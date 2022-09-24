@@ -3,6 +3,12 @@
   @return $px / $fs-base + em;
 }
 
+// * Generate Size
+@mixin size($px){
+  width: $px + px;
+  height: $px + px;
+}
+
 // * Fonts
 @mixin font-face($font-name,$fontfile,$fontweight: normal,$fontstyle: normal
 ) {
