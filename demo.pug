@@ -10,3 +10,16 @@ html(lang="en")
     //- Style
     link(rel="stylesheet", href="./index.css")
   body 
+    .buttons 
+      +button({
+        type: 'button',
+        text: 'Read More >',
+        toolTip: 'Read more here'
+      })
+    .buttons 
+      +button({
+        type: 'button',
+        text: 'Subscribe',
+        toolTip: 'Push for Subscribe',
+        whiteMode: true
+      })
