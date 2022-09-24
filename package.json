@@ -26,6 +26,7 @@
   "dependencies": {
     "bootstrap": "^5.2.1",
     "font-awesome": "^4.7.0",
+    "package.json": "^2.0.1",
     "simptip": "^1.0.4"
   }
 }
