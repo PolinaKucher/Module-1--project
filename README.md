@@ -6,3 +6,9 @@ dim- : Dmytro Volunchyc
 kos- : Kostiantyn Melnyk
 val- : Valeriia Hudkova
 yul- : Yuliya Sushko
+
+
+для запуска компиляции страниц
+pug -w src/pages/page_name.pug -o pages
+
+
