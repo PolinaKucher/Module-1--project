@@ -1,0 +1,10 @@
+mixin button(args='')
+  - const type = args.type || 'button'
+  - let classes = ''
+  - args.whiteMode ? classes += ' andr-button--white' : null
+
+  button.andr-button(type=args.type, class=classes, data-tooltip=args.toolTip).simptip-position-bottom.simptip-fade.simptip-smooth
+    if args.text 
+      span.andr-button__text=args.text 
+    else 
+      span(style='color:red;') Default text
