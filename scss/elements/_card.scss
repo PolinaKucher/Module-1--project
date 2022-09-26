@@ -1,0 +1,35 @@
+
+.sol-card {
+  background-color: $c-white;
+  color: $c-black;
+  cursor: default;
+
+  &__wrapper {
+    padding: 64px;
+
+    @include media('<=desktop') {
+      padding: 32px;
+    }
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    letter-spacing: -2px;
+    font-family: $ff-sen;
+    font-size: em(48);
+    line-height: 64px;
+    font-weight: 700;
+
+    @include media('<=tablet') {
+      font-size: em(28);
+      line-height: 32px;
+    }
+  }
+}

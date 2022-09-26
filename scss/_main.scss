@@ -2,7 +2,25 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  // * Selection
+  &::selection {
+    background-color: rgba($c-purple, 0.3);
+  }
 }
+
+.icon {
+  display: inline-block;
+  stroke: currentColor;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+
+  &:not(.has-stroke) {
+    stroke-width: 0;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -12,25 +30,30 @@ h6 {
   padding: 0;
   margin: 0;
 }
+
 body {
   background-color: $c-white;
+  font-size: $fs-base + px;
   font-family: $ff-inter;
   color: $c-medium-grey;
-  font-size: $fs-base;
 }
+
 img {
   width: 100%;
 }
+
 a {
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
 }
+
 .wrapper {
-  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1320px;
   margin: 0 auto;
-  max-width: 1440px;
-  padding-left: 80px;
-  padding-right: 80px;
+  width: 100%;
 }

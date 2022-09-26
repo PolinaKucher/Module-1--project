@@ -4,7 +4,6 @@
   "description": "Prefixes indicate the area of work done by each participant: alx- : Olexandr Kubryk andr- : Andrey Askryotkov dim- : Dmytro Volunchyc  kos- : Kostiantyn Melnyk val- : Valeriia Hudkova yul- : Yuliya Sushko",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev-pug": "pug -w index.pug --pretty",
     "dev-scss": "sass --watch index.scss index.css",
     "prod": "pug index.pug && sass index.scss index.css --style compressed"

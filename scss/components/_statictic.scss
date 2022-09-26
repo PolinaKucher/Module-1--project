@@ -1,0 +1,20 @@
+.sol-statictic {
+  background-color: $c-yellow;
+
+  &__wrapper {
+    justify-content: space-between;
+    padding: 32px 48px;
+    display: flex;
+
+    @include media('<=tablet') {
+      padding: 16px;
+    }
+
+    @include media('<=phone') {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 8px;
+      padding: 8px;
+    }
+  }
+}

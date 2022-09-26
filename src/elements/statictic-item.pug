@@ -1,0 +1,7 @@
+mixin staticticItem(args={})
+  - const subtitle = args.subtitle || 'Default statictic subtitle'
+  - const title = args.title || 'Default statictic title'
+
+  .sol-statictic-item
+    .sol-statictic-item__title=title
+    .sol-statictic-item__subtitle=subtitle
