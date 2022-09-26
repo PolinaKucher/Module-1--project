@@ -1,15 +1,12 @@
 .kos-form-item {
-
   &__content {
     max-width: 768px;
     width: 100%;
   }
 
   &__input {
-    font-family: $ff-inter;
+    border: 1px solid $c-medium-grey;
     line-height: 28px;
-    font-size: em(16);
-    font-weight: 400;
     margin-top: 16px;
     padding: 25px;
     width: 100%;    
@@ -21,23 +18,22 @@
   }
 
   &__select {
-    font-family: $ff-inter;
+    border: 1px solid $c-medium-grey;
     line-height: 28px;
-    font-size: em(16);
     font-weight: 400;
     margin-top: 16px;
     padding: 25px;
     width: 100%;
   }
 
-  &__text-area{
-    font-family: $ff-inter;
+  &__text-area {
+    border: 1px solid $c-medium-grey;
+    box-sizing: border-box;
     line-height: 28px;
-    font-size: em(16);
-    font-weight: 400;
     margin-top: 16px;
-    max-width: 768px;
+    display: block;
     padding: 25px;
+    resize: none;
     width: 100%;
   }
 

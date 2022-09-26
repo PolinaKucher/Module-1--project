@@ -8217,10 +8217,8 @@ progress {
   width: 100%;
 }
 .kos-form-item__input {
-  font-family: "Inter", sans-serif;
+  border: 1px solid #6D6E76;
   line-height: 28px;
-  font-size: 1em;
-  font-weight: 400;
   margin-top: 16px;
   padding: 25px;
   width: 100%;
@@ -8230,22 +8228,21 @@ progress {
   width: 100%;
 }
 .kos-form-item__select {
-  font-family: "Inter", sans-serif;
+  border: 1px solid #6D6E76;
   line-height: 28px;
-  font-size: 1em;
   font-weight: 400;
   margin-top: 16px;
   padding: 25px;
   width: 100%;
 }
 .kos-form-item__text-area {
-  font-family: "Inter", sans-serif;
+  border: 1px solid #6D6E76;
+  box-sizing: border-box;
   line-height: 28px;
-  font-size: 1em;
-  font-weight: 400;
   margin-top: 16px;
-  max-width: 768px;
+  display: block;
   padding: 25px;
+  resize: none;
   width: 100%;
 }
 .kos-form-item__error {
