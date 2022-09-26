@@ -1,0 +1,33 @@
+mixin aboutUs() 
+  - const list = [{ title: '12+', subtitle: 'Blogs Published' }, { title: '18K+', subtitle: 'Views on Finsweet' }, { title: '30K+', subtitle: 'Total active Users' }]
+
+  section.sol-about-us
+    .wrapper.sol-about-us__wrapper
+      //- * Head
+      .sol-about-us__head
+        .sol-about-us__card
+          +card({
+            subtitle: 'About us',
+            title: 'We are a team of content writers who share their learnings'
+          })
+        p.sol-about-us__other Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      //- Body
+      .sol-about-us__body
+        .sol-about-us__content
+          .sol-about-us__statictic
+            +statictic({ list })
+          .sol-about-us__block
+            +block()
+        .sol-about-us__image-block
+          img(src="../assets/images/yul-photo-of-woman-wearing-eyeglasses-large.jpg" alt="woman-wearing-eyeglasses-large" loading="lazy")
+      .sol-about-us__footer
+        +item({
+          subtitle: 'Our mision',
+          title: 'Creating valuable content for creatives all around the world',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
+        })
+        +item({
+          subtitle: 'Our Vision',
+          title: 'A platform that empowers individuals to improve',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.'
+        })
