@@ -23,3 +23,28 @@ html(lang="en")
         toolTip: 'Push for Subscribe',
         whiteMode: true
       })
+    
+    .kos-form 
+      +formItem({
+        placeholder: 'Full Name',
+        toolTip: 'Full Name',
+        name: 'firstName',
+        type: 'text',
+      })
+
+      +formItem({
+        placeholder: 'Your Email',
+        toolTip: 'Your Email',
+        name: 'email',
+        type: 'email',
+      })
+
+      +formItem({
+        name2: 'country'
+      })
+
+      +formItem({
+        placeholder2: 'Message',
+        name3: 'textArea',
+        rows: '5',
+      })

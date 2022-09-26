@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(‘https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap’);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -8210,6 +8210,51 @@ progress {
 }
 .andr-button--white:hover {
   color: #fff;
+}
+
+.kos-form-item__content {
+  max-width: 768px;
+  width: 100%;
+}
+.kos-form-item__input {
+  font-family: "Inter", sans-serif;
+  line-height: 28px;
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 16px;
+  padding: 25px;
+  width: 100%;
+}
+.kos-form-item__country {
+  max-width: 768px;
+  width: 100%;
+}
+.kos-form-item__select {
+  font-family: "Inter", sans-serif;
+  line-height: 28px;
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 16px;
+  padding: 25px;
+  width: 100%;
+}
+.kos-form-item__text-area {
+  font-family: "Inter", sans-serif;
+  line-height: 28px;
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 16px;
+  max-width: 768px;
+  padding: 25px;
+  width: 100%;
+}
+.kos-form-item__error {
+  text-align: end;
+  color: red;
+  opacity: 0;
+}
+.kos-form-item__error--show {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.css.map */
