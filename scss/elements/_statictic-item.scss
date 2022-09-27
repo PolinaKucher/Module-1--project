@@ -1,0 +1,36 @@
+.sol-statictic-item {
+  color: $c-black;
+
+  @include media('<=tablet') {
+    text-align: center;
+  }
+
+  &__title {
+    font-family: $ff-sen;
+    letter-spacing: -2px;
+    line-height: 64px;
+    font-size: em(56);
+    font-weight: 700;
+
+    @include media('<=desktop') {
+      font-size: em(28);
+    }
+
+    @include media('<=tablet') {
+      font-size: em(19);
+    }
+  }
+
+  &__subtitle {
+    line-height: 28px;
+
+    @include media('<=tablet') {
+      line-height: 22px;
+    }
+
+    @include media('<=phone') {
+      line-height: 16px;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+mixin block(rightMode=false)
+  - let classes = ''
+  - classes = rightMode ? 'sol-block--right-mode' : ''
+
+  .sol-block(class=classes)
+    .sol-block__line

@@ -1,0 +1,33 @@
+.sol-item {
+  color: $c-black;
+
+  &__title {
+    font-family: $ff-sen;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+    line-height: 40px;
+    font-size: em(28);
+    font-weight: 700;
+
+    @include media('<=tablet') {
+      line-height: 32px;
+    }
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+    line-height: 20px;
+    font-weight: 600;
+
+    @include media('<=tablet') {
+      line-height: 18px;
+    }
+  }
+
+  &__description {
+    color: $c-medium-grey;
+    line-height: 28px;
+  }
+}

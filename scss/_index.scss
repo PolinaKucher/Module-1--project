@@ -1,18 +1,12 @@
-// Plugins
-@import './plugins/index';
+// ! Plugins
+// @import './plugins/index';
 // Mixins
 @import './mixins';
+// Media
+@import './media';
 // Fonts
 @import './fonts';
 // Config
 @import './variables';
 // Global
 @import './main';
-// Plugins
-@import './plugins/index';
-// Elements
-@import './elements/index';
-// Components
-@import './components/index';
-// Pages 
-@import './pages/index';

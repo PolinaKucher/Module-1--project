@@ -1,0 +1,8 @@
+mixin card(args={})
+  - const subtitle = args.subtitle || 'Default card subtitle'
+  - const title = args.title || 'Default card title'
+
+  .sol-card
+    .sol-card__wrapper 
+      .sol-card__subtitle=subtitle
+      .sol-card__title=title
