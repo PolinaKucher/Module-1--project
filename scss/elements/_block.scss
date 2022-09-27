@@ -1,0 +1,16 @@
+.sol-block {
+  background-color: $c-yellow;
+  display: flex;
+  height: 24px;
+  width: 100%;
+
+  &__line {
+    background-color: $c-purple;
+    height: 100%;
+    width: 30%;
+  }
+
+  &--right-mode {
+    justify-content: flex-end;
+  }
+}
