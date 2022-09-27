@@ -1,0 +1,9 @@
+mixin item(args)
+  - const subtitle = args.subtitle || 'Default item subtitle'
+  - const title = args.title || 'Default item title'
+  - const description = args.description || 'Default item description'
+
+  .sol-item
+    .sol-item__subtitle=subtitle
+    h3.sol-item__title=title
+    p.sol-item__description=description

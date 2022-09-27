@@ -1,0 +1,45 @@
+.andr-article {
+  padding-bottom: 30px;
+  cursor: default;
+
+
+  &__subtitle {
+    font-family: $ff-inter;
+    color: $c-dark-grey;
+    padding-top: 30px;
+    font-size: em(14);
+    font-weight: 500;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $c-purple;
+  }
+
+  &__title {
+    font-family: $ff-sen;
+    letter-spacing: -1px;
+    font-size: em(28);
+    line-height: 40px;
+    padding-top: 15px;
+    font-weight: 700;
+    margin-bottom: 0;
+
+    &--small{
+      font-size: em(24);
+      line-height: 32px;
+      max-width: 340px;
+    }
+  }
+
+  &__text{
+    color: $c-medium-grey;
+    padding-top: 15px;
+    line-height: 30px;
+    font-size: 16px;
+  }
+}
+
+.andr-h-margin-top-30{
+  margin-top: 30px;
+}
