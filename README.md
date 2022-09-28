@@ -10,7 +10,13 @@ Prefixes indicate the area of work done by each participant:
 
 
 
-** для запуска компиляции страниц **
+**для запуска компиляции страниц**
 >> pug -w src/pages/page_name.pug -o pages
+
+**для работы с папкой scss/pages запускаем следующую команду**
+>>  sass --watch scss/pages/_<file-name>.scss styles/<file-name>.css 
+
+__`Обратите внимание`, в scss/pages обязательно перед названием файла должно быть нижнее подчеркивание__
+
 
 
