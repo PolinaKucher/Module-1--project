@@ -1,2 +1,11 @@
 mixin header()
-  header(style="background-color: black").header Header
+  header.yul-header 
+    .wrapper.yul-header__wrapper
+      .yul-header__logo
+        img(src="./assets/images/logo.svg" alt="logo")
+      .yul-header__block
+        .yul-header__navigation 
+          +navigation() 
+        .yul-header__button
+          .andr-button--white
+      
