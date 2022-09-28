@@ -1,0 +1,33 @@
+.yul-navigation {
+  display: none;
+  background-color: $c-black;
+  
+
+  &__list {
+    display: flex;
+    height: 100%;
+  }
+
+  &__item {
+    margin-right: 24px;
+    
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    transition: $t-normal;
+    font-family: $ff-inter;
+    font-size: em(16);
+    line-height: em(28);
+    font-weight: 400;
+    color: $c-white;
+
+    &:hover {
+      color: $c-purple;
+      border-bottom: 1 solid $c-purple;
+    }
+  }
+}
