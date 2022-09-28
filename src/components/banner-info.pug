@@ -1,7 +1,5 @@
-mixin banner(args={})
-  section.pol-banner 
-    .wrapper.pol-banner__wrapper
-      .pol-banner__info  
+mixin bannerInfo(args={})
+  .pol-banner__info  
     if args.subtitle 
       span.pol-banner__subtitle=args.subtitle
     if args.link
@@ -20,6 +18,4 @@ mixin banner(args={})
       type: 'button',
       text: 'Read More >',
       toolTip: 'Read more'
-      })
-    if args.src 
-      img(src=args.src, alt=args.alt).andr-article__image
+})

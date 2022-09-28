@@ -7,6 +7,7 @@ Prefixes indicate the area of work done by each participant:
 >> val- : Valeriia Hudkova
 >> yul- : Yuliya Sushko
 >> sol- : Solodkui Arthur
+>> pol- : Polina Kucher
 
 
 
