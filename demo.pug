@@ -23,14 +23,30 @@ html(lang="en")
         toolTip: 'Push for Subscribe',
         whiteMode: true
       })
-    .blog-post-item 
-      +blogPostsItem({
-        src: './assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
-        subtitle: 'Startup',
-        title: 'Design tips for designers that cover everything you need'
+    
+    .kos-form 
+      +formItem({
+        placeholder: 'Full Name',
+        toolTip: 'Full Name',
+        name: 'firstName',
+        type: 'text',
       })
-      +blogPostsItem({
-        src2: './assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
-        subtitle: 'Business',
-        title: 'Top 6 free website mockup tools 2022'
+
+      +formItem({
+        placeholder: 'Your Email',
+        toolTip: 'Your Email',
+        name: 'email',
+        type: 'email',
+      })
+
+      +formItem({
+        name2: 'country',
+        toolTip: 'Select your country',
+      })
+
+      +formItem({
+        placeholder2: 'Message',
+        name3: 'textArea',
+        rows: '5',
+        toolTip: 'Message',
       })
