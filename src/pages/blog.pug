@@ -2,3 +2,24 @@ extends ../common/layout
 
 block title 
   title Blog
+block style
+  link(rel="stylesheet" href="../styles/blog.css")
+
+
+block content
+  +banner({
+    src: '../assets/images/yul-man-in-white-dress-shirt-sitting-on-black (1).jpg',
+    classes: 'pol-banner--colorized',
+    subtitle: 'Featured Post',
+    title: 'Step-by-step guide to choosing great font pairs',
+    alt: 'Man working',
+    mod: 'pol-banner__link--colorized',
+    href: 'https://en.wikipedia.org/wiki/James_West_(Australian_journalist)',
+    href2: 'https://startup.ua/ua/',
+    toolTip: 'Who is John Doe',
+    author: 'John Doe',
+    toolTip2: 'Watch on Startup',
+    dateTime: '23-05-2022',
+    time: 'May 23, 2022',
+    text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
+  })
