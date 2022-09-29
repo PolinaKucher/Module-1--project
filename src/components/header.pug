@@ -5,7 +5,11 @@ mixin header()
         img(src="./assets/images/logo.svg" alt="logo")
       .yul-header__block
         .yul-header__navigation 
-          +navigation() 
+          //- +navigation() 
         .yul-header__button
-          .andr-button--white
-      
+          +button({
+            type: 'button',
+            text: 'Subscribe',
+            toolTip: 'Push for Subscribe',
+            whiteMode: true
+          })

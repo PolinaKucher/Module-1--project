@@ -576,6 +576,11 @@ ul {
   background-position: center center;
   background-size: cover;
 }
+.pol-banner--colorized {
+  background-color: #f4f0f8;
+  background-image: none;
+  color: #232536;
+}
 .pol-banner__wrapper {
   height: 100vh;
   display: flex;
@@ -628,12 +633,11 @@ ul {
   }
 }
 .pol-banner__link {
-  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffd050;
   cursor: pointer;
 }
-.pol-banner__link:hover {
-  color: #edc14a;
+.pol-banner__link--colorized {
+  color: #592ea9;
 }
 .pol-banner__text {
   padding-top: 16px;
@@ -659,6 +663,69 @@ ul {
   .pol-banner__image {
     display: none;
   }
+}
+
+.yul-header {
+  background-color: #232536;
+  color: #fff;
+  position: fixed;
+  height: 80px;
+  z-index: 999;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.yul-header__wrapper {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+.yul-header__logo {
+  max-width: 140px;
+  width: 100%;
+}
+.yul-header__block {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.yul-header__navigation {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+  display: flex;
+  margin-right: 2em;
+}
+.yul-header__button {
+  align-items: center;
+  display: flex;
+}
+
+.yul-navigation {
+  display: none;
+  background-color: #232536;
+}
+.yul-navigation__list {
+  display: flex;
+  height: 100%;
+}
+.yul-navigation__item {
+  margin-right: 24px;
+}
+.yul-navigation__item:last-child {
+  margin-right: 0;
+}
+.yul-navigation__link {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  line-height: 1.75em;
+  font-weight: 400;
+  color: #fff;
+}
+.yul-navigation__link:hover {
+  color: #592ea9;
+  border-bottom: 1 solid #592ea9;
 }
 
 .andr-content-block {
