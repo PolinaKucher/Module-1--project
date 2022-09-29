@@ -701,33 +701,6 @@ ul {
   display: flex;
 }
 
-.yul-navigation {
-  display: none;
-  background-color: #232536;
-}
-.yul-navigation__list {
-  display: flex;
-  height: 100%;
-}
-.yul-navigation__item {
-  margin-right: 24px;
-}
-.yul-navigation__item:last-child {
-  margin-right: 0;
-}
-.yul-navigation__link {
-  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  font-family: "Inter", sans-serif;
-  font-size: 1em;
-  line-height: 1.75em;
-  font-weight: 400;
-  color: #fff;
-}
-.yul-navigation__link:hover {
-  color: #592ea9;
-  border-bottom: 1 solid #592ea9;
-}
-
 .andr-content-block {
   padding-top: 130px;
 }

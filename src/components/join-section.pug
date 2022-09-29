@@ -1,0 +1,17 @@
+mixin join-section()
+  section.yul-join-section 
+    .wrapper.yul-join-section__wrapper
+      h2.yul-join-section__title
+        | Join our team to be a part 
+        br
+        |  of our story
+      p.yul-join-section__subtitle
+        | Lorem ipsum dolor sit amet, consectetur adipiscing 
+        br
+        |  elit, sed do eiusmod tempor incididunt.
+      +button({
+        type: 'button',
+        text: 'Join Now',
+        oolTip: 'Push for Join Now',
+        whiteMode: true
+        })
