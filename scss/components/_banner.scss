@@ -1,0 +1,90 @@
+@import "../media";
+$info-width: 805px;
+.pol-banner {
+  position: relative;
+  margin-top: 80px;
+  height: 100vh;
+  color: $c-white;
+  background-image: url(../../assets/images/yul-man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  &--colorized {
+    background-color: $c-lavender;
+    background-image: none;
+    color: $c-black;
+  }
+  &__wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    @include media("<=tablet") {
+      flex-direction: column;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  &__info {
+    max-width: $info-width;
+    padding-right: 20px;
+    @include media("<=tablet") {
+      font-size: em(14);
+    }
+  }
+  &__subtitle {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 20px;
+    &--link {
+      cursor: pointer;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $c-white;
+      &:hover {
+        color: $c-yellow;
+      }
+    }
+  }
+  &__title {
+    padding: 24px 0;
+    font-size: em(56);
+    font-family: $ff-sen;
+    line-height: 64px;
+    letter-spacing: -2px;
+    @include media("<=tablet") {
+      font-size: em(48);
+      line-height: 54px;
+    }
+  }
+  &__link {
+    color: $c-yellow;
+    cursor: pointer;
+    &--colorized {
+      color: $c-purple;
+    }
+  }
+  &__text {
+    padding-top: 16px;
+    padding-bottom: 48px;
+    line-height: 28px;
+  }
+  &__button {
+    width: 200px;
+  }
+  &__image {
+    max-width: 515px;
+    width: 50%;
+    @include media("<=tablet") {
+      height: 100%;
+      min-height: calc($info-width/4);
+      width: 100%;
+      padding-top: 20px;
+    }
+    @include media("<=phone") {
+      display: none;
+    }
+  }
+}

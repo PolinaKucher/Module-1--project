@@ -1,0 +1,29 @@
+mixin banner(args={})
+  section.pol-banner(class=args.classes) 
+    .wrapper.pol-banner__wrapper
+      .pol-banner__info  
+        if args.subtitle 
+          span.pol-banner__subtitle=args.subtitle
+        if args.link
+          a.pol-banner__subtitle--link.simptip-position-bottom.simptip-fade.simptip-smooth(href=args.href2,  data-tooltip=args.toolTip2, target='blanc')=args.link
+        h1.pol-banner__title=args.title
+        if args.author
+          .pol-banner__author By 
+            |
+            a.pol-banner__link.simptip-position-top.simptip-fade.simptip-smooth(href=args.href,  data-tooltip=args.toolTip, target='blanc', class=args.mod)=args.author
+            |
+            | |
+            |
+            time(datetime=args.dateTime).pol-banner__time=args.time
+        p.pol-banner__text 
+          | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+          br
+          | fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        .pol-banner__button
+          +button({
+            type: 'button',
+            text: 'Read More >',
+            toolTip: 'Read more',
+            })
+      if args.src 
+        img(src=args.src, alt=args.alt).pol-banner__image

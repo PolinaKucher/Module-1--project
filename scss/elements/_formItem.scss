@@ -39,7 +39,7 @@
 
   &__error {
     text-align: end;
-    color: red; //! Add from variables
+    color: $c-red; 
     opacity: 0;
 
     &--show {

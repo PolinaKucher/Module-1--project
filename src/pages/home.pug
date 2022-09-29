@@ -3,9 +3,26 @@ extends ../common/layout
 block title 
   title Home
 block style 
-  link(rel="stylesheet", href="../styles/home.css")
+  link(rel="stylesheet" href="../styles/home.css")
 
   .app 
+    //- *Header
+    +header()
+    //- * Banner
+    +banner({
+      subtitle: 'Posted on ',
+      link: 'startup',
+      title: 'Step-by-step guide to choosing great font pairs',
+      alt: 'Building',
+      href: 'https://en.wikipedia.org/wiki/James_West_(Australian_journalist)',
+      href2: 'https://startup.ua/ua/',
+      toolTip: 'Who is James West',
+      toolTip2: 'Watch on Startup',
+      author: 'James West',
+      dateTime: '23-05-2022',
+      time: 'May 23, 2022',
+      text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
+    })
     //- * Featured post
     .andr-content-block
       .wrapper.andr-content-block__wrapper
@@ -16,7 +33,11 @@ block style
           .andr-content-block__article-wrapper
             +article({
               src: '../assets/images/yul-white-concrete-building.jpg',
+<<<<<<< HEAD
               alt: 'Building',
+=======
+              alt: 'Man working',
+>>>>>>> a371d7307eb7991a03f6b4c041e71373539ad886
               href: 'https://en.wikipedia.org/wiki/John_Doe',
               toolTip: 'Who is John Doe',
               author: 'John Doe',
@@ -35,7 +56,11 @@ block style
         .andr-content-block__item.andr-content-block__item--tiny
           .andr-content-block__head
             h2.andr-content-block__title All Posts
+<<<<<<< HEAD
             a(href="#", data-tooltip='View all posts').andr-content-block__link.simptip-position-bottom.simptip-fade.simptip-smooth View all
+=======
+            a(href="#" data-tooltip='View all posts').andr-content-block__link.simptip-position-bottom.simptip-fade.simptip-smooth View all
+>>>>>>> a371d7307eb7991a03f6b4c041e71373539ad886
           +article({
           classes: ' andr-h-margin-top-30',
           href: 'https://en.wikipedia.org/wiki/John_Doe',
@@ -69,8 +94,11 @@ block style
           time: 'August 23, 2021',
           title2: '8 Figma design systems that you can download for free today.'
         })
+<<<<<<< HEAD
     //- * Category block
     +category
+=======
+>>>>>>> a371d7307eb7991a03f6b4c041e71373539ad886
 
     //- * Logoipsum block
     +logoipsum

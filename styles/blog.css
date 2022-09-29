@@ -63,44 +63,103 @@ ul {
   width: 100%;
 }
 
-.andr-article {
-  padding-bottom: 30px;
-  cursor: default;
+.pol-banner {
+  position: relative;
+  margin-top: 80px;
+  height: 100vh;
+  color: #fff;
+  background-image: url(../../assets/images/yul-man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
-.andr-article__subtitle {
-  font-family: "Inter", sans-serif;
-  color: #4c4c4c;
-  padding-top: 30px;
-  font-size: 0.875em;
-  font-weight: 500;
+.pol-banner--colorized {
+  background-color: #f4f0f8;
+  background-image: none;
+  color: #232536;
 }
-.andr-article__link {
-  text-decoration: none;
+.pol-banner__wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .pol-banner__wrapper {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.pol-banner__info {
+  max-width: 805px;
+  padding-right: 20px;
+}
+@media (max-width: 768px) {
+  .pol-banner__info {
+    font-size: 0.875em;
+  }
+}
+.pol-banner__subtitle {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.pol-banner__subtitle--link {
+  cursor: pointer;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+.pol-banner__subtitle--link:hover {
+  color: #ffd050;
+}
+.pol-banner__title {
+  padding: 24px 0;
+  font-size: 3.5em;
+  font-family: "Sen", sans-serif;
+  line-height: 64px;
+  letter-spacing: -2px;
+}
+@media (max-width: 768px) {
+  .pol-banner__title {
+    font-size: 3em;
+    line-height: 54px;
+  }
+}
+.pol-banner__link {
+  color: #ffd050;
+  cursor: pointer;
+}
+.pol-banner__link--colorized {
   color: #592ea9;
 }
-.andr-article__title {
-  font-family: "Sen", sans-serif;
-  letter-spacing: -1px;
-  font-size: 1.75em;
-  line-height: 40px;
-  padding-top: 15px;
-  font-weight: 700;
-  margin-bottom: 0;
+.pol-banner__text {
+  padding-top: 16px;
+  padding-bottom: 48px;
+  line-height: 28px;
 }
-.andr-article__title--small {
-  font-size: 1.5em;
-  line-height: 32px;
-  max-width: 340px;
+.pol-banner__button {
+  width: 200px;
 }
-.andr-article__text {
-  color: #6d6e76;
-  padding-top: 15px;
-  line-height: 30px;
-  font-size: 16px;
+.pol-banner__image {
+  max-width: 515px;
+  width: 50%;
 }
-
-.andr-h-margin-top-30 {
-  margin-top: 30px;
+@media (max-width: 768px) {
+  .pol-banner__image {
+    height: 100%;
+    min-height: 201.25px;
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .pol-banner__image {
+    display: none;
+  }
 }
 
 .andr-button {
@@ -566,293 +625,4 @@ ul {
   border-right: 7px solid #e67e22;
 }
 
-<<<<<<< HEAD
-.alx-category {
-  margin-top: 128px;
-  background-color: #fff;
-}
-.alx-category__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.alx-category__title {
-  font-family: "Sen";
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
-  letter-spacing: -2px;
-  margin-bottom: 48px;
-  color: #232536;
-  text-align: center;
-}
-.alx-category__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 32px;
-}
-
-.alx-category-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #fff;
-  margin-bottom: 16px;
-  border: 1px solid rgba(109, 110, 118, 0.3);
-  padding: 32px;
-}
-.alx-category-item__icon {
-  background-color: #fbf6ea;
-  font-size: 24px;
-  width: fit-content;
-  padding: 12px;
-  border-radius: 10px;
-  margin-bottom: 12px;
-}
-.alx-category-item__title {
-  font-family: "Sen";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 40px;
-  letter-spacing: -1px;
-  color: #232536;
-  margin-bottom: 4px;
-}
-.alx-category-item__subtitle {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: #6d6e76;
-}
-
-.alx-category-item:hover {
-  background-color: #ffd050;
-  border-color: #fff;
-}
-
-.alx-logoipsum {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 96px;
-  margin-top: 96px;
-}
-.alx-logoipsum__icon {
-  font-size: 136px;
-=======
-.pol-banner {
-  position: relative;
-  margin-top: 80px;
-  height: 100vh;
-  color: #fff;
-  background-image: url(../../assets/images/yul-man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-.pol-banner--colorized {
-  background-color: #f4f0f8;
-  background-image: none;
-  color: #232536;
-}
-.pol-banner__wrapper {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@media (max-width: 768px) {
-  .pol-banner__wrapper {
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-.pol-banner__info {
-  max-width: 805px;
-  padding-right: 20px;
-}
-@media (max-width: 768px) {
-  .pol-banner__info {
-    font-size: 0.875em;
-  }
-}
-.pol-banner__subtitle {
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  line-height: 20px;
-}
-.pol-banner__subtitle--link {
-  cursor: pointer;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
-}
-.pol-banner__subtitle--link:hover {
-  color: #ffd050;
-}
-.pol-banner__title {
-  padding: 24px 0;
-  font-size: 3.5em;
-  font-family: "Sen", sans-serif;
-  line-height: 64px;
-  letter-spacing: -2px;
-}
-@media (max-width: 768px) {
-  .pol-banner__title {
-    font-size: 3em;
-    line-height: 54px;
-  }
-}
-.pol-banner__link {
-  color: #ffd050;
-  cursor: pointer;
-}
-.pol-banner__link--colorized {
-  color: #592ea9;
-}
-.pol-banner__text {
-  padding-top: 16px;
-  padding-bottom: 48px;
-  line-height: 28px;
-}
-.pol-banner__button {
-  width: 200px;
-}
-.pol-banner__image {
-  max-width: 515px;
-  width: 50%;
-}
-@media (max-width: 768px) {
-  .pol-banner__image {
-    height: 100%;
-    min-height: 201.25px;
-    width: 100%;
-    padding-top: 20px;
-  }
-}
-@media (max-width: 480px) {
-  .pol-banner__image {
-    display: none;
-  }
-}
-
-.yul-header {
-  background-color: #232536;
-  color: #fff;
-  position: fixed;
-  height: 80px;
-  z-index: 999;
-  right: 0;
-  left: 0;
-  top: 0;
-}
-.yul-header__wrapper {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  height: 100%;
-}
-.yul-header__logo {
-  max-width: 140px;
-  width: 100%;
-}
-.yul-header__block {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-}
-.yul-header__navigation {
-  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  align-items: center;
-  display: flex;
-  margin-right: 2em;
-}
-.yul-header__button {
-  align-items: center;
-  display: flex;
-}
-
-.yul-navigation {
-  display: none;
-  background-color: #232536;
-}
-.yul-navigation__list {
-  display: flex;
-  height: 100%;
-}
-.yul-navigation__item {
-  margin-right: 24px;
-}
-.yul-navigation__item:last-child {
-  margin-right: 0;
-}
-.yul-navigation__link {
-  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  font-family: "Inter", sans-serif;
-  font-size: 1em;
-  line-height: 1.75em;
-  font-weight: 400;
-  color: #fff;
-}
-.yul-navigation__link:hover {
-  color: #592ea9;
-  border-bottom: 1 solid #592ea9;
->>>>>>> a371d7307eb7991a03f6b4c041e71373539ad886
-}
-
-.andr-content-block {
-  padding-top: 130px;
-}
-.andr-content-block__wrapper {
-  justify-content: space-between;
-  display: flex;
-}
-.andr-content-block__item {
-  max-width: 735px;
-  width: 100%;
-}
-.andr-content-block__item--tiny {
-  max-width: 515px;
-  width: 100%;
-}
-.andr-content-block__item--tiny .andr-article {
-  padding-left: 30px;
-}
-.andr-content-block__item--tiny .andr-article:hover {
-  background-color: #fbf6ea;
-  cursor: pointer;
-}
-.andr-content-block__item--tiny .andr-article__title {
-  padding-top: 8px;
-}
-.andr-content-block__head {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-}
-.andr-content-block__title {
-  font-family: "Sen", sans-serif;
-  letter-spacing: -2px;
-  font-size: 2.25em;
-  font-weight: 700;
-  cursor: default;
-}
-.andr-content-block__link {
-  font-family: "Inter", sans-serif;
-  text-decoration: none;
-  color: #592ea9;
-  font-weight: 400;
-}
-.andr-content-block__article-wrapper {
-  border: 1px solid rgba(109, 110, 118, 0.1);
-  margin-top: 30px;
-  padding: 30px;
-}
-.andr-content-block__button {
-  max-width: 200px;
-}
-
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=blog.css.map */

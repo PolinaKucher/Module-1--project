@@ -1,0 +1,48 @@
+extends ../common/layout
+
+block title 
+  title Contact us
+
+block style
+  link(rel="stylesheet" href="../styles/contacts.css")
+
+
+block content
+  section.kos-contact 
+    .wrapper.kos-contact__wrapper 
+      h3.kos-contact__subtitle Contact us
+      h2.kos-contact__title Let's Start a Conversation
+      .kos-contact__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+      +contact-pannel()
+      form.kos-contact__form
+        +formItem({
+          placeholder: 'Full Name',
+          toolTip: 'Full Name',
+          name: 'firstName',
+          type: 'text',
+        })
+
+        +formItem({
+          placeholder: 'Your Email',
+          toolTip: 'Your Email',
+          name: 'email',
+          type: 'email',
+        })
+
+        +formItem({
+          name2: 'country',
+          toolTip: 'Select your country',
+        })
+
+        +formItem({
+          placeholder2: 'Message',
+          name3: 'textArea',
+          rows: '5',
+          toolTip: 'Message',
+        })
+        .kos-contact__button
+          +button({
+            type: 'submit',
+            text: 'Send Message',
+            toolTip: 'Send Message',
+          })

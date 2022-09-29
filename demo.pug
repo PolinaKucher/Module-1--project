@@ -1,52 +1,59 @@
-include ./src/elements/index
-include ./src/components/index 
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Demo
-    //- Style
-    link(rel="stylesheet", href="./index.css")
-  body 
-    .buttons 
-      +button({
-        type: 'button',
-        text: 'Read More >',
-        toolTip: 'Read more here'
-      })
-    .buttons 
-      +button({
-        type: 'button',
-        text: 'Subscribe',
-        toolTip: 'Push for Subscribe',
-        whiteMode: true
-      })
-    
-    .kos-form 
-      +formItem({
-        placeholder: 'Full Name',
-        toolTip: 'Full Name',
-        name: 'firstName',
-        type: 'text',
-      })
+extends ./src/common/layout
 
-      +formItem({
-        placeholder: 'Your Email',
-        toolTip: 'Your Email',
-        name: 'email',
-        type: 'email',
-      })
+block title 
+  title Demo
 
-      +formItem({
-        name2: 'country',
-        toolTip: 'Select your country',
-      })
+block style
+  link(rel="stylesheet" href="./index.css")
 
-      +formItem({
-        placeholder2: 'Message',
-        name3: 'textArea',
-        rows: '5',
-        toolTip: 'Message',
-      })
+block content
+  .buttons 
+    +button({
+      type: 'button',
+      text: 'Read More >',
+      toolTip: 'Read more here'
+    })
+  .buttons 
+    +button({
+      type: 'button',
+      text: 'Subscribe',
+      toolTip: 'Push for Subscribe',
+      whiteMode: true
+    })
+  
+  .kos-form 
+    +formItem({
+      placeholder: 'Full Name',
+      toolTip: 'Full Name',
+      name: 'firstName',
+      type: 'text',
+    })
+
+    +formItem({
+      placeholder: 'Your Email',
+      toolTip: 'Your Email',
+      name: 'email',
+      type: 'email',
+    })
+
+    +formItem({
+      name2: 'country',
+      toolTip: 'Select your country',
+    })
+
+    +formItem({
+      placeholder2: 'Message',
+      name3: 'textArea',
+      rows: '5',
+      toolTip: 'Message',
+    })
+
+    +banner({
+        subtitle: 'Posted on',
+        link: ' startup',
+        title: 'Step-by-step guide to choosing great font pairs',
+        author: 'James West',
+        dateTime: '23-05-2022',
+        time: 'May 23, 2022',
+    })
+      
