@@ -3,11 +3,35 @@ mixin category(args={})
     .wrapper.alx-category__wrapper
       h3.alx-category__title Choose A Category    
       ul.alx-category__list
-        +categoryItem({
-          icon: '<svg class="icon icon-business"><use xlink:href="#icon-business"></use></svg>',
-          title: 'Business',
-          subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
-        })
-        +categoryItem()
-        +categoryItem()
-        +categoryItem()
+
+        .alx-category-item
+          .alx-category-item__icon
+            <svg class="icon icon-business"><use xlink:href="#icon-business"></use></svg>
+          .alx-category-item__title
+            h3 Business
+          .alx-category-item__subtitle 
+            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+        .alx-category-item
+          .alx-category-item__icon
+            <svg class="icon icon-startup"><use xlink:href="#icon-startup"></use></svg>
+          .alx-category-item__title
+            h3 Startup
+          .alx-category-item__subtitle 
+            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+        .alx-category-item
+          .alx-category-item__icon
+              <svg class="icon icon-economy"><use xlink:href="#icon-economy"></use></svg>
+          .alx-category-item__title
+              h3 Economy
+          .alx-category-item__subtitle 
+              p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+        .alx-category-item
+          .alx-category-item__icon
+            <svg class="icon icon-tecnology"><use xlink:href="#icon-tecnology"></use></svg>
+          .alx-category-item__title
+            h3 Technology
+          .alx-category-item__subtitle 
+            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.

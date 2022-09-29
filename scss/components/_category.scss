@@ -1,10 +1,14 @@
+// * Category
+
 .alx-category {
+
   margin-top: 128px;
+  background-color: $c-white;
 
   &__wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 
   &__title {
@@ -15,6 +19,7 @@
     letter-spacing: -2px;
     margin-bottom: 48px;
     color: $c-black;
+    text-align: center;
   }
 
   &__list {
@@ -22,4 +27,49 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 32px;
   }
+}
+
+
+// * Category Item
+
+.alx-category-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $c-white;
+  margin-bottom: 16px;
+  border: 1px solid rgb($c-medium-grey, 0.3);
+  padding: 32px;
+
+  &__icon {
+    background-color: $c-light-yellow;
+    font-size: 24px;
+    width: fit-content;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: $c-black;
+    margin-bottom: 4px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $c-medium-grey;
+  }
+}
+
+.alx-category-item:hover {
+  background-color: $c-yellow;
+  border-color: $c-white;
 }
