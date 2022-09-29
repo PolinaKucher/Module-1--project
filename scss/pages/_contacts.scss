@@ -1,0 +1,59 @@
+// * Base
+@import '../index';
+
+// * Contact pannel
+@import '../components/contact-pannel';
+
+// * Simptip
+@import '../plugins/simptip/simptip';
+
+// * Button
+@import '../elements/button';
+@import '../elements/formItem';
+
+.kos-contact {
+  
+  &__wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 800px;
+    width: 100%;
+  }
+
+  &__subtitle {
+    text-align: center;
+    line-height: 20px;
+    font-weight: 900;
+    color: $c-black;
+  }
+
+  &__title {
+    font-family: $ff-sen;
+    text-align: center;
+    font-size: em(48);
+    padding-top: 10px;
+    font-weight: 700;
+    line-height: 64px;
+    color: $c-black;
+  }
+
+  &__description {
+    color: $c-medium-grey; 
+    text-align: center;
+    line-height: 28px;
+    padding-top: 25px;
+
+    @include media ('<=tablet') {
+      margin-bottom: 65px;
+    }
+  }
+
+  &__form {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  &__button {
+    margin-top: 15px;
+  }
+}
