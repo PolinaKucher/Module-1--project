@@ -1,0 +1,231 @@
+// .val-blog-post-item {
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: row;
+//   margin-bottom: 64px;
+//   display: flex;
+
+//   &:last-child {
+//     margin-bottom: 0;
+//   }
+
+//   @include media('<=tablet') {
+//     margin-bottom: 32px;
+//   }
+
+//   @include media('<=phone') {
+//     margin-bottom: 16px;
+//   }
+
+//   &__image-block {
+//     max-width: 490px;
+//     width: 42%;
+
+//     @include media('<=phone') {
+//       display: none;
+//     }
+
+//     &--small {
+//       max-width: 295px;
+//       width: 35%;
+
+//       @include media('<=phone') {
+//         display: none;
+//       }
+//     }
+
+//     &__image {
+//       display: block;
+        
+//       &--small {
+//         object-fit: cover;
+//         height: 315px;
+
+//         @include media('<=screen') {
+//           height: 265px;
+//         }
+        
+//         @include media('<=desktop') {
+//           height: 150px;
+//         }
+
+//         @include media('<=tablet') {
+//           height: 100px;
+//         }
+//       }
+//     }
+//   }
+
+//   &__info {
+//     margin-left: 32px;
+
+//     @include media('<=desktop') {
+//       margin-left: 24px;
+//     }
+
+//     @include media('<=tablet') {
+//       margin-left: 14px;
+//     }
+
+//     &__subtitle {
+//       text-transform: uppercase;
+//       font-family: $ff-inter;
+//       font-size: $fs-base;
+//       margin-bottom: 20px;
+//       letter-spacing: 3px;
+//       line-height: 20px;
+//       font-weight: 600;
+//       color: $c-purple;
+
+//       &:hover {
+//         transition: $t-normal;
+//         cursor: pointer;
+//         opacity: 0.8;
+//       }
+
+//       @include media('<=screen') {
+//         margin-bottom: 15px;
+//       }
+
+//       @include media('<=desktop') {
+//         margin-bottom: 10px;
+//       }
+
+//       @include media('<=tablet') {
+//         margin-bottom: 10px;
+//         font-size: em(14);
+//         line-height: 16px;
+//         letter-spacing: 0;
+//       }
+
+//       @include media('<=phone') {
+//         font-size: em(12);
+//         line-height: 14px;
+//         margin-bottom: 8px;
+//       }
+//     }
+
+//     &__title {
+//       font-family: $ff-sen;
+//       letter-spacing: -2px;
+//       margin-bottom: 16px;
+//       font-size: em(36);
+//       line-height: 48px;
+//       font-weight: 700;
+//       color: $c-black;
+
+//       &:hover {
+//         transition: $t-normal;
+//         cursor: pointer;
+//         opacity: 0.8;
+//       }
+
+//       @include media('<=screen') {
+//         font-size: em(28);
+//         line-height: 32px;
+//       }
+
+//       @include media('<=desktop') {
+//         margin-bottom: 10px;
+//         font-size: em(22);
+//         line-height: 20px;
+//         letter-spacing: 0;
+//       }
+
+//       @include media('<=tablet') {
+//         margin-bottom: 10px;
+//         font-size: em(18);
+//         line-height: 20px;
+//         letter-spacing: 0;
+//       }
+
+//       @include media('<=phone') {
+//         font-size: em(14);
+//         line-height: 16px;
+//         margin-bottom: 8px;
+//       }
+//     }
+
+//     &__text {
+//       font-family: $ff-inter;
+//       color: $c-medium-grey;
+//       font-size: $fs-base;
+//       line-height: 28px;
+//       font-weight: 400;
+
+//       @include media('<=screen') {
+//         line-height: 24px;
+//       }
+
+//       @include media('<=desktop') {
+//         line-height: 20px;
+//       }
+
+//       @include media('<=tablet') {
+//         font-size: em(14);
+//         line-height: 20px;
+//       }
+
+//       @include media('<=phone') {
+//         font-size: em(12);
+//         line-height: 14px;
+//       }
+//     }
+//   }
+// }
+
+.val-content-item {
+  justify-content: center;
+  align-items: center;
+  margin-top: 65px;
+  display: flex;
+  @include media('<=tablet'){
+    flex-direction: column;
+    align-items: start;
+    margin-top: 40px;
+  }
+  &__image-block {
+    max-width: 410px;
+  }
+  &__info {
+    margin-left: 10px;
+    padding-left: 25px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    &:hover{
+      background-color: $c-light-yellow;
+      cursor: pointer;
+    }
+    @include media('<=tablet'){
+      padding-left: 0;
+      padding-top: 30px;
+      padding-bottom: 10;
+    }
+  }
+  &__subtitle {
+    text-transform: uppercase;
+    color: $c-purple;
+    font-weight: 600;
+    @include media('<=tablet'){
+      margin-top: 20px;
+    }
+  }
+  &__title {
+    font-family: $ff-sen;
+    letter-spacing: -2px;
+    margin-top: 20px;
+    font-size: em(36);
+    line-height: 48px;
+    font-weight: 700;
+    max-width: 560px;
+    color: $c-black;
+    @include media('<=tablet'){
+      font-size: em(24);
+      line-height: 32px;
+    }
+  }
+  &__description {
+    margin-top: 15px;
+    max-width: 580px;
+  }
+}
