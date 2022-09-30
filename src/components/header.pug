@@ -5,7 +5,9 @@ mixin header()
         img(src="./assets/images/logo.svg" alt="logo")
       .yul-header__block
         .yul-header__navigation 
-          //- +navigation() 
+          +navigation() 
+        //- .yul-header__burger 
+        //-   +burger()
         .yul-header__button
           +button({
             type: 'button',

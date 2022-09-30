@@ -665,6 +665,18 @@ ul {
   }
 }
 
+.pol-navigation__list {
+  display: flex;
+  gap: 40px;
+}
+.pol-navigation__link {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #fff;
+}
+.pol-navigation__link:hover {
+  opacity: 0.8;
+}
+
 .yul-header {
   background-color: #232536;
   color: #fff;

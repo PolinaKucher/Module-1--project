@@ -11,6 +11,10 @@
 @import '../elements/button';
 @import '../elements/formItem';
 
+// *Header
+@import '../components/navigation';
+@import '../components/header';
+
 .kos-contact {
   
   &__wrapper {

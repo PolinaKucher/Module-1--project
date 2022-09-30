@@ -1,4 +1,10 @@
+// *Base
 @import '../index';
-@import '../components/banner';
-@import '../elements/button';
 @import '../plugins/simptip/simptip';
+// *Banner
+@import '../components/banner';
+// *Buttons
+@import '../elements/button';
+// *Header
+@import '../components/navigation';
+@import '../components/header';
