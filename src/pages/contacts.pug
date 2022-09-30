@@ -8,6 +8,8 @@ block style
 
 
 block content
+  //- *Header
+  +header()
   section.kos-contact 
     .wrapper.kos-contact__wrapper 
       h3.kos-contact__subtitle Contact us
@@ -15,19 +17,20 @@ block content
       .kos-contact__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
       +contact-pannel()
       form.kos-contact__form
-        +formItem({
-          placeholder: 'Full Name',
-          toolTip: 'Full Name',
-          name: 'firstName',
-          type: 'text',
-        })
-
-        +formItem({
-          placeholder: 'Your Email',
-          toolTip: 'Your Email',
-          name: 'email',
-          type: 'email',
-        })
+        .kos-contact__item
+          +formItem({
+            placeholder: 'Full Name',
+            toolTip: 'Full Name',
+            name: 'firstName',
+            type: 'text',
+          })
+        .kos-contact__item
+          +formItem({
+            placeholder: 'Your Email',
+            toolTip: 'Your Email',
+            name: 'email',
+            type: 'email',
+          })
 
         +formItem({
           name2: 'country',
