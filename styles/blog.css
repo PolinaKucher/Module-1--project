@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap");
+@font-face {
+  font-family: "sen";
+  src: url("./assets/fonts/sen-bold.eot");
+  src: url("./assets/fonts/sen-bold.eot?#iefix"), format("embedded-opentype"), url("./assets/fonts/sen-bold.woff"), format("woff"), url("./assets/fonts/sen-bold.ttf"), format("truetype");
+  font-weight: 700;
+  font-style: "normal";
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+*::selection {
+  background-color: rgba(89, 46, 169, 0.3);
+}
+
+.icon {
+  display: inline-block;
+  stroke: currentColor;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+}
+.icon:not(.has-stroke) {
+  stroke-width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: #6D6E76;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.val-blog-post-item {
+  align-items: center;
+  margin-bottom: 64px;
+  display: flex;
+}
+.val-blog-post-item:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .val-blog-post-item {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .val-blog-post-item {
+    margin-bottom: 16px;
+  }
+}
+.val-blog-post-item__image {
+  max-width: 490px;
+  width: 42%;
+}
+@media (max-width: 1024px) {
+  .val-blog-post-item__image {
+    max-width: 390px;
+  }
+}
+@media (max-width: 768px) {
+  .val-blog-post-item__image {
+    object-fit: cover;
+    max-width: 295px;
+    height: 200px;
+    width: 35%;
+  }
+}
+@media (max-width: 480px) {
+  .val-blog-post-item__image {
+    display: none;
+  }
+}
+.val-blog-post-item__image--small {
+  object-fit: cover;
+  max-width: 295px;
+  height: 315px;
+  width: 35%;
+}
+@media (max-width: 1024px) {
+  .val-blog-post-item__image--small {
+    height: 265px;
+  }
+}
+@media (max-width: 768px) {
+  .val-blog-post-item__image--small {
+    max-width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .val-blog-post-item__image--small {
+    display: none;
+  }
+}
+.val-blog-post-item__info {
+  margin-left: 32px;
+}
+@media (max-width: 1024px) {
+  .val-blog-post-item__info {
+    margin-left: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .val-blog-post-item__info {
+    margin-left: 14px;
+  }
+}
+.val-blog-post-item__info__subtitle {
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-size: 16;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #592EA9;
+}
+.val-blog-post-item__info__subtitle:hover {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  opacity: 0.8;
+}
+@media (max-width: 1024px) {
+  .val-blog-post-item__info__subtitle {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .val-blog-post-item__info__subtitle {
+    margin-bottom: 10px;
+    font-size: 0.875em;
+    line-height: 16px;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 480px) {
+  .val-blog-post-item__info__subtitle {
+    font-size: 0.75em;
+    line-height: 14px;
+  }
+}
+.val-blog-post-item__info__title {
+  font-family: "Sen", sans-serif;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+  font-size: 2.25em;
+  line-height: 48px;
+  font-weight: 700;
+  color: #232536;
+}
+.val-blog-post-item__info__title:hover {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  opacity: 0.8;
+}
+@media (max-width: 1024px) {
+  .val-blog-post-item__info__title {
+    font-size: 1.5em;
+    line-height: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .val-blog-post-item__info__title {
+    margin-bottom: 10px;
+    font-size: 1.125em;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 480px) {
+  .val-blog-post-item__info__title {
+    font-size: 0.875em;
+    line-height: 16px;
+  }
+}
+.val-blog-post-item__info__text {
+  font-family: "Inter", sans-serif;
+  color: #6D6E76;
+  font-size: 16;
+  line-height: 28px;
+  font-weight: 400;
+}
+@media (max-width: 1024px) {
+  .val-blog-post-item__info__text {
+    line-height: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .val-blog-post-item__info__text {
+    font-size: 0.875em;
+    line-height: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .val-blog-post-item__info__text {
+    font-size: 0.75em;
+    line-height: 14px;
+  }
+}
+
+/*# sourceMappingURL=blog.css.map */

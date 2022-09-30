@@ -1,66 +1,160 @@
 .val-blog-post-item {
-  display: flex;
+  // justify-content: center;
   align-items: center;
-  justify-content: center;
   margin-bottom: 64px;
+  display: flex;
 
   &:last-child {
     margin-bottom: 0;
   }
 
+  @include media('<=tablet') {
+    margin-bottom: 32px;
+  }
+
+  @include media('<=phone') {
+    margin-bottom: 16px;
+  }
+
   &__image {
     max-width: 490px;
-    width: 100%;
+    width: 42%;
+
+    @include media('<=desktop') {
+      max-width: 390px;
+    }
+
+    @include media('<=tablet') {
+      object-fit: cover;
+      max-width: 295px;
+      height: 200px;
+      width: 35%;
+    }
+
+    @include media('<=phone') {
+      display: none;
+    }
 
     &--small {
-      height: 315px;
-      max-width: 295px;
       object-fit: cover;
+      max-width: 295px;
+      height: 315px;
+      width: 35%;
+
+      @include media('<=desktop') {
+        height: 265px;
+      }
+
+      @include media('<=tablet') {
+        max-width: 200px;
+        height: 200px;
+      }
+
+      @include media('<=phone') {
+        display: none;
+      }
     }
   }
+
   &__info {
     margin-left: 32px;
-    margin-right: 20px;
+
+    @include media('<=desktop') {
+      margin-left: 24px;
+    }
+
+    @include media('<=tablet') {
+      margin-left: 14px;
+    }
 
     &__subtitle {
-      font-family: $ff-inter;
-      font-weight: 600;
-      font-size: $fs-base;
-      line-height: 20px;
-      letter-spacing: 3px;
       text-transform: uppercase;
-      color: $c-purple;
+      font-family: $ff-inter;
+      font-size: $fs-base;
       margin-bottom: 20px;
+      letter-spacing: 3px;
+      line-height: 20px;
+      font-weight: 600;
+      color: $c-purple;
 
       &:hover {
-        opacity: 0.8;
         transition: $t-normal;
         cursor: pointer;
+        opacity: 0.8;
+      }
+
+      @include media('<=desktop') {
+        margin-bottom: 15px;
+      }
+
+      @include media('<=tablet') {
+        margin-bottom: 10px;
+        font-size: em(14);
+        line-height: 16px;
+        letter-spacing: 0;
+      }
+
+      @include media('<=phone') {
+        font-size: em(12);
+        line-height: 14px;
+        margin-bottom: 8px;
       }
     }
 
     &__title {
       font-family: $ff-sen;
-      font-weight: 700;
+      letter-spacing: -2px;
+      margin-bottom: 16px;
       font-size: em(36);
       line-height: 48px;
-      letter-spacing: -2px;
+      font-weight: 700;
       color: $c-black;
-      margin-bottom: 16px;
 
       &:hover {
-        opacity: 0.8;
         transition: $t-normal;
         cursor: pointer;
+        opacity: 0.8;
+      }
+
+      @include media('<=desktop') {
+        font-size: em(24);
+        line-height: 32px;
+      }
+
+      @include media('<=tablet') {
+        margin-bottom: 10px;
+        font-size: em(18);
+        line-height: 20px;
+        letter-spacing: 0;
+      }
+
+      @include media('<=phone') {
+        font-size: em(14);
+        line-height: 16px;
+        margin-bottom: 8px;
       }
     }
 
     &__text {
       font-family: $ff-inter;
-      font-weight: 400;
+      color: $c-medium-grey;
       font-size: $fs-base;
       line-height: 28px;
-      color: $c-medium-grey;
+      font-weight: 400;
+
+      @include media('<=desktop') {
+        line-height: 24px;
+      }
+
+      @include media('<=tablet') {
+        font-size: em(14);
+        line-height: 20px;
+      }
+
+      @include media('<=phone') {
+        font-size: em(12);
+        line-height: 14px;
+      }
     }
   }
 }

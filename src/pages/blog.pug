@@ -2,3 +2,18 @@ extends ../common/layout
 
 block title 
   title Blog
+
+block style
+  link(rel="stylesheet" href="../styles/blog.css")
+
+block content
+  +blogPostsItem({
+    src: '../assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
+    subtitle: 'Startup',
+    title: 'Design tips for designers that cover everything you need'
+  })
+  +blogPostsItem({
+    src2: '../assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
+    subtitle: 'Startup',
+    title: 'Design tips for designers that cover everything you need'
+  })
