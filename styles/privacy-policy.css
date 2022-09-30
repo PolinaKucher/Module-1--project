@@ -718,4 +718,109 @@ input, select, textarea {
   opacity: 1;
 }
 
+.val-policy-header-block {
+  background-color: #f4f0f8;
+  margin-bottom: 128px;
+  margin-top: 80px;
+  color: #232536;
+}
+@media (max-width: 768px) {
+  .val-policy-header-block {
+    margin-bottom: 64px;
+  }
+}
+.val-policy-header-block__wrapper {
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+  align-items: center;
+  padding-top: 80px;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .val-policy-header-block__wrapper {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+}
+.val-policy-header-block__title {
+  font-family: "Sen", sans-serif;
+  letter-spacing: -2px;
+  margin-bottom: 4px;
+  font-size: 3em;
+  line-height: 64px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .val-policy-header-block__title {
+    font-size: 2.25em;
+    line-height: 52px;
+  }
+}
+.val-policy-header-block__subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 16;
+  line-height: 28px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+@media (max-width: 768px) {
+  .val-policy-header-block__subtitle {
+    font-size: 0.875em;
+    line-height: 20px;
+  }
+}
+
+.val-policy-info-block {
+  margin-bottom: 128px;
+}
+@media (max-width: 768px) {
+  .val-policy-info-block {
+    margin-bottom: 64px;
+  }
+}
+.val-policy-info-block__wrapper {
+  max-width: 808px;
+}
+.val-policy-info-block__title {
+  font-family: "Sen", sans-serif;
+  letter-spacing: -2px;
+  margin-bottom: 32px;
+  font-size: 2.25em;
+  line-height: 48px;
+  font-weight: 700;
+  color: #232536;
+}
+.val-policy-info-block__title:nth-child(3) {
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .val-policy-info-block__title {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    line-height: 36px;
+    letter-spacing: 0;
+  }
+}
+.val-policy-info-block__text {
+  font-family: "Inter", sans-serif;
+  font-size: 16;
+  color: #4c4c4c;
+  margin-bottom: 32px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.val-policy-info-block__text:last-child {
+  margin-bottom: 0;
+}
+.val-policy-info-block__text:nth-child(4) {
+  margin-bottom: 28px;
+}
+@media (max-width: 768px) {
+  .val-policy-info-block__text {
+    font-size: 0.875em;
+    line-height: 20px;
+  }
+}
+
 /*# sourceMappingURL=privacy-policy.css.map */
