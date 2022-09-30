@@ -1,0 +1,11 @@
+
+.alx-logoipsum {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 96px;
+  margin-top: 96px;
+
+  &__icon {
+    font-size: 136px;
+  }
+}
