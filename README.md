@@ -19,5 +19,18 @@ sass --watch scss/pages/_<file-name>.scss styles/<file-name>.css
 
 __`Обратите внимание`, в scss/pages обязательно перед названием файла должно быть нижнее подчеркивание__
 
+***Для использования социальных иконок***
+_Facebook_
+svg.icon.icon-facebook
+  use(xlink:href='#icon-facebook')
+_Twitter_
+svg.icon.icon-twitter
+  use(xlink:href='#icon-twitter')
+_Instagram_
+svg.icon.icon-twitter
+  use(xlink:href='#icon-instagram')
+_LinkedIn_
+svg.icon.icon-linked-in
+  use(xlink:href='#icon-linked-in')
 
-
+`Важно`, что бы use был вложен в svg, соблюдать табуляцию

@@ -1,0 +1,12 @@
+mixin contentItem(args)
+  - const subtitle = args.subtitle || 'Default subtitle'
+  - const title = args.title || 'Default title'
+  - const description = args.description || 'Some text'
+
+  .andr-content-item
+    .andr-content-item__image-block
+      img(src=args.src, alt=args.alt).andr-content-item-image
+    .andr-content-item__info 
+      .andr-content-item__subtitle=subtitle
+      .andr-content-item__title=title
+      .andr-content-item__description=description

@@ -1,0 +1,44 @@
+extends ../common/layout
+
+block title 
+  title Author
+
+block style
+  link(rel="stylesheet" href="../styles/author.css")
+
+  //- * Header
+  +header()
+
+//- * Banner
+block content
+  .andr-banner 
+    .andr-banner__wrapper 
+      .andr-banner__image 
+        img(src="../assets/images/yul-close-up-photography-of-man-wearing-sunglasses.jpg", alt="Portrait")
+      .andr-banner__block 
+        .andr-banner__title Hey there, I'm Andrew Jonhson and welcome to my Blog
+        .andr-banner__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
+        .andr-banner__social
+          //- Facebook
+          a(href="#", data-tooltip='Facebook').andr-banner__link.simptip-position-bottom.simptip-fade.simptip-smooth
+            svg.icon.icon-facebook
+              use(xlink:href='#icon-facebook')
+          //- Twitter
+          a(href="#", data-tooltip='Twitter').andr-banner__link.simptip-position-bottom.simptip-fade.simptip-smooth
+            svg.icon.icon-twitter
+              use(xlink:href='#icon-twitter')
+          //- Instagram
+          a(href="#", data-tooltip='Instagram').andr-banner__link.simptip-position-bottom.simptip-fade.simptip-smooth
+            svg.icon.icon-instagram
+              use(xlink:href='#icon-instagram')
+          //- LinkedIn
+          a(href="#", data-tooltip='Linked In').andr-banner__link.simptip-position-bottom.simptip-fade.simptip-smooth
+            svg.icon.icon-linked-in
+              use(xlink:href='#icon-linked-in')
+    .andr-banner__line
+      +block(true)
+
+  //- * Content
+  +content()
+
+    
