@@ -11,5 +11,17 @@
 @import '../components/header';
 // * Blog post item section
 @import '../components/blogpostsItem';
+// *Categories section
+@import '../elements/category-item';
+@import '../components/category';
 // *Footer
 @import '../components/footer';
+
+
+// *Posts Section
+.pol-blog {
+  &__wrapper {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
