@@ -27,13 +27,42 @@ block content
     text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
   })
 
-  +contentItem({
-    src: '../assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
-    subtitle: 'Startup',
-    title: 'Design tips for designers that cover everything you need',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
-  })
-
+  //- *Blog posts
+  .pol-blog 
+    .wrapper.pol-blog__wrapper
+      h1.pol-blog__title All posts
+      .pol-blog__posts
+        +contentItem({
+          src: '../assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
+          subtitle: 'Startup',
+          title: 'Design tips for designers that cover everything you need',
+          description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
+        })
+        +contentItem({
+          src: '../assets/images/yul-photo-of-people-doing-handshakes.jpg',
+          subtitle: 'Buisnes',
+          title: 'How to build rapport with your web design clients',
+          description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
+        })
+        +contentItem({
+          src: '../assets/images/yul-photo-of-woman-looking-at-man.jpg',
+          subtitle: 'Startup',
+          title: 'Logo design trends to avoid in 2022',
+          description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
+        })
+        +contentItem({
+          src: '../assets/images/yul-photo-of-people-walking-on-hallway.jpg',
+          subtitle: 'Technology',
+          title: '8 Figma design systems you can download for free today',
+          description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
+        })
+        +contentItem({
+          src: '../assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
+          subtitle: 'Economy',
+          title: 'Font sizes in UI design: The complete guide to follow',
+          description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
+        })
+  +category()
   //- *Footer
   +footer({
     toolTip: 'Contact us'
