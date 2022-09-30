@@ -3,14 +3,16 @@ mixin blogPostsItem (args={})
 
   if args.src
     .val-blog-post-item
-      img(src=args.src, alt="post image").val-blog-post-item__image
+      .val-blog-post-item__image-block
+        img(src=args.src, alt="post image").val-blog-post-item__image-block__image
       .val-blog-post-item__info
         p.val-blog-post-item__info__subtitle=args.subtitle
         h2.val-blog-post-item__info__title=args.title
         p.val-blog-post-item__info__text='Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
   if args.src2
     .val-blog-post-item
-      img(src=args.src2, alt="post image").val-blog-post-item__image--small
+      .val-blog-post-item__image-block--small
+        img(src=args.src2, alt="post image").val-blog-post-item__image-block__image--small
       .val-blog-post-item__info
         p.val-blog-post-item__info__subtitle=args.subtitle
         h2.val-blog-post-item__info__title=args.title
