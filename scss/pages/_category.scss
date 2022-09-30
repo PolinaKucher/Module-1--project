@@ -1,0 +1,96 @@
+// *Base
+@import "../index";
+@import "../plugins/simptip/simptip";
+
+// *Buttons
+@import "../elements/button";
+@import "../elements/formItem";
+
+// *Header
+@import "../components/navigation";
+@import "../components/header";
+
+// * Blog post item section
+@import "../components/content-item";
+
+// *Categories section
+@import "../elements/category-item";
+@import "../components/category";
+
+// *Footer
+@import "../components/footer";
+
+.val-category-header-block {
+  background-color: $c-lavender;
+  margin-bottom: 128px;
+  margin-top: 80px;
+  color: $c-black;
+
+  @include media("<=tablet") {
+    margin-bottom: 64px;
+  }
+
+  &__wrapper {
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+    align-items: center;
+    padding-top: 80px;
+    display: flex;
+
+    @include media("<=tablet") {
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+  }
+  &__title {
+    font-family: $ff-sen;
+    letter-spacing: -2px;
+    margin-bottom: 16px;
+    font-size: em(56);
+    line-height: 64px;
+    font-weight: 700;
+
+    @include media("<=tablet") {
+      font-size: em(48);
+      line-height: 52px;
+    }
+  }
+  &__subtitle {
+    font-family: $ff-inter;
+    color: $c-medium-grey;
+    font-size: $fs-base;
+    margin-bottom: 32px;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 400;
+    max-width: 515px;
+
+    @include media("<=tablet") {
+      font-size: em(14);
+      line-height: 20px;
+    }
+  }
+  &__path {
+    text-transform: uppercase;
+    font-family: $ff-inter;
+    font-size: $fs-base;
+    letter-spacing: 3px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+}
+
+.val-category-main {
+  &__wrapper {
+    margin-bottom: 128px;
+    margin-top: 128px;
+    display: grid;
+    grid-template-columns: 838px auto;
+    grid-gap: 144px;
+
+    &__categories {
+      }
+    }
+  }
+

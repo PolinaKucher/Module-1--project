@@ -1,0 +1,55 @@
+extends ../common/layout
+
+block title 
+  title Category
+
+block style
+  link(rel="stylesheet" href="../styles/category.css")
+
+block content 
+  //- *Header
+  +header()
+
+  //- Privacy category header
+  .val-category-header-block
+    .wrapper.val-category-header-block__wrapper
+      h1.val-category-header-block__title Business
+      p.val-category-header-block__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+      p.val-category-header-block__path Blog &gt; Business
+  .val-category-main 
+    .wrapper.val-category-main__wrapper 
+      .val-category-main__wrapper__blog-posts 
+        +contentItem({
+          src: '../assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
+          subtitle: 'Business',
+          title: 'Top 6 free website mockup tools 2022',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
+        })
+        +contentItem({
+          src: '../assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
+          subtitle: 'Business',
+          title: 'Step-by-step guide to choosing great font pairs',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
+        })
+        +contentItem({
+          src: '../assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
+          subtitle: 'Business',
+          title: 'Ten free foogle fonts that you should use',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
+        })
+        +contentItem({
+          src: '../assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
+          subtitle: 'Business',
+          title: 'What did I learn from doing 50+ design sprints?',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
+        })
+      .val-category-main__wrapper__categories
+        .val-category-main__wrapper__categories__categories-list 
+        //- * Category block
+        +category
+        .val-category-main__wrapper__categories__tags
+
+  //- *Footer
+  +footer({
+    toolTip: 'Contact us'
+  })
