@@ -21,6 +21,7 @@ $info-width: 805px;
     flex-direction: row;
     justify-content: space-between;
     @include media("<=tablet") {
+      align-items: flex-start;
       flex-direction: column;
       padding-top: 20px;
       padding-bottom: 20px;

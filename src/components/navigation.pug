@@ -10,6 +10,6 @@ mixin navigation(args={})
           a(href="#").pol-navigation__link About us
         li.pol-navigation__item 
           a(href="#").pol-navigation__link Contact us
-        if args=text
+        if args.text
           li.pol-navigation__item 
             a(href="#").pol-navigation__link=args.text

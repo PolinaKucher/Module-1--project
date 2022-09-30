@@ -1,0 +1,84 @@
+
+.pol-footer {
+  background-color: $c-black;
+  color: $c-white;
+  &__wrapper {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  &__head {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding-bottom: 56px;
+    @include media("<=tablet") {
+      gap: 25px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__body {
+    padding: 80px 64px;
+    background-color: rgba($c-white, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media("<=tablet") {
+      gap: 25px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__title {
+    font-family: $ff-sen;
+    font-size: em(36);
+    line-height: 48px;
+    letter-spacing: -2px;
+    max-width: 560px;
+  }
+  &__block {
+    padding-left: 20px;
+    gap: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media("<=tablet") {
+      padding-left: 0;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__input {
+    height: 56px;
+    width: 320px;
+    @include media("<=tablet") {
+      width: inherit;
+    }
+  }
+  &__button {
+    width: 180px;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 56px;
+    @include media("<=tablet") {
+      gap: 25px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__link {
+    transition: $t-normal;
+    line-height: 28px;
+    opacity: 0.7;
+    color: $c-white;
+    &:nth-child(3) {
+      margin-right: 10px;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
