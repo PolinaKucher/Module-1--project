@@ -1,1 +1,12 @@
 @import '../../../node_modules/simptip/simptip.scss';
+
+//tooltip's default box color
+$tooltipColor: $c-red;
+
+//tooltip's default text color
+$tooltipTextColor: $c-light-grey;
+
+$c-success: $c-green;
+$c-info:   $c-purple;
+$c-danger: $c-red;
+$c-warning: $c-yellow;

@@ -1,0 +1,30 @@
+mixin formItem(args={})
+  - let classes = ''
+
+  .kos-form-item 
+    if args.name
+      label.kos-form-item__content(data-tooltip=args.toolTip).simptip-position-bottom.simptip-fade.simptip-smooth
+        input.kos-form-item__input(name=args.name, type=args.type, method='get', required, placeholder=args.placeholder, title='')
+        .kos-form-item__error * Please check again
+    if args.name2  
+      label.kos-form-item__country(data-tooltip=args.toolTip).simptip-position-bottom.simptip-fade.simptip-smooth
+        select.kos-form-item__select(name=args.name2, required)
+          option(value='' disabled selected hidden) Query Related  
+          option(value='AE') United Arab Emirates
+          option(value='UA') Ukraine
+          option(value='CN') China
+          option(value='ES') Spain
+          option(value='AS') China
+          option(value='AD') France
+          option(value='AO') Italy
+          option(value='AI') Poland
+          option(value='AQ') India
+          option(value='AG') Japan
+          option(value='AR') Brazil
+        .kos-form-item__error * Please choose country
+    if args.name3 
+      label.kos-form-item__content(data-tooltip=args.toolTip).simptip-position-bottom.simptip-fade.simptip-smooth
+        textarea.kos-form-item__text-area(rows=args.rows, name=args.name3, placeholder=args.placeholder2, data-tooltip=args.toolTip).simptip-position-bottom.simptip-fade.simptip-smooth
+        
+
+

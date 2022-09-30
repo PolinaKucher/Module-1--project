@@ -1,0 +1,49 @@
+.kos-form-item {
+  &__content {
+    max-width: 768px;
+    width: 100%;
+  }
+
+  &__input {
+    border: 1px solid $c-medium-grey;
+    line-height: 28px;
+    margin-top: 16px;
+    padding: 25px;
+    width: 100%;    
+  }
+
+  &__country {
+    max-width: 768px;
+    width: 100%;
+  }
+
+  &__select {
+    border: 1px solid $c-medium-grey;
+    line-height: 28px;
+    font-weight: 400;
+    margin-top: 16px;
+    padding: 25px;
+    width: 100%;
+  }
+
+  &__text-area {
+    border: 1px solid $c-medium-grey;
+    box-sizing: border-box;
+    line-height: 28px;
+    margin-top: 16px;
+    display: block;
+    padding: 25px;
+    resize: none;
+    width: 100%;
+  }
+
+  &__error {
+    text-align: end;
+    color: $c-red; 
+    opacity: 0;
+
+    &--show {
+      opacity: 1;
+    }
+  }
+}

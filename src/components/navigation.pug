@@ -1,0 +1,15 @@
+mixin navigation(args={})
+  nav.pol-navigation 
+    .pol-navigation__wrapper 
+      ul.pol-navigation__list 
+        li.pol-navigation__item 
+          a(href="#").pol-navigation__link Home
+        li.pol-navigation__item 
+          a(href="#").pol-navigation__link Blog
+        li.pol-navigation__item 
+          a(href="#").pol-navigation__link About us
+        li.pol-navigation__item 
+          a(href="#").pol-navigation__link Contact us
+        if args=text
+          li.pol-navigation__item 
+            a(href="#").pol-navigation__link=args.text

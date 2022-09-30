@@ -1,0 +1,26 @@
+.yul-join-section {
+  margin-bottom: 128px;
+  margin-top: 128px;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: $ff-sen;
+    margin-bottom: 16px;
+    line-height: em(48);
+    font-size: em(36);
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    font-family: $ff-inter;
+    line-height: em(28);
+    margin-bottom: 32px;    
+    font-size: em(16);
+    font-weight: 400;
+  }
+}
