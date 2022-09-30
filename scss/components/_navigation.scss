@@ -1,0 +1,13 @@
+.pol-navigation {
+  &__list {
+    display: flex;
+    gap: 40px;
+  }
+  &__link {
+    transition: $t-normal;
+    color: $c-white;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

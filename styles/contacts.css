@@ -40,7 +40,7 @@ body {
   background-color: #fff;
   font-size: 16px;
   font-family: "Inter", sans-serif;
-  color: #6D6E76;
+  color: #6d6e76;
 }
 
 img {
@@ -65,7 +65,7 @@ ul {
 
 .kos-contact-pannel {
   justify-content: space-around;
-  background-color: #592EA9;
+  background-color: #592ea9;
   padding-bottom: 50px;
   padding-right: 65px;
   padding-left: 65px;
@@ -578,7 +578,7 @@ ul {
 }
 
 .andr-button {
-  background-color: #FFD050;
+  background-color: #ffd050;
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   font-family: "Sen", sans-serif;
   font-size: 1.125em;
@@ -589,7 +589,7 @@ ul {
   border: none;
 }
 .andr-button:hover {
-  background-color: #EDC14A;
+  background-color: #edc14a;
 }
 .andr-button--white {
   background-color: #fff;
@@ -603,7 +603,7 @@ ul {
   width: 100%;
 }
 .kos-form-item__input {
-  border: 1px solid #6D6E76;
+  border: 1px solid #6d6e76;
   line-height: 28px;
   margin-top: 16px;
   padding: 25px;
@@ -614,7 +614,7 @@ ul {
   width: 100%;
 }
 .kos-form-item__select {
-  border: 1px solid #6D6E76;
+  border: 1px solid #6d6e76;
   line-height: 28px;
   font-weight: 400;
   margin-top: 16px;
@@ -622,7 +622,7 @@ ul {
   width: 100%;
 }
 .kos-form-item__text-area {
-  border: 1px solid #6D6E76;
+  border: 1px solid #6d6e76;
   box-sizing: border-box;
   line-height: 28px;
   margin-top: 16px;
@@ -638,6 +638,54 @@ ul {
 }
 .kos-form-item__error--show {
   opacity: 1;
+}
+
+.pol-navigation__list {
+  display: flex;
+  gap: 40px;
+}
+.pol-navigation__link {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #fff;
+}
+.pol-navigation__link:hover {
+  opacity: 0.8;
+}
+
+.yul-header {
+  background-color: #232536;
+  color: #fff;
+  position: fixed;
+  height: 80px;
+  z-index: 999;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.yul-header__wrapper {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+.yul-header__logo {
+  max-width: 140px;
+  width: 100%;
+}
+.yul-header__block {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.yul-header__navigation {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+  display: flex;
+  margin-right: 2em;
+}
+.yul-header__button {
+  align-items: center;
+  display: flex;
 }
 
 .kos-contact__wrapper {
@@ -662,7 +710,7 @@ ul {
   color: #232536;
 }
 .kos-contact__description {
-  color: #6D6E76;
+  color: #6d6e76;
   text-align: center;
   line-height: 28px;
   padding-top: 25px;

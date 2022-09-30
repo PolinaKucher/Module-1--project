@@ -63,126 +63,6 @@ ul {
   width: 100%;
 }
 
-.pol-banner {
-  position: relative;
-  margin-top: 80px;
-  height: 100vh;
-  color: #fff;
-  background-image: url(../../assets/images/yul-man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-.pol-banner--colorized {
-  background-color: #f4f0f8;
-  background-image: none;
-  color: #232536;
-}
-.pol-banner__wrapper {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@media (max-width: 768px) {
-  .pol-banner__wrapper {
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-.pol-banner__info {
-  max-width: 805px;
-  padding-right: 20px;
-}
-@media (max-width: 768px) {
-  .pol-banner__info {
-    font-size: 0.875em;
-  }
-}
-.pol-banner__subtitle {
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  line-height: 20px;
-}
-.pol-banner__subtitle--link {
-  cursor: pointer;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
-}
-.pol-banner__subtitle--link:hover {
-  color: #ffd050;
-}
-.pol-banner__title {
-  padding: 24px 0;
-  font-size: 3.5em;
-  font-family: "Sen", sans-serif;
-  line-height: 64px;
-  letter-spacing: -2px;
-}
-@media (max-width: 768px) {
-  .pol-banner__title {
-    font-size: 3em;
-    line-height: 54px;
-  }
-}
-.pol-banner__link {
-  color: #ffd050;
-  cursor: pointer;
-}
-.pol-banner__link--colorized {
-  color: #592ea9;
-}
-.pol-banner__text {
-  padding-top: 16px;
-  padding-bottom: 48px;
-  line-height: 28px;
-}
-.pol-banner__button {
-  width: 200px;
-}
-.pol-banner__image {
-  max-width: 515px;
-  width: 50%;
-}
-@media (max-width: 768px) {
-  .pol-banner__image {
-    height: 100%;
-    min-height: 201.25px;
-    width: 100%;
-    padding-top: 20px;
-  }
-}
-@media (max-width: 480px) {
-  .pol-banner__image {
-    display: none;
-  }
-}
-
-.andr-button {
-  background-color: #ffd050;
-  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  font-family: "Sen", sans-serif;
-  font-size: 1.125em;
-  font-weight: 700;
-  min-width: 150px;
-  padding: 15px 0;
-  width: 100%;
-  border: none;
-}
-.andr-button:hover {
-  background-color: #edc14a;
-}
-.andr-button--white {
-  background-color: #fff;
-}
-.andr-button--white:hover {
-  color: #fff;
-}
-
 /********************************* Core ******************************/
 [data-tooltip] {
   position: relative;
@@ -623,6 +503,174 @@ ul {
 }
 .simptip-warning.simptip-position-bottom.half-arrow:before {
   border-right: 7px solid #e67e22;
+}
+
+.pol-banner {
+  position: relative;
+  margin-top: 80px;
+  height: 100vh;
+  color: #fff;
+  background-image: url(../../assets/images/yul-man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.pol-banner--colorized {
+  background-color: #f4f0f8;
+  background-image: none;
+  color: #232536;
+}
+.pol-banner__wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .pol-banner__wrapper {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.pol-banner__info {
+  max-width: 805px;
+  padding-right: 20px;
+}
+@media (max-width: 768px) {
+  .pol-banner__info {
+    font-size: 0.875em;
+  }
+}
+.pol-banner__subtitle {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.pol-banner__subtitle--link {
+  cursor: pointer;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+.pol-banner__subtitle--link:hover {
+  color: #ffd050;
+}
+.pol-banner__title {
+  padding: 24px 0;
+  font-size: 3.5em;
+  font-family: "Sen", sans-serif;
+  line-height: 64px;
+  letter-spacing: -2px;
+}
+@media (max-width: 768px) {
+  .pol-banner__title {
+    font-size: 3em;
+    line-height: 54px;
+  }
+}
+.pol-banner__link {
+  color: #ffd050;
+  cursor: pointer;
+}
+.pol-banner__link--colorized {
+  color: #592ea9;
+}
+.pol-banner__text {
+  padding-top: 16px;
+  padding-bottom: 48px;
+  line-height: 28px;
+}
+.pol-banner__button {
+  width: 200px;
+}
+.pol-banner__image {
+  max-width: 515px;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .pol-banner__image {
+    height: 100%;
+    min-height: 201.25px;
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .pol-banner__image {
+    display: none;
+  }
+}
+
+.andr-button {
+  background-color: #ffd050;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Sen", sans-serif;
+  font-size: 1.125em;
+  font-weight: 700;
+  min-width: 150px;
+  padding: 15px 0;
+  width: 100%;
+  border: none;
+}
+.andr-button:hover {
+  background-color: #edc14a;
+}
+.andr-button--white {
+  background-color: #fff;
+}
+.andr-button--white:hover {
+  color: #fff;
+}
+
+.pol-navigation__list {
+  display: flex;
+  gap: 40px;
+}
+.pol-navigation__link {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #fff;
+}
+.pol-navigation__link:hover {
+  opacity: 0.8;
+}
+
+.yul-header {
+  background-color: #232536;
+  color: #fff;
+  position: fixed;
+  height: 80px;
+  z-index: 999;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.yul-header__wrapper {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+.yul-header__logo {
+  max-width: 140px;
+  width: 100%;
+}
+.yul-header__block {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.yul-header__navigation {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+  display: flex;
+  margin-right: 2em;
+}
+.yul-header__button {
+  align-items: center;
+  display: flex;
 }
 
 /*# sourceMappingURL=blog.css.map */
