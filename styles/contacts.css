@@ -55,6 +55,10 @@ ul {
   list-style-type: none;
 }
 
+input, select, textarea {
+  background-color: transparent;
+}
+
 .wrapper {
   padding-right: 20px;
   padding-left: 20px;
@@ -578,6 +582,7 @@ ul {
 }
 
 .andr-button {
+  height: 100%;
   background-color: #ffd050;
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   font-family: "Sen", sans-serif;
@@ -598,15 +603,19 @@ ul {
   color: #fff;
 }
 
+.kos-form-item {
+  height: 100%;
+}
 .kos-form-item__content {
   max-width: 768px;
+  height: 100%;
   width: 100%;
 }
 .kos-form-item__input {
   border: 1px solid #6d6e76;
   line-height: 28px;
-  margin-top: 16px;
-  padding: 25px;
+  height: 100%;
+  padding: 14px 25px;
   width: 100%;
 }
 .kos-form-item__country {
@@ -617,17 +626,16 @@ ul {
   border: 1px solid #6d6e76;
   line-height: 28px;
   font-weight: 400;
-  margin-top: 16px;
-  padding: 25px;
+  height: 76px;
+  padding: 14px 25px;
   width: 100%;
 }
 .kos-form-item__text-area {
   border: 1px solid #6d6e76;
   box-sizing: border-box;
   line-height: 28px;
-  margin-top: 16px;
   display: block;
-  padding: 25px;
+  padding: 14px 25px;
   resize: none;
   width: 100%;
 }
@@ -723,6 +731,12 @@ ul {
 .kos-contact__form {
   margin-top: 30px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.kos-contact__item {
+  height: 76px;
 }
 .kos-contact__button {
   margin-top: 15px;
