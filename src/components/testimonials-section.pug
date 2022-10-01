@@ -1,18 +1,22 @@
 mixin testimonials()
-  section.yul-testimonials 
-    .wrapper.yul-testimonials__wrapper 
-      .yul-testimonials__heading 
-        span.yul-testimonials__span TESTIMONIALs
-        h2.yul-testimonials__title What people say about our blog          
-        p.yul-testimonials__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-      .yul-testimonials__messages 
-        p.yul-testimonials__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  .wrapper.yul-testimonials__wrapper 
+    .yul-testimonials__heading 
+      span.yul-testimonials__span TESTIMONIALs
+      h2.yul-testimonials__title What people say about our blog          
+      p.yul-testimonials__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+    .yul-testimonials__messages 
+      h4.yul-testimonials__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      .yul-testimonials__bottom
         .yul-testimonials__profile 
           .yul-testimonials__image 
-            img(src="./assets/images/yul-jonathan-vallem.jpg", alt="profile")
-            .yul-testimonials__profile
-              .yul-testimonials__profile--name Jonathan Vallem
-              .yul-testimonials__profile--place New york, USA
-            .yul-testimonials__button
-              button.yul-testimonials__button--back 
-                img(src="./assets/images/", alt="back")
+            img(src="./assets/images/yul-jonathan-vallem.jpg" alt="profile")
+          .yul-testimonials__info
+            h4.yul-testimonials__name Jonathan Vallem
+            .yul-testimonials__place New york, USA
+        .yul-testimonials__buttons
+          button.yul-testimonials__button
+            svg.icon.icon-Arrow-1.yul-testimonials__icons.yul-testimonials__font
+              use(xlink:href='#icon-Arrow-1')
+          button.yul-testimonials__button 
+            svg.icon.icon-Arrow-1-1.yul-testimonials__icons
+              use(xlink:href='#icon-Arrow-1-1')
