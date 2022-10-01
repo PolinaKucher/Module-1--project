@@ -790,36 +790,48 @@ input, select, textarea {
 
 .alx-category-item {
   display: flex;
-}
-.alx-category-item__item {
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   background-color: #fff;
+  margin-bottom: 16px;
+  border: 1px solid rgba(109, 110, 118, 0.3);
+  padding: 32px;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
-.alx-category-item__icon {
+.alx-category-item__icon-block {
   background-color: #fbf6ea;
+  font-size: 1.5em;
+  width: fit-content;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
 }
 .alx-category-item__title {
   font-family: "Sen";
-  font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.75em;
   line-height: 40px;
   letter-spacing: -1px;
   color: #232536;
   margin-bottom: 4px;
 }
-.alx-category-item__subtitle {
+.alx-category-item___subtitle {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 28px;
   color: #6d6e76;
+}
+
+.alx-category-item:hover {
+  background-color: #ffd050;
+  border-color: #fff;
 }
 
 .alx-category {
   margin-top: 128px;
   background-color: #fff;
+  margin-bottom: 128px;
 }
 
 .alx-category__wrapper {
@@ -829,9 +841,9 @@ input, select, textarea {
 }
 
 .alx-category__title {
-  font-family: "Sen";
+  font-family: "Sen", sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25em;
   line-height: 48px;
   letter-spacing: -2px;
   margin-bottom: 48px;
@@ -843,48 +855,6 @@ input, select, textarea {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 32px;
-}
-
-.alx-category-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #fff;
-  margin-bottom: 16px;
-  border: 1px solid rgba(109, 110, 118, 0.3);
-  padding: 32px;
-}
-
-.alx-category-item__icon {
-  background-color: #fbf6ea;
-  font-size: 24px;
-  width: fit-content;
-  padding: 12px;
-  border-radius: 10px;
-  margin-bottom: 12px;
-}
-
-.alx-category-item__title {
-  font-family: "Sen";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 40px;
-  letter-spacing: -1px;
-  color: #232536;
-  margin-bottom: 4px;
-}
-
-.alx-category-item__subtitle {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: #6d6e76;
-}
-
-.alx-category-item:hover {
-  background-color: #ffd050;
-  border-color: #fff;
 }
 
 .pol-footer {
