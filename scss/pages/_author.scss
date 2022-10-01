@@ -3,6 +3,7 @@
 
 // * Plugins
 @import "../plugins/simptip/simptip";
+@import "../plugins/fontawesome/fontawesome";
 
 // * Media
 @import "../media";
@@ -102,11 +103,12 @@
     color: $c-black;
     display: flex;
     padding: 3px;
+    height: 15px;
 
     &:hover {
       background-color: $c-yellow;
+      color: $c-dark-grey;
       border-radius: 4px;
-      color: $c-white;
     }
   }
 
