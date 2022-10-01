@@ -1,0 +1,23 @@
+.alx-list-of-autor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 128px;
+  margin-bottom: 128px;
+
+  &__title {
+    color: $c-black;
+    font-family: $ff-sen;
+    font-weight: 700;
+    font-size: em(36);
+    line-height: 48px;
+    letter-spacing: -2px;
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+  }
+}

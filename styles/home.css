@@ -107,6 +107,45 @@ input, select, textarea {
   margin-top: 30px;
 }
 
+.alx-autors-item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 28px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-right: 28px;
+  align-items: center;
+  text-align: center;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.alx-autors-item__image-block {
+  margin-bottom: 20px;
+}
+.alx-autors-item__image {
+  border-radius: 50%;
+}
+.alx-autors-item__title {
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 1.75em;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #232536;
+}
+.alx-autors-item__subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 20px;
+  color: #6d6e76;
+}
+
+.alx-autors-item:hover {
+  background-color: #fbf6ea;
+}
+
 .andr-button {
   height: 100%;
   background-color: #ffd050;
@@ -794,9 +833,31 @@ input, select, textarea {
   justify-content: space-between;
   margin-bottom: 96px;
   margin-top: 96px;
+  color: #232536;
 }
 .alx-logoipsum__icon {
   font-size: 136px;
+}
+
+.alx-list-of-autor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 128px;
+}
+.alx-list-of-autor__title {
+  color: #232536;
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 2.25em;
+  line-height: 48px;
+  letter-spacing: -2px;
+  margin-bottom: 48px;
+}
+.alx-list-of-autor__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
 }
 
 .andr-content-block {
