@@ -11,6 +11,7 @@
 @import '../components/header';
 
 // *Footer
+@import '../elements/socials';
 @import '../components/footer';
 
 // Styles
@@ -39,6 +40,7 @@
     }
   }
   &__title {
+    cursor: default;
     font-family: $ff-sen;
     letter-spacing: -2px;
     margin-bottom: 4px;
@@ -52,6 +54,7 @@
     }
   }
   &__subtitle {
+    cursor: default;
     font-family: $ff-inter;
     font-size: $fs-base;
     line-height: 28px;

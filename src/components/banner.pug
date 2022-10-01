@@ -15,15 +15,13 @@ mixin banner(args={})
             | |
             |
             time(datetime=args.dateTime).pol-banner__time=args.time
-        p.pol-banner__text 
-          | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-          br
-          | fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        p.pol-banner__text Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
         .pol-banner__button
           +button({
             type: 'button',
-            text: 'Read More >',
-            toolTip: 'Read more',
-            })
+            text: 'Read More',
+            icon: true,
+            toolTip: 'Read more here'
+          })
       if args.src 
         img(src=args.src, alt=args.alt).pol-banner__image

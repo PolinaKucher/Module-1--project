@@ -92,27 +92,26 @@ block content
       title: 'Choose A Catagory'
     })
 
-    //- * List of Autors
-    .wrapper.alx-list-of-autor
-      .alx-list-of-autor__title
-        h2 List of Authors
-      .alx-list-of-autor__list 
-        +autorsItem({
+    //- * List of Authors
+    .wrapper.alx-list-of-author
+      h3.alx-list-of-author__title List of Authors
+      ul.alx-list-of-author__list 
+        +authorsItem({
           title: 'Floyd Miles',
           subtitle: 'Content Writer @Company',
           src: '../assets/images/yul-man-in-yellow-button-up-shirt.jpg'
         }) 
-        +autorsItem({
+        +authorsItem({
           title: 'Dianne Russell',
           subtitle: 'Content Writer @Company',
           src: '../assets/images/yul-woman-in-white-and-black-striped-shirt.jpg'
         }) 
-        +autorsItem({
+        +authorsItem({
           title: 'Jenny Wilson',
           subtitle: 'Content Writer @Company',
           src: '../assets/images/yul-fashion-woman-cute-shoes.jpg'
         }) 
-        +autorsItem({
+        +authorsItem({
           title: 'Leslie Alexander',
           subtitle: 'Content Writer @Company',
           src: '../assets/images/yul-content-baker-with-delicious-puff-in-cafeteria.jpg'
@@ -120,4 +119,9 @@ block content
       
     //- * Logoipsum block
     +logoipsum
-
+    +testimonials()
+    +join-section()
+    //- *Footer
+    +footer({
+      toolTip: 'Contact us'
+    })

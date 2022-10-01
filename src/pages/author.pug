@@ -18,19 +18,8 @@ block content
       .andr-banner__block 
         .andr-banner__title Hey there, I'm Andrew Jonhson and welcome to my Blog
         .andr-banner__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
-        .andr-banner__social
-          //- Facebook
-          a(href="#", data-tooltip='Facebook').andr-banner__link.simptip-position-bottom.simptip-fade.simptip-smooth
-            i.fa-brands.fa-facebook
-          //- Twitter
-          a(href="#", data-tooltip='Twitter').andr-banner__link.simptip-position-bottom.simptip-fade.simptip-smooth
-            i.fa-brands.fa-twitter
-          //- Instagram
-          a(href="#", data-tooltip='Instagram').andr-banner__link.simptip-position-bottom.simptip-fade.simptip-smooth
-            i.fa-brands.fa-instagram
-          //- LinkedIn
-          a(href="#", data-tooltip='Linked In').andr-banner__link.simptip-position-bottom.simptip-fade.simptip-smooth
-            i.fa-brands.fa-linkedin
+        +socials()
+        
     .andr-banner__line
       +block(true)
 

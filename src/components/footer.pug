@@ -27,4 +27,6 @@ mixin footer(args={})
           a.pol-footer__link.simptip-position-bottom.simptip-fade.simptip-smooth(href="mailto: Hello@finsweet.com", target='_blank', data-tooltip=args.toolTip) Hello@finsweet.com  
           a.pol-footer__link.simptip-position-bottom.simptip-fade.simptip-smooth(href="tel: 020 7993 2905", target='_blank', data-tooltip=args.toolTip) 020 7993 2905
         .pol-footer__socials 
-          span.pol-footer__span socials
+          +socials({
+            whiteMode: true
+          })

@@ -1,4 +1,4 @@
-.alx-list-of-autor {
+.alx-list-of-author {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -6,6 +6,7 @@
   margin-bottom: 128px;
 
   &__title {
+    cursor: default;
     color: $c-black;
     font-family: $ff-sen;
     font-weight: 700;
@@ -19,5 +20,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 32px;
+    @include media("<=desktop") {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }

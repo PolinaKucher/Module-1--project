@@ -5,8 +5,18 @@
   margin-bottom: 96px;
   margin-top: 96px;
   color: $c-black;
-
+  @include media("<=desktop") {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
   &__icon {
+    height: 136px;
+    transition: $t-normal;
+    color: $c-medium-grey;
     font-size: 136px;
+    &:hover {
+      color: $c-black;
+    }
   }
 }

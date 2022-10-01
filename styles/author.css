@@ -3608,6 +3608,32 @@ input, select, textarea {
   justify-content: flex-end;
 }
 
+.andr-banner__social {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 115px;
+  margin-top: 25px;
+  font-size: 16px;
+  display: flex;
+  width: 100%;
+}
+.andr-banner__link {
+  color: #232536;
+  display: flex;
+  padding: 3px;
+  font-size: 1em;
+  height: 16px;
+}
+.andr-banner__link:hover {
+  background-color: #ffd050;
+  color: #4c4c4c;
+  border-radius: 4px;
+}
+
+.fa-brands {
+  font-size: 1em;
+}
+
 .kos-form-item {
   height: 100%;
 }
@@ -3889,6 +3915,7 @@ input, select, textarea {
 .andr-banner {
   background-color: #f4f0f8;
   margin-top: 80px;
+  cursor: default;
 }
 .andr-banner__wrapper {
   justify-content: center;
@@ -3951,26 +3978,6 @@ input, select, textarea {
   .andr-banner__subtitle {
     max-width: 400px;
   }
-}
-.andr-banner__social {
-  justify-content: space-between;
-  align-items: center;
-  max-width: 115px;
-  margin-top: 25px;
-  font-size: 16px;
-  display: flex;
-  width: 100%;
-}
-.andr-banner__link {
-  color: #232536;
-  display: flex;
-  padding: 3px;
-  height: 15px;
-}
-.andr-banner__link:hover {
-  background-color: #ffd050;
-  color: #4c4c4c;
-  border-radius: 4px;
 }
 .andr-banner__line {
   max-width: 1024px;
