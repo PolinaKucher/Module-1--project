@@ -1,31 +1,48 @@
 .andr-button {
-  height: 100%;
   background-color: $c-yellow;
+  justify-content: center;
   transition: $t-normal;
   font-family: $ff-sen;
+  align-items: center;
+  position: relative;
   font-size: em(18);
+  padding: 0px 50px;
   font-weight: 700;
-  min-width: 150px;
-  padding: 15px 0;
-  width: 100%;
+  min-width: 210px;
+  cursor: pointer;
+  display: flex;
+  height: 55px;
   border: none;
+  width: 100%;
 
-&:hover{
-  background-color: $c-dark-yellow;
-  // color: $c-white;
-}
+  &:hover {
+    background-color: $c-dark-yellow;
 
+    & .andr-button__hidden {
+      opacity: 1;
+    }
+
+    & .icon-more-sign {
+      transform: translateX(15px);
+    }
+  }
 
   &--white {
     background-color: $c-white;
-    
+
     &:hover {
       color: $c-white;
     }
   }
+
+  &__hidden {
+    transition: $t-normal;
+    position: absolute;
+    opacity: 0;
+  }
 }
 
-// .andr-button:hover {
-//   background-color: $c-purple;
-//   color: $c-white;
-// }
+.icon-more-sign {
+  transition: $t-normal;
+  font-size: 10px;
+}
