@@ -1,0 +1,56 @@
+extends ../common/layout
+
+block title 
+  title About us
+
+block style
+  link(rel="stylesheet" href="../styles/about-us.css")
+
+
+block content
+  +aboutUs()
+
+  .wrapper.alx-list-of-autor
+    .alx-list-of-autor__title
+      h2 List of Authors
+    .alx-list-of-autor__list 
+      +autorsItem({
+        title: 'Floyd Miles',
+        subtitle: 'Content Writer @Company',
+        src: '../assets/images/yul-man-in-yellow-button-up-shirt.jpg'
+      }) 
+      +autorsItem({
+        title: 'Dianne Russell',
+        subtitle: 'Content Writer @Company',
+        src: '../assets/images/yul-woman-in-white-and-black-striped-shirt.jpg'
+      }) 
+      +autorsItem({
+        title: 'Jenny Wilson',
+        subtitle: 'Content Writer @Company',
+        src: '../assets/images/yul-fashion-woman-cute-shoes.jpg'
+      }) 
+      +autorsItem({
+        title: 'Leslie Alexander',
+        subtitle: 'Content Writer @Company',
+        src: '../assets/images/yul-content-baker-with-delicious-puff-in-cafeteria.jpg'
+      })
+      +autorsItem({
+        title: 'Guy Hawkins',
+        subtitle: 'Content Writer @Company',
+        src: '../assets/images/yul-man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses.jpg'
+      })
+      +autorsItem({
+        title: 'Eleanor Pena',
+        subtitle: 'Content Writer @Company',
+        src: '../assets/images/yul-woman-in-white-and-black-striped-shirt-wearing-black.jpg'
+      })
+      +autorsItem({
+        title: 'Robert Fox',
+        subtitle: 'Content Writer @Company',
+        src: '../assets/images/yul-content-unshaven-man-covering-eye-with-yellow-flower.jpg'
+      })
+      +autorsItem({
+        title: 'Jacob Jones',
+        subtitle: 'Content Writer @Company',
+        src: '../assets/images/yul-cheerful-young-ethnic-male-millennial-standing-near-stone-wall-and-smiling.jpg'
+      })

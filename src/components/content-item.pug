@@ -1,0 +1,11 @@
+mixin contentItem(args)
+  - const subtitle = args.subtitle || 'Default subtitle'
+  - const title = args.title || 'Default title'
+  - const description = args.description || 'Some text'
+  .val-content-item
+    .val-content-item__image-block
+      img(src=args.src, alt=args.alt).val-content-item-image
+    .val-content-item__info
+      .val-content-item__subtitle=subtitle
+      .val-content-item__title=title
+      .val-content-item__description=description

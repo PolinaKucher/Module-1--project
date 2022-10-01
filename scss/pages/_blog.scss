@@ -5,11 +5,14 @@
 @import '../components/banner';
 // *Buttons
 @import '../elements/button';
-@import '../elements/formItem';
+@import '../elements/form-item';
 // *Header
 @import '../components/navigation';
 @import '../components/header';
 // * Blog post item section
-@import '../components/blogpostsItem';
+@import '../components/content-item';
+// *Categories section
+@import '../elements/category-item';
+@import '../components/category';
 // *Footer
 @import '../components/footer';

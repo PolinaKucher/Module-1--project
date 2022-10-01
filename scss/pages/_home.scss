@@ -1,12 +1,26 @@
+// Base
 @import '../index';
-@import '../components/featuredSection';
-@import '../elements/button';
 @import '../plugins/simptip/simptip';
+
+// Buttons
+@import '../elements/button';
+@import '../elements/form-item';
+
+// Sections
+@import '../components/featured-section';
 @import '../components/banner';
-@import '../components/navigation';
-@import '../components/header';
 @import '../components/category';
 @import '../components/logoipsum';
+
+// Navigation
+@import '../components/navigation';
+@import '../components/header';
+@import '../components/footer';
+
+// Authors
+@import '../elements/autors-item';
+@import '../components/authors';
+
 // * Banner
 
 // * Featured post section
