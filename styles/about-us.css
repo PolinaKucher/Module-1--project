@@ -40,7 +40,7 @@ body {
   background-color: #fff;
   font-size: 16px;
   font-family: "Inter", sans-serif;
-  color: #6D6E76;
+  color: #6d6e76;
 }
 
 img {
@@ -53,6 +53,10 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+input, select, textarea {
+  background-color: transparent;
 }
 
 .wrapper {
@@ -107,7 +111,7 @@ ul {
   }
 }
 .sol-about-us__other {
-  color: #4C4C4C;
+  color: #4c4c4c;
   line-height: 28px;
   cursor: default;
 }
@@ -173,7 +177,7 @@ ul {
 }
 .sol-about-us__footer {
   grid-template-columns: repeat(2, 1fr);
-  background-color: #F4F0F8;
+  background-color: #f4f0f8;
   padding: 128px 110px;
   grid-gap: 32px;
   display: grid;
@@ -190,7 +194,7 @@ ul {
 }
 
 .sol-statictic {
-  background-color: #FFD050;
+  background-color: #ffd050;
 }
 .sol-statictic__wrapper {
   justify-content: space-between;
@@ -209,6 +213,28 @@ ul {
     grid-gap: 8px;
     padding: 8px;
   }
+}
+
+.alx-list-of-autor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 128px;
+  margin-bottom: 128px;
+}
+.alx-list-of-autor__title {
+  color: #232536;
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  margin-bottom: 48px;
+}
+.alx-list-of-autor__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
 }
 
 .sol-statictic-item {
@@ -252,13 +278,13 @@ ul {
 }
 
 .sol-block {
-  background-color: #FFD050;
+  background-color: #ffd050;
   display: flex;
   height: 24px;
   width: 100%;
 }
 .sol-block__line {
-  background-color: #592EA9;
+  background-color: #592ea9;
   height: 100%;
   width: 30%;
 }
@@ -329,8 +355,47 @@ ul {
   }
 }
 .sol-item__description {
-  color: #6D6E76;
+  color: #6d6e76;
   line-height: 28px;
+}
+
+.alx-autors-item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 28px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-right: 28px;
+  align-items: center;
+  text-align: center;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.alx-autors-item__image-block {
+  margin-bottom: 20px;
+}
+.alx-autors-item__image {
+  border-radius: 50%;
+}
+.alx-autors-item__title {
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 1.75em;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #232536;
+}
+.alx-autors-item__subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 20px;
+  color: #6d6e76;
+}
+
+.alx-autors-item:hover {
+  background-color: #fbf6ea;
 }
 
 /*# sourceMappingURL=about-us.css.map */
