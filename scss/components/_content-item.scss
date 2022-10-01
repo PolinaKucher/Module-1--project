@@ -10,6 +10,7 @@
   }
   &__image-block {
     max-width: 410px;
+    display: flex;
   }
   &__info {
     margin-left: 10px;
@@ -21,6 +22,7 @@
       cursor: pointer;
     }
     @include media('<=tablet'){
+      margin-left: 0;
       padding-left: 0;
       padding-top: 30px;
       padding-bottom: 10;
