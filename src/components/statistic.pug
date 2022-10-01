@@ -1,0 +1,7 @@
+mixin statistic(args)
+  - const list = args.list || []
+
+  .sol-statistic
+    .sol-statistic__wrapper
+      each item in list
+        +statisticItem(item)
