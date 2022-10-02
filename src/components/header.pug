@@ -1,8 +1,8 @@
 mixin header()
   header.yul-header 
     .wrapper.yul-header__wrapper
-      .yul-header__logo
-        img(src="./assets/images/logo.svg" alt="logo")
+      a(href="./home.html").yul-header__logo
+        +logo()
       .yul-header__block
         .yul-header__navigation 
           +navigation() 

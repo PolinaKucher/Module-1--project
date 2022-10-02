@@ -2,7 +2,8 @@ mixin footer(args={})
   footer.pol-footer 
     .wrapper.pol-footer__wrapper 
       .pol-footer__head 
-        span.pol-footer__logo Logo 
+        a(href="./home.html").pol-footer__logo
+          +logo()
         +navigation({text: 'Privacy Policy'})
       .pol-footer__body
         h2.pol-footer__title Subscribe to our news letter to get latest updates and news
