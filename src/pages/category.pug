@@ -10,12 +10,15 @@ block content
   //- *Header
   +header()
 
-  //- Privacy category header
+  //- Category header
   .val-category-header-block
     .wrapper.val-category-header-block__wrapper
       h1.val-category-header-block__title Business
       p.val-category-header-block__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-      p.val-category-header-block__path Blog &gt; Business
+      p.val-category-header-block__path 
+        a(href="./blog.html").val-category-header-block__path__link Blog
+        span &gt;
+        a(href="./category.html").val-category-header-block__path__link Business
   .val-category-main 
     .wrapper.val-category-main__wrapper 
       .val-category-main__wrapper__blog-posts 
@@ -46,8 +49,15 @@ block content
       .val-category-main__wrapper__categories
         .val-category-main__wrapper__categories__categories-list 
         //- * Category block
-        +category
+        +categoryItem({
+          src: '#icon-business',
+          title: 'Startup'
+        })
         .val-category-main__wrapper__categories__tags
+          .val-category-main__wrapper__categories__tags__tags-list 
+            +tagsTable()
+              
+
 
   //- *Footer
   +footer({

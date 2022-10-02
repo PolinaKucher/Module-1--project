@@ -17,6 +17,10 @@
 @import "../elements/category-item";
 @import "../components/category";
 
+// *Tags
+@import "../elements/tag-item";
+@import "../components/tags";
+
 // *Footer
 @import "../components/footer";
 
@@ -78,6 +82,13 @@
     letter-spacing: 3px;
     line-height: 20px;
     font-weight: 500;
+    &__link {
+      color: $c-black;
+
+      &:hover {
+        color: $c-purple;
+      }
+    }
   }
 }
 

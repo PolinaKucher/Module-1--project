@@ -788,6 +788,59 @@ input, select, textarea {
   border-color: #fff;
 }
 
+.val-tag-item {
+  border: 2px solid #6d6e76;
+  border-radius: 28px;
+  text-align: center;
+  opacity: 0.7;
+}
+.val-tag-item:hover {
+  cursor: pointer;
+  background-color: #ffd050;
+  opacity: 1;
+  color: #592ea9;
+  border: 2px solid #ffd050;
+}
+.val-tag-item__title {
+  font-family: "Sen", sans-serif;
+  font-size: 0.875em;
+  line-height: 32px;
+  font-weight: 700;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #232536;
+}
+.val-tag-item--1 {
+  grid-area: a;
+}
+.val-tag-item--2 {
+  grid-area: b;
+}
+.val-tag-item--3 {
+  grid-area: c;
+}
+.val-tag-item--4 {
+  grid-area: d;
+}
+.val-tag-item--5 {
+  grid-area: e;
+}
+.val-tag-item--6 {
+  grid-area: f;
+}
+
+.val-tags-table__wrapper {
+  max-width: 298px;
+}
+.val-tags-table__title {
+  margin-bottom: 24px;
+}
+.val-tags-table__tags-list {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-areas: "a a b b" "c d d d" "e e e f";
+}
+
 .pol-footer {
   background-color: #232536;
   color: #fff;
@@ -945,6 +998,12 @@ input, select, textarea {
   letter-spacing: 3px;
   line-height: 20px;
   font-weight: 500;
+}
+.val-category-header-block__path__link {
+  color: #232536;
+}
+.val-category-header-block__path__link:hover {
+  color: #592ea9;
 }
 
 .val-category-main__wrapper {
