@@ -1573,9 +1573,6 @@ input, select, textarea {
 }
 
 .pol-specials {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column-reverse;
   position: relative;
 }
 @media (max-width: 1024px) {
