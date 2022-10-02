@@ -1,6 +1,7 @@
 // Base
 @import "../index";
 @import "../plugins/simptip/simptip";
+@import "../media";
 
 // Buttons
 @import "../elements/button";
@@ -31,8 +32,6 @@
 @import "../elements/authors-item";
 @import "../components/authors";
 
-// * Banner
-
 // * Featured post section
 .andr-content-block {
   padding-top: 130px;
@@ -40,23 +39,41 @@
   &__wrapper {
     justify-content: space-between;
     display: flex;
+
+    @include media("<=desktop") {
+      display: block;
+    }
   }
 
   &__item {
-    max-width: 735px;
+    min-width: 735px;
     width: 100%;
 
+    @include media("<=tablet") {
+      max-width: 735px;
+      min-width: auto;
+    }
+
     &--tiny {
+      min-width: auto;
       max-width: 515px;
       width: 100%;
 
-      & .andr-article {
-        padding-left: 30px;
+      @include media("<=desktop") {
+        max-width: initial;
       }
 
-      & .andr-article:hover {
-        background-color: $c-light-yellow;
-        cursor: pointer;
+      & .andr-article {
+        padding-left: 30px;
+
+        @include media("<=desktop") {
+          min-width: 340px;
+        }
+
+        &:hover {
+          background-color: $c-light-yellow;
+          cursor: pointer;
+        }
       }
 
       & .andr-article {
@@ -71,6 +88,10 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
+
+    @include media("<=desktop") {
+      margin-top: 20px;
+    }
   }
 
   &__title {
@@ -78,6 +99,7 @@
     letter-spacing: -2px;
     font-size: em(36);
     font-weight: 700;
+    color: $c-black;
     cursor: default;
   }
 
@@ -92,10 +114,28 @@
     border: 1px solid rgb($c-medium-grey, 0.1);
     margin-top: 30px;
     padding: 30px;
+
+    @include media("<=tablet") {
+      padding: 15px;
+    }
   }
 
   &__button {
     max-width: 200px;
+  }
+
+  &__short-wrapper {
+    margin-top: 30px;
+
+    @include media("<=desktop") {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media("<=tablet") {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
   }
 }
 
@@ -118,9 +158,8 @@
   &__image-block {
     max-width: 950px;
     bottom: 0;
-    
   }
-  
+
   &__card {
     display: flex;
     background-color: $c-white;
@@ -129,8 +168,8 @@
     bottom: 0;
     width: 706px;
     @include media("<=desktop") {
-        position: unset;
-        width: 100%;
+      position: unset;
+      width: 100%;
     }
   }
 }
