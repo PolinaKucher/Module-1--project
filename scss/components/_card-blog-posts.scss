@@ -1,0 +1,38 @@
+.kos-card {
+  padding-bottom: 32px;
+  max-width: 405px;
+  width: 100%;
+
+  &__subtitle {
+    color: $c-dark-grey;
+    font-size: em(14);
+    margin-top: 32px;
+    font-weight: 500;
+
+    &--name {
+      color: $c-purple;
+    }
+  }
+
+  &__title {
+    font-family: $ff-sen;
+    font-size: em(28);
+    line-height: 40px;
+    margin-top: 16px;
+    font-weight: 700;
+    color: $c-black;
+  }
+
+  &__text {
+    line-height: 28px;
+    margin-top: 16px;
+    color: $c-black;
+    opacity: .7;
+  }
+
+  // ! Delete after add photo to pug
+  &__photo {
+    background-color: red;
+    height: 320px; 
+  }
+}

@@ -1,0 +1,47 @@
+extends ../common/layout
+
+block title 
+  title Blog Post
+
+block style
+  link(rel="stylesheet" href="../styles/blog-posts.css")
+
+
+block content
+  // * Header
+  // +header() 
+  // * Banner
+  +bannerBlogPosts()
+  // * Blog cards
+  section.kos-blog 
+    .wrapper.kos-blog__wrapper 
+      h2.kos-blog__title What to read next
+      .kos-blog__content 
+        +cardBlogPosts({
+          title: 'A UX Case Study Creating a Studious Environment for Students: ',
+          text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
+        })
+        +cardBlogPosts({
+          title: 'A UX Case Study Creating a Studious Environment for Students: ',
+          text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
+        })
+        +cardBlogPosts({
+          title: 'A UX Case Study Creating a Studious Environment for Students: ',
+          text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
+        })
+  // * Button      
+  section.kos-blog-footer 
+    .wrapper.kos-blog-footer__wrapper
+      h2.kos-blog-footer__title Join our team to be a part of our story
+      .kos-blog-footer__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+      .kos-blog-footer__button 
+        +button({
+          toolTip: 'Join Now',
+          text: 'Join Now',
+        })
+  // * Footer 
+  +footer({
+    toolTip: 'Contact us'
+  })
+
+

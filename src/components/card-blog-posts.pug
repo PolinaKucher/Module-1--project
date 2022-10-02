@@ -1,0 +1,16 @@
+mixin cardBlogPosts(args={})
+  - const title = args.title || 'Default card title'
+  - const text = args.text || 'Default text'
+
+  .kos-card
+    .kos-card__photo 
+      img(src=args.src, alt=args.alt)
+    .kos-card__subtitle
+      | By 
+      span.kos-card__subtitle--name John Doe
+      |
+      |l   Aug 23, 2021 
+    .kos-card__title=args.title
+    .kos-card__text=args.text
+  
+
