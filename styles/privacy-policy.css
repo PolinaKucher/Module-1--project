@@ -597,9 +597,32 @@ input, select, textarea {
   opacity: 1;
 }
 
+.pol-navigation {
+  z-index: 900;
+}
+@media (max-width: 768px) {
+  .pol-navigation {
+    background-color: #4c4c4c;
+    justify-content: center;
+    position: fixed;
+    display: flex;
+    bottom: 50%;
+    top: 80px;
+    right: 0;
+    left: 0;
+  }
+}
 .pol-navigation__list {
   display: flex;
+  height: 100%;
   gap: 40px;
+}
+@media (max-width: 768px) {
+  .pol-navigation__list {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .pol-navigation__link {
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -607,6 +630,43 @@ input, select, textarea {
 }
 .pol-navigation__link:hover {
   opacity: 0.8;
+}
+
+.kos-burger {
+  background-color: transparent;
+  position: relative;
+  margin-left: 20px;
+  transition: 1s;
+  display: none;
+  border: none;
+  padding: 5px;
+  z-index: 920;
+}
+@media (max-width: 768px) {
+  .kos-burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+.kos-burger--active {
+  transform: rotate(270deg);
+}
+.kos-burger--active > .kos-burger__bar {
+  transform: rotate(135deg);
+}
+.kos-burger--active > .kos-burger__bar:nth-child(2) {
+  opacity: 0;
+}
+.kos-burger--active > .kos-burger__bar:last-child {
+  transform: rotate(-135deg);
+}
+.kos-burger__bar {
+  background-color: #fff;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 5px auto;
+  display: block;
+  width: 25px;
+  height: 3px;
 }
 
 .yul-header {
@@ -640,14 +700,24 @@ input, select, textarea {
   display: flex;
   margin-right: 2em;
 }
+@media (max-width: 768px) {
+  .yul-header__navigation {
+    display: none;
+  }
+}
+.yul-header__navigation--show {
+  display: block;
+}
 .yul-header__button {
   width: 170px;
   align-items: center;
   display: flex;
+  margin-left: 32px;
 }
 
 .andr-banner__social {
   gap: 16px;
+  justify-content: center;
   align-items: center;
   margin-top: 25px;
   display: flex;
@@ -767,6 +837,9 @@ input, select, textarea {
 }
 .pol-footer__link:hover {
   opacity: 1;
+}
+.pol-footer__socials {
+  margin-right: 14px;
 }
 
 .val-policy-header-block {

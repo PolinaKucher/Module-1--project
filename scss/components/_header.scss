@@ -1,3 +1,6 @@
+// * Elements
+@import '../elements/burger';
+
 .yul-header {
   background-color: $c-black;
   color: $c-white;
@@ -31,11 +34,21 @@
     align-items: center;
     display: flex;
     margin-right: em(32);
+
+    @include media ('<=tablet') {
+      display: none;
+    }
+
+    &--show {
+      display: block;
+    }
   }
+
   &__button {
     width: 170px;
     align-items: center;
     display: flex;
+    margin-left: 32px;
   }
 }
 

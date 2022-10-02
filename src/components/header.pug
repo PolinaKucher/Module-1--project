@@ -10,9 +10,7 @@ mixin header(args={})
               indexMode: true
             }) 
           else
-            +navigation() 
-        //- .yul-header__burger 
-        //-   +burger()
+            +navigation()
         .yul-header__button
           +button({
             type: 'button',
@@ -20,3 +18,5 @@ mixin header(args={})
             toolTip: 'Push for Subscribe',
             whiteMode: true
           })
+        .yul-header__burger 
+          +burger()
