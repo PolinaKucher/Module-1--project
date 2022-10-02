@@ -6,3 +6,12 @@ mixin card(args={})
     .sol-card__wrapper 
       .sol-card__subtitle=subtitle
       .sol-card__title=title
+      if args.description
+        .sol-card__text=args.text
+        .sol-card__button
+          +button({
+            type: 'button',
+            text: 'Discover our story',
+            icon: true,
+            toolTip: 'Read about us'
+          })

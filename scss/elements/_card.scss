@@ -32,4 +32,13 @@
       line-height: 32px;
     }
   }
+  &__text {
+    color: $c-medium-grey;
+    line-height: em(28);
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  &__button {
+    width: 260px;
+  }
 }

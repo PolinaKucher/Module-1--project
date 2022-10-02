@@ -1,29 +1,35 @@
 // Base
-@import '../index';
-@import '../plugins/simptip/simptip';
+@import "../index";
+@import "../plugins/simptip/simptip";
 
 // Buttons
-@import '../elements/button';
-@import '../elements/form-item';
-@import '../elements/socials';
+@import "../elements/button";
+@import "../elements/form-item";
+@import "../elements/socials";
 
 // Sections
-@import '../components/featured-section';
-@import '../components/banner';
-@import '../components/category';
-@import '../elements/category-item';
-@import '../components/logoipsum';
-@import '../components/testimonials';
+@import "../components/featured-section";
+@import "../components/banner";
+@import "../components/category";
+@import "../elements/category-item";
+@import "../components/logoipsum";
+@import "../components/testimonials";
+@import "../elements/card";
+
+// About us section
+@import "../components/about-us";
+@import "../elements/item";
+@import "../elements/block";
 
 // Navigation
-@import '../components/navigation';
-@import '../components/header';
-@import '../components/footer';
+@import "../components/navigation";
+@import "../components/header";
+@import "../components/footer";
 
-@import '../components/join-section';
+@import "../components/join-section";
 // Authors
-@import '../elements/authors-item';
-@import '../components/authors';
+@import "../elements/authors-item";
+@import "../components/authors";
 
 // * Banner
 
@@ -90,5 +96,51 @@
 
   &__button {
     max-width: 200px;
+  }
+}
+
+// *About us section
+.pol-about-us {
+  &__wrapper {
+    margin-top: 128px;
+    margin-bottom: 128px;
+  }
+}
+.pol-specials {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  // height: 705px;
+  position: relative;
+  @include media("<=desktop") {
+    position: unset;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    // padding-bottom: 32px;
+    // margin-bottom: 0;
+    // min-width: auto;
+  }
+  &__image-block {
+    // z-index: -1;
+    max-width: 950px;
+    // position: absolute;
+    bottom: 0;
+    
+  }
+  &__card {
+    display: flex;
+    // margin-left: 400px;
+    background-color: $c-white;
+    // margin-top: -548px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 706px;
+    @include media("<=desktop") {
+        position: unset;
+      
+        width: 100%;
+    }
   }
 }

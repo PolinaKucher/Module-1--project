@@ -223,6 +223,7 @@ input, select, textarea {
   margin-bottom: 128px;
 }
 .alx-list-of-author__title {
+  cursor: default;
   color: #232536;
   font-family: "Sen", sans-serif;
   font-weight: 700;
@@ -236,30 +237,42 @@ input, select, textarea {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 32px;
 }
+@media (max-width: 1024px) {
+  .alx-list-of-author__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .yul-join-section {
+  cursor: default;
   margin-bottom: 128px;
   margin-top: 128px;
 }
 .yul-join-section__wrapper {
+  text-align: center;
+  max-width: 414px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 .yul-join-section__title {
+  color: #232536;
   font-family: "Sen", sans-serif;
   margin-bottom: 16px;
-  line-height: 3em;
   font-size: 2.25em;
   font-weight: 700;
 }
 .yul-join-section__subtitle {
+  text-align: center;
   font-family: "Inter", sans-serif;
   line-height: 1.75em;
   margin-bottom: 32px;
   font-size: 1em;
   font-weight: 400;
+}
+.yul-join-section__button {
+  width: 170px;
 }
 
 .sol-statistic-item {
@@ -306,7 +319,7 @@ input, select, textarea {
   background-color: #ffd050;
   display: flex;
   height: 24px;
-  width: 100%;
+  width: 90%;
 }
 .sol-block__line {
   background-color: #592ea9;
@@ -355,6 +368,7 @@ input, select, textarea {
   color: #232536;
 }
 .sol-item__title {
+  cursor: default;
   font-family: "Sen", sans-serif;
   letter-spacing: -1px;
   margin-bottom: 16px;
@@ -368,6 +382,7 @@ input, select, textarea {
   }
 }
 .sol-item__subtitle {
+  cursor: default;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 24px;
@@ -382,6 +397,29 @@ input, select, textarea {
 .sol-item__description {
   color: #6d6e76;
   line-height: 28px;
+}
+.sol-item__button {
+  margin-top: 16px;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+.sol-item__button:hover .sol-item__hidden {
+  opacity: 1;
+}
+.sol-item__button:hover .icon-more-sign {
+  transform: translateX(15px);
+}
+.sol-item__button-text {
+  font-size: 1.125em;
+  font-family: "Sen", sans-serif;
+  color: #592ea9;
+  font-weight: 700;
+}
+.sol-item__hidden {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  opacity: 0;
 }
 
 .alx-authors-item {
@@ -427,11 +465,10 @@ input, select, textarea {
 }
 
 .andr-banner__social {
-  justify-content: space-between;
+  gap: 16px;
+  justify-content: center;
   align-items: center;
-  max-width: 115px;
   margin-top: 25px;
-  font-size: 16px;
   display: flex;
   width: 100%;
 }
@@ -440,7 +477,11 @@ input, select, textarea {
   display: flex;
   padding: 3px;
   font-size: 1em;
-  height: 16px;
+}
+.andr-banner__link--white {
+  font-size: 1em;
+  color: #fff;
+  opacity: 0.7;
 }
 .andr-banner__link:hover {
   background-color: #ffd050;
