@@ -1,11 +1,16 @@
-mixin header()
+mixin header(args={})
   header.yul-header 
     .wrapper.yul-header__wrapper
       .yul-header__logo
         img(src="./assets/images/logo.svg" alt="logo")
       .yul-header__block
         .yul-header__navigation 
-          +navigation() 
+          if args.indexMode
+            +navigation({
+              indexMode: true
+            }) 
+          else
+            +navigation() 
         //- .yul-header__burger 
         //-   +burger()
         .yul-header__button
