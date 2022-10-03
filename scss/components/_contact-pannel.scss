@@ -5,7 +5,7 @@
   padding-right: 65px;
   padding-left: 65px;
   padding-top: 50px;
-  margin-top: 0 auto;
+  margin-top: 65px;
   display: flex;
   width: 100%;
   text-align: center;
@@ -16,6 +16,7 @@
   &__block {
     margin-right: 40px;
     max-width: 295px;
+    text-align: left;
     width: 100%;
 
     &:last-child {
@@ -35,6 +36,7 @@
     line-height: 20px;
     color: $c-white; 
     display: block;
+    opacity: .6;
   }
 
   &__days {
@@ -66,14 +68,27 @@
   }
 
   &__link {
+    transition: $t-normal;
     line-height: 28px;
     font-weight: 400;
     color: $c-white;
+    opacity: .6;
+
+    &:hover {
+      color: $c-black;
+    }
+
     &--number {
+      transition: $t-normal;
       font-family: $ff-sen;
       font-size: em(20);
+      line-height: 32px;
       font-weight: 700;
       color: $c-white;
+      opacity: 1;
+      &:hover {
+        color: $c-black;
+      }
     }
   }
 }

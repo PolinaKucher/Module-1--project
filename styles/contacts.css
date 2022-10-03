@@ -74,7 +74,7 @@ input, select, textarea {
   padding-right: 65px;
   padding-left: 65px;
   padding-top: 50px;
-  margin-top: 0 auto;
+  margin-top: 65px;
   display: flex;
   width: 100%;
   text-align: center;
@@ -87,6 +87,7 @@ input, select, textarea {
 .kos-contact-pannel__block {
   margin-right: 40px;
   max-width: 295px;
+  text-align: left;
   width: 100%;
 }
 .kos-contact-pannel__block:last-child {
@@ -104,6 +105,7 @@ input, select, textarea {
   line-height: 20px;
   color: #fff;
   display: block;
+  opacity: 0.6;
 }
 .kos-contact-pannel__days {
   font-family: "Sen", sans-serif;
@@ -128,15 +130,26 @@ input, select, textarea {
   margin-top: 16px;
 }
 .kos-contact-pannel__link {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 28px;
   font-weight: 400;
   color: #fff;
+  opacity: 0.6;
+}
+.kos-contact-pannel__link:hover {
+  color: #232536;
 }
 .kos-contact-pannel__link--number {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   font-family: "Sen", sans-serif;
   font-size: 1.25em;
+  line-height: 32px;
   font-weight: 700;
   color: #fff;
+  opacity: 1;
+}
+.kos-contact-pannel__link--number:hover {
+  color: #232536;
 }
 
 /********************************* Core ******************************/
@@ -582,25 +595,46 @@ input, select, textarea {
 }
 
 .andr-button {
-  height: 100%;
   background-color: #ffd050;
+  justify-content: center;
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   font-family: "Sen", sans-serif;
+  align-items: center;
+  position: relative;
   font-size: 1.125em;
+  padding-left: 5px;
+  padding-right: 5px;
   font-weight: 700;
-  min-width: 150px;
-  padding: 15px 0;
-  width: 100%;
+  cursor: pointer;
+  display: flex;
+  height: 56px;
   border: none;
+  width: 100%;
 }
 .andr-button:hover {
   background-color: #edc14a;
+}
+.andr-button:hover .andr-button__hidden {
+  opacity: 1;
+}
+.andr-button:hover .icon-more-sign {
+  transform: translateX(15px);
 }
 .andr-button--white {
   background-color: #fff;
 }
 .andr-button--white:hover {
   color: #fff;
+}
+.andr-button__hidden {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  opacity: 0;
+}
+
+.icon-more-sign {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 10px;
 }
 
 .kos-form-item {
@@ -613,29 +647,55 @@ input, select, textarea {
 }
 .kos-form-item__input {
   border: 1px solid #6d6e76;
+  padding: 14px 25px;
+  border-radius: 2px;
   line-height: 28px;
   height: 100%;
-  padding: 14px 25px;
   width: 100%;
+  height: 76px;
+  font-family: "Inter", sans-serif;
+  line-height: 28px;
+  font-size: 1em;
+  font-weight: 400;
 }
 .kos-form-item__country {
   max-width: 768px;
   width: 100%;
 }
+.kos-form-item__arrow {
+  background: transparent;
+  position: absolute;
+  border-radius: 0;
+  right: 65px;
+  width: 12px;
+  height: 8px;
+  top: 27%;
+}
 .kos-form-item__select {
   border: 1px solid #6d6e76;
+  font-family: "Inter", sans-serif;
+  padding: 14px 25px;
+  border-radius: 2px;
   line-height: 28px;
+  line-height: 28px;
+  font-size: 1em;
+  font-weight: 400;
+  appearance: none;
   font-weight: 400;
   height: 76px;
-  padding: 14px 25px;
   width: 100%;
 }
 .kos-form-item__text-area {
   border: 1px solid #6d6e76;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
-  line-height: 28px;
-  display: block;
   padding: 14px 25px;
+  border-radius: 2px;
+  line-height: 28px;
+  font-size: 1em;
+  line-height: 28px;
+  font-weight: 400;
+  display: block;
   resize: none;
   width: 100%;
 }
@@ -648,9 +708,32 @@ input, select, textarea {
   opacity: 1;
 }
 
+.pol-navigation {
+  z-index: 900;
+}
+@media (max-width: 768px) {
+  .pol-navigation {
+    background-color: #4c4c4c;
+    justify-content: center;
+    position: fixed;
+    display: flex;
+    bottom: 50%;
+    top: 80px;
+    right: 0;
+    left: 0;
+  }
+}
 .pol-navigation__list {
   display: flex;
+  height: 100%;
   gap: 40px;
+}
+@media (max-width: 768px) {
+  .pol-navigation__list {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .pol-navigation__link {
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -658,6 +741,43 @@ input, select, textarea {
 }
 .pol-navigation__link:hover {
   opacity: 0.8;
+}
+
+.kos-burger {
+  background-color: transparent;
+  position: relative;
+  margin-left: 20px;
+  transition: 1s;
+  display: none;
+  border: none;
+  padding: 5px;
+  z-index: 920;
+}
+@media (max-width: 768px) {
+  .kos-burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+.kos-burger--active {
+  transform: rotate(270deg);
+}
+.kos-burger--active > .kos-burger__bar {
+  transform: rotate(135deg);
+}
+.kos-burger--active > .kos-burger__bar:nth-child(2) {
+  opacity: 0;
+}
+.kos-burger--active > .kos-burger__bar:last-child {
+  transform: rotate(-135deg);
+}
+.kos-burger__bar {
+  background-color: #fff;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 5px auto;
+  display: block;
+  width: 25px;
+  height: 3px;
 }
 
 .yul-header {
@@ -691,11 +811,24 @@ input, select, textarea {
   display: flex;
   margin-right: 2em;
 }
+@media (max-width: 768px) {
+  .yul-header__navigation {
+    display: none;
+  }
+}
+.yul-header__navigation--show {
+  display: block;
+}
 .yul-header__button {
+  width: 170px;
   align-items: center;
   display: flex;
+  margin-left: 32px;
 }
 
+.kos-contact {
+  padding-top: 208px;
+}
 .kos-contact__wrapper {
   padding-right: 15px;
   padding-left: 15px;
@@ -707,6 +840,20 @@ input, select, textarea {
   line-height: 20px;
   font-weight: 900;
   color: #232536;
+  background: linear-gradient(270deg, #592ea9, #edc14a, #592ea9);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 .kos-contact__title {
   font-family: "Sen", sans-serif;
@@ -716,6 +863,20 @@ input, select, textarea {
   font-weight: 700;
   line-height: 64px;
   color: #232536;
+  background: linear-gradient(270deg, #592ea9, #edc14a, #592ea9);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 .kos-contact__description {
   color: #6d6e76;
@@ -731,15 +892,13 @@ input, select, textarea {
 .kos-contact__form {
   margin-top: 30px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.kos-contact__item {
-  height: 76px;
 }
 .kos-contact__button {
   margin-top: 15px;
+}
+.kos-contact__name {
+  max-height: 76px;
+  height: 100%;
 }
 
 /*# sourceMappingURL=contacts.css.map */
