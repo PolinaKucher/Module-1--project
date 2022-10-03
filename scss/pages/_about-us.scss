@@ -1,19 +1,28 @@
 // * Base
-@import '../index';
+@import "../index";
+@import "../plugins/simptip/simptip";
+@import '../media';
 
 // * About us section
-@import '../components/about-us';
+@import "../components/about-us";
+@import "../components/about-us-info";
 
 // * Components
-@import '../components/statistic';
-@import '../components/authors';
-@import '../components/join-section';
+@import "../components/navigation";
+@import "../components/header";
+@import "../components/statistic";
+@import "../components/authors";
+@import "../components/join-section";
+@import "../components/footer";
 
 // * Elements
-@import '../elements/statistic-item';
-@import '../elements/block';
-@import '../elements/card';
-@import '../elements/item';
-@import '../elements/authors-item';
-@import '../elements/socials';
+@import "../elements/button";
+@import "../elements/statistic-item";
+@import "../elements/block";
+@import "../elements/card";
+@import "../elements/item";
+@import "../elements/form-item";
+@import "../elements/authors-item";
+@import "../elements/socials";
+
 

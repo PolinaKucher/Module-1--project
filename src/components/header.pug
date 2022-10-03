@@ -1,13 +1,16 @@
-mixin header()
+mixin header(args={})
   header.yul-header 
     .wrapper.yul-header__wrapper
-      .yul-header__logo
-        img(src="./assets/images/logo.svg" alt="logo")
+      a(href="./home.html").yul-header__logo
+        +logo()
       .yul-header__block
         .yul-header__navigation 
-          +navigation() 
-        //- .yul-header__burger 
-        //-   +burger()
+          if args.indexMode
+            +navigation({
+              indexMode: true
+            }) 
+          else
+            +navigation()
         .yul-header__button
           +button({
             type: 'button',
@@ -15,3 +18,5 @@ mixin header()
             toolTip: 'Push for Subscribe',
             whiteMode: true
           })
+        .yul-header__burger 
+          +burger()

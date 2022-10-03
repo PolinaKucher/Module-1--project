@@ -1,20 +1,20 @@
 mixin socials(args='')
   - let classes = ''
-  - args.whiteMode ? classes += 'andr-banner__link--white' : null
-  ul.andr-banner__social
+  - args.whiteMode ? classes += 'andr-social__link--white' : null
+  ul.andr-social
     //- Facebook
-    li.andr-banner__item
-      a.andr-banner__link(href="https://uk-ua.facebook.com" target='_blank' data-tooltip='Facebook', class=classes).simptip-position-bottom.simptip-fade.simptip-smooth
+    li.andr-social__item
+      a.andr-social__link(href="https://uk-ua.facebook.com" target='_blank' data-tooltip='Facebook', class=classes).simptip-position-bottom.simptip-fade.simptip-smooth
         i.fa-brands.fa-facebook
     //- Twitter
-    li.andr-banner__item
-      a.andr-banner__link(href="https://twitter.com" target='_blank' data-tooltip='Twitter' class=classes).simptip-position-bottom.simptip-fade.simptip-smooth
+    li.andr-social__item
+      a.andr-social__link(href="https://twitter.com" target='_blank' data-tooltip='Twitter' class=classes).simptip-position-bottom.simptip-fade.simptip-smooth
         i.fa-brands.fa-twitter
     //- Instagram
-    li.andr-banner__item
-      a.andr-banner__link(href="https://www.instagram.com" target='_blank' data-tooltip='Instagram', class=classes).simptip-position-bottom.simptip-fade.simptip-smooth
+    li.andr-social__item
+      a.andr-social__link(href="https://www.instagram.com" target='_blank' data-tooltip='Instagram', class=classes).simptip-position-bottom.simptip-fade.simptip-smooth
         i.fa-brands.fa-instagram
     //- LinkedIn
-    li.andr-banner__item
-      a.andr-banner__link(href="https://ua.linkedin.com" target='_blank' data-tooltip='Linked In', class=classes).simptip-position-bottom.simptip-fade.simptip-smooth
+    li.andr-social__item
+      a.andr-social__link(href="https://ua.linkedin.com" target='_blank' data-tooltip='Linked In', class=classes).simptip-position-bottom.simptip-fade.simptip-smooth
         i.fa-brands.fa-linkedin

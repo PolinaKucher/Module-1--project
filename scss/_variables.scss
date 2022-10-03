@@ -21,6 +21,7 @@ $ff-sen: "Sen", sans-serif;
 
 // *Bezier
 $b-normal: cubic-bezier(0.4, 0, 0.2, 1);
-
+$b-rotate: cubic-bezier(.87,.64,.58,1.55);
 // *Transitions
 $t-normal: 0.35s $b-normal;
+$t-rotate: 0.7s $b-rotate

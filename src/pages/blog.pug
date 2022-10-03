@@ -3,6 +3,7 @@ extends ../common/layout
 block title 
   title Blog
 block style
+  link(rel="icon" href="../favicon.ico" type="image/x-icon")
   link(rel="stylesheet" href="../styles/blog.css")
 
 
@@ -64,7 +65,7 @@ block content
         })
   //- Category block
   +category({
-      title: 'All Categories'
+    title: 'All Categories'
     })
   +join-section()
   //- *Footer
