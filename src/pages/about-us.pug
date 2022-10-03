@@ -9,7 +9,31 @@ block style
 
 
 block content
+  //- * Header
+  +header()
+
   +aboutUs()
+
+  //- * About us info
+  +aboutUsInfo({
+    reverseMode: true,
+    src: '../assets/images/yul-ground-group-growth-hands.jpg',
+    alt: 'Hands',
+    title: 'Our team of creatives',
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.',
+    svg: ''
+  }
+  )
+  +aboutUsInfo({
+    classes2: 'andr-info-block__shape--circle',
+    src: '../assets/images/yul-three-persons-sitting-on-the-stairs-talking-with-each-other.jpg',
+    alt: 'Peoples',
+    title: 'Why we started this Blog',
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.'
+  }
+  )
 
   .wrapper.alx-list-of-author
     h3.alx-list-of-author__title List of Authors
@@ -54,3 +78,9 @@ block content
         subtitle: 'Content Writer @Company',
         src: '../assets/images/yul-cheerful-young-ethnic-male-millennial-standing-near-stone-wall-and-smiling.jpg'
       })
+
+  //- * Join us section
+  +join-section()
+
+  //- * Footer
+  +footer()
