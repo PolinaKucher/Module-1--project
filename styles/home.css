@@ -649,21 +649,29 @@ input, select, textarea {
   padding-top: 15px;
   font-weight: 700;
   margin-bottom: 0;
+  color: #232536;
+}
+@media (max-width: 480px) {
+  .andr-article__title {
+    font-size: 1.5em;
+    line-height: 30px;
+  }
 }
 .andr-article__title--small {
   font-size: 1.5em;
   line-height: 32px;
   max-width: 340px;
+  color: #232536;
 }
 .andr-article__text {
   color: #6d6e76;
   padding-top: 15px;
   line-height: 30px;
-  font-size: 16px;
 }
-
-.andr-h-margin-top-30 {
-  margin-top: 30px;
+@media (max-width: 480px) {
+  .andr-article__text {
+    line-height: 25px;
+  }
 }
 
 .pol-banner {
@@ -1522,16 +1530,38 @@ input, select, textarea {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 1024px) {
+  .andr-content-block__wrapper {
+    display: block;
+  }
+}
 .andr-content-block__item {
-  max-width: 735px;
+  min-width: 735px;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .andr-content-block__item {
+    max-width: 735px;
+    min-width: auto;
+  }
+}
 .andr-content-block__item--tiny {
+  min-width: auto;
   max-width: 515px;
   width: 100%;
 }
+@media (max-width: 1024px) {
+  .andr-content-block__item--tiny {
+    max-width: initial;
+  }
+}
 .andr-content-block__item--tiny .andr-article {
   padding-left: 30px;
+}
+@media (max-width: 1024px) {
+  .andr-content-block__item--tiny .andr-article {
+    min-width: 340px;
+  }
 }
 .andr-content-block__item--tiny .andr-article:hover {
   background-color: #fbf6ea;
@@ -1545,11 +1575,17 @@ input, select, textarea {
   align-items: center;
   display: flex;
 }
+@media (max-width: 1024px) {
+  .andr-content-block__head {
+    margin-top: 20px;
+  }
+}
 .andr-content-block__title {
   font-family: "Sen", sans-serif;
   letter-spacing: -2px;
   font-size: 2.25em;
   font-weight: 700;
+  color: #232536;
   cursor: default;
 }
 .andr-content-block__link {
@@ -1563,8 +1599,28 @@ input, select, textarea {
   margin-top: 30px;
   padding: 30px;
 }
+@media (max-width: 768px) {
+  .andr-content-block__article-wrapper {
+    padding: 15px;
+  }
+}
 .andr-content-block__button {
   max-width: 200px;
+}
+.andr-content-block__short-wrapper {
+  margin-top: 30px;
+}
+@media (max-width: 1024px) {
+  .andr-content-block__short-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .andr-content-block__short-wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 
 .pol-about-us__wrapper {
