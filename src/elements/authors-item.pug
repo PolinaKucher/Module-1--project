@@ -1,0 +1,10 @@
+mixin authorsItem(args)
+  //- - const subtitle = args.subtitle || 'Default statictic subtitle'
+  //- - const title = args.title || 'Default statictic title'
+
+  li.alx-authors-item
+    .alx-authors-item__image-block
+      img(src=args.src, alt=args.alt).alx-authors-item__image
+    a(href="./author.html").alx-authors-item__title=args.title
+    .alx-authors-item__subtitle=args.subtitle
+    +socials()

@@ -1,0 +1,35 @@
+.andr-logo {
+  height: 37px;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: $ff-sen;
+  line-height: 1;
+  color: $c-white;
+  transition: $t-normal;
+
+  &:hover{
+    cursor: pointer;
+
+    & .andr-logo__colored{
+      fill: $c-yellow;
+      color: $c-yellow;
+    }
+
+    & .andr-logo__rotate{
+      transform: rotate(360deg);
+    }
+  }
+  
+  &__item{
+    display: flex;
+  }
+  
+  &__symbol{
+    height: 37px;
+    fill: $c-white;
+  }
+
+  .andr-logo__rotate{
+    transition: $t-rotate;
+  }
+  }

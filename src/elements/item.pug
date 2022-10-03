@@ -1,4 +1,4 @@
-mixin item(args)
+mixin item(args={})
   - const subtitle = args.subtitle || 'Default item subtitle'
   - const title = args.title || 'Default item title'
   - const description = args.description || 'Default item description'
@@ -7,3 +7,9 @@ mixin item(args)
     .sol-item__subtitle=subtitle
     h3.sol-item__title=title
     p.sol-item__description=description
+    if args.button
+      button.sol-item__button(type=args.type) 
+        span.sol-item__button-text Read More 
+          span.sol-item__hidden --
+          svg.icon.icon-more-sign
+            use(xlink:href='#icon-more-sign')

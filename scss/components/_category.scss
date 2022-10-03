@@ -4,24 +4,30 @@
   margin-top: 128px;
   background-color: $c-white;
   margin-bottom: 128px;
-}
-.alx-category__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.alx-category__title {
-  font-family: $ff-sen;
-  font-weight: 700;
-  font-size: em(36);
-  line-height: 48px;
-  letter-spacing: -2px;
-  margin-bottom: 48px;
-  color: $c-black;
-  text-align: center;
-}
-.alx-category__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 32px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    cursor: default;
+    font-family: $ff-sen;
+    font-weight: 700;
+    font-size: em(36);
+    line-height: 48px;
+    letter-spacing: -2px;
+    margin-bottom: 48px;
+    color: $c-black;
+    text-align: center;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+    @include media("<=desktop") {
+      gap: 32px;
+      flex-direction: column;
+      display: flex;
+    }
+  }
 }

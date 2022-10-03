@@ -4,53 +4,83 @@ block title
   title About us
 
 block style
+  link(rel="icon" href="../favicon.ico" type="image/x-icon")
   link(rel="stylesheet" href="../styles/about-us.css")
 
 
 block content
+  //- * Header
+  +header()
+
   +aboutUs()
 
-  .wrapper.alx-list-of-autor
-    .alx-list-of-autor__title
-      h2 List of Authors
-    .alx-list-of-autor__list 
-      +autorsItem({
+  //- * About us info
+  +aboutUsInfo({
+    reverseMode: true,
+    src: '../assets/images/yul-ground-group-growth-hands.jpg',
+    alt: 'Hands',
+    title: 'Our team of creatives',
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.',
+    svg: ''
+  }
+  )
+  +aboutUsInfo({
+    classes2: 'andr-info-block__shape--circle',
+    src: '../assets/images/yul-three-persons-sitting-on-the-stairs-talking-with-each-other.jpg',
+    alt: 'Peoples',
+    title: 'Why we started this Blog',
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.'
+  }
+  )
+
+  .wrapper.alx-list-of-author
+    h3.alx-list-of-author__title List of Authors
+    ul.alx-list-of-author__list 
+      +authorsItem({
         title: 'Floyd Miles',
         subtitle: 'Content Writer @Company',
         src: '../assets/images/yul-man-in-yellow-button-up-shirt.jpg'
       }) 
-      +autorsItem({
+      +authorsItem({
         title: 'Dianne Russell',
         subtitle: 'Content Writer @Company',
         src: '../assets/images/yul-woman-in-white-and-black-striped-shirt.jpg'
       }) 
-      +autorsItem({
+      +authorsItem({
         title: 'Jenny Wilson',
         subtitle: 'Content Writer @Company',
         src: '../assets/images/yul-fashion-woman-cute-shoes.jpg'
       }) 
-      +autorsItem({
+      +authorsItem({
         title: 'Leslie Alexander',
         subtitle: 'Content Writer @Company',
         src: '../assets/images/yul-content-baker-with-delicious-puff-in-cafeteria.jpg'
       })
-      +autorsItem({
+      +authorsItem({
         title: 'Guy Hawkins',
         subtitle: 'Content Writer @Company',
         src: '../assets/images/yul-man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses.jpg'
       })
-      +autorsItem({
+      +authorsItem({
         title: 'Eleanor Pena',
         subtitle: 'Content Writer @Company',
         src: '../assets/images/yul-woman-in-white-and-black-striped-shirt-wearing-black.jpg'
       })
-      +autorsItem({
+      +authorsItem({
         title: 'Robert Fox',
         subtitle: 'Content Writer @Company',
         src: '../assets/images/yul-content-unshaven-man-covering-eye-with-yellow-flower.jpg'
       })
-      +autorsItem({
+      +authorsItem({
         title: 'Jacob Jones',
         subtitle: 'Content Writer @Company',
         src: '../assets/images/yul-cheerful-young-ethnic-male-millennial-standing-near-stone-wall-and-smiling.jpg'
       })
+
+  //- * Join us section
+  +join-section()
+
+  //- * Footer
+  +footer()

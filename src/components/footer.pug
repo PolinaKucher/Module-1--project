@@ -2,7 +2,8 @@ mixin footer(args={})
   footer.pol-footer 
     .wrapper.pol-footer__wrapper 
       .pol-footer__head 
-        span.pol-footer__logo Logo 
+        a(href="./home.html").pol-footer__logo
+          +logo()
         +navigation({text: 'Privacy Policy'})
       .pol-footer__body
         h2.pol-footer__title Subscribe to our news letter to get latest updates and news
@@ -27,4 +28,6 @@ mixin footer(args={})
           a.pol-footer__link.simptip-position-bottom.simptip-fade.simptip-smooth(href="mailto: Hello@finsweet.com", target='_blank', data-tooltip=args.toolTip) Hello@finsweet.com  
           a.pol-footer__link.simptip-position-bottom.simptip-fade.simptip-smooth(href="tel: 020 7993 2905", target='_blank', data-tooltip=args.toolTip) 020 7993 2905
         .pol-footer__socials 
-          span.pol-footer__span socials
+          +socials({
+            whiteMode: true
+          })

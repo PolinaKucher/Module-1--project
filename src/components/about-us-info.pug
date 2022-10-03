@@ -1,0 +1,21 @@
+mixin aboutUsInfo(args)
+  - let classes = ''
+  - let classes2 = args.classes || ''
+  - args.reverseMode ? classes += ' andr-info-block__wrapper--reverse ' : null
+
+  .andr-info-block
+    .wrapper.andr-info-block__wrapper(class=classes)
+      .andr-info-block__image-block
+        if args.reverseMode
+          img.andr-info-block__image(src=args.src, alt=args.alt)
+          .andr-info-block__shape
+            svg.rectangle(viewbox='0 0 103 116' xmlns='http://www.w3.org/2000/svg')
+              path(d='M0 42.8469C0 19.1832 19.4417 0 43.4242 0H103V116H0V42.8469Z')
+        if !args.reverseMode 
+          img.andr-info-block__image(src=args.src, alt=args.alt)
+          .andr-info-block__shape--circle
+      .andr-info-block__content
+        h2.andr-info-block__title=args.title 
+        h4.andr-info-block__subtitle=args.subtitle 
+        .andr-info-block__description=args.description
+      

@@ -3,34 +3,42 @@ extends ../common/layout
 block title 
   title Author
 block style
+  link(rel="icon", href="../favicon.ico", type="image/x-icon")
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT' crossorigin='anonymous')
   link(rel="stylesheet" href="../styles/author.css")
 
 
 block content
   //- * Header
-  +header()
-  
-  //- * Banner 
+  header.p-3.text-bg-dark
+    .container
+      .d-flex.flex-wrap.align-items-center.justify-content-center.justify-content-lg-start
+        a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.text-decoration-none(href='./home.html')
+          +logo()
+        ul.nav.col-12.col-lg-auto.mb-2.justify-content-center.mb-md-0
+          li
+            a.nav-link.px-2.text-white(href='./home.html') Home
+          li
+            a.nav-link.px-2.text-white(href='./blog.html') Blog
+          li
+            a.nav-link.px-2.text-white(href='./about-us.html') About Us
+          li
+            a.nav-link.px-2.text-white(href='./contacts.html') Contact Us
+        .text-end.ms-2
+          button.btn.btn-light.me-2(type='button') Subscribe
+
+
+
+  //- * Banner
   .andr-banner 
     .andr-banner__wrapper 
       .andr-banner__image 
-        img(src="../assets/images/yul-close-up-photography-of-man-wearing-sunglasses.jpg", alt="Portrait")
+        img(src="../assets/images/yul-close-up-photography-of-man-wearing-sunglasses.jpg" alt="Portrait")
       .andr-banner__block 
         .andr-banner__title Hey there, I'm Andrew Jonhson and welcome to my Blog
         .andr-banner__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
-        .andr-banner__social
-          //- Facebook
-          a(href="#", data-tooltip='Facebook').andr-banner__link.simptip-position-bottom.simptip-fade.simptip-smooth
-            i.fa-brands.fa-facebook
-          //- Twitter
-          a(href="#", data-tooltip='Twitter').andr-banner__link.simptip-position-bottom.simptip-fade.simptip-smooth
-            i.fa-brands.fa-twitter
-          //- Instagram
-          a(href="#", data-tooltip='Instagram').andr-banner__link.simptip-position-bottom.simptip-fade.simptip-smooth
-            i.fa-brands.fa-instagram
-          //- LinkedIn
-          a(href="#", data-tooltip='Linked In').andr-banner__link.simptip-position-bottom.simptip-fade.simptip-smooth
-            i.fa-brands.fa-linkedin
+        +socials()
+
     .andr-banner__line
       +block(true)
 

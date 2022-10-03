@@ -2,6 +2,7 @@
   color: $c-black;
 
   &__title {
+    cursor: default;
     font-family: $ff-sen;
     letter-spacing: -1px;
     margin-bottom: 16px;
@@ -15,6 +16,7 @@
   }
 
   &__subtitle {
+    cursor: default;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 24px;
@@ -29,5 +31,34 @@
   &__description {
     color: $c-medium-grey;
     line-height: 28px;
+  }
+
+  &__button {
+    margin-top: 16px;
+    cursor: pointer;
+    border: 0;
+    
+    background-color:transparent;
+    &:hover {
+  
+      & .sol-item__hidden {
+        opacity: 1;
+      }
+  
+      & .icon-more-sign {
+        transform: translateX(15px);
+      }
+    }
+  }
+  &__button-text {
+    font-size: em(18);
+    font-family: $ff-sen;
+    color: $c-purple;
+    font-weight: 700;
+  }
+  &__hidden {
+    transition: $t-normal;
+    position: absolute;
+    opacity: 0;
   }
 }

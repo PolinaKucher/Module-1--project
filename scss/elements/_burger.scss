@@ -1,0 +1,40 @@
+.kos-burger {
+	background-color: transparent;
+	position: relative;
+	margin-left: 20px;
+	transition: 1s;
+	display: none;
+	border: none;
+	padding: 5px;
+	z-index: 920;
+	
+
+	@include media ('<=tablet') {
+    display: block;
+		cursor: pointer;
+  }
+
+	&--active {
+		transform: rotate(270deg);
+		& > .kos-burger__bar {
+			transform: rotate(135deg);
+
+			&:nth-child(2) {
+				opacity: 0;
+			}
+
+			&:last-child {
+				transform: rotate(-135deg);
+			}
+		}
+	}
+
+	&__bar {
+		background-color: $c-white;
+		transition: $t-normal; 
+		margin: 5px auto;
+		display: block;
+		width: 25px;
+		height: 3px;
+	}
+}

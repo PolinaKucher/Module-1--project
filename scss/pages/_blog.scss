@@ -14,5 +14,19 @@
 // *Categories section
 @import '../elements/category-item';
 @import '../components/category';
+@import '../components/join-section';
 // *Footer
+@import '../elements/socials';
 @import '../components/footer';
+
+.pol-blog {
+  &__wrapper {
+    margin-top: 64px;
+  }
+  &__title {
+    cursor: default;
+    color: $c-black;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba($c-medium-grey, $alpha: 0.3);
+  }
+}

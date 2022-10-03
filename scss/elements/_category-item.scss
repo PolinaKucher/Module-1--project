@@ -8,6 +8,10 @@
   padding: 32px;
   transition: $t-normal;
   cursor: pointer;
+  &:hover {
+    background-color: $c-yellow;
+    border-color: $c-yellow;
+  }
 
   &__icon-block {
     background-color: $c-light-yellow;
@@ -20,7 +24,7 @@
   }
   
   &__title {
-    font-family: "Sen";
+    font-family: $ff-sen;
     font-weight: 700;
     font-size: em(28);
     line-height: 40px;
@@ -36,7 +40,4 @@
   }
 
 }
-.alx-category-item:hover {
-  background-color: $c-yellow;
-  border-color: $c-white;
-}
+

@@ -28,9 +28,11 @@ $info-width: 805px;
     }
   }
   &__info {
+    cursor: default;
     max-width: $info-width;
     padding-right: 20px;
     @include media("<=tablet") {
+      margin-top: 100px;
       font-size: em(14);
     }
   }
@@ -68,6 +70,7 @@ $info-width: 805px;
     }
   }
   &__text {
+    max-width: 620px;
     padding-top: 16px;
     padding-bottom: 48px;
     line-height: 28px;
