@@ -32,7 +32,7 @@
 
   // ! Delete after add photo to pug
   &__photo {
-    background-color: red;
-    height: 320px; 
+    max-width: 405px;
+    width: 100%; 
   }
 }

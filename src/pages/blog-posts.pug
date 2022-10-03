@@ -9,7 +9,7 @@ block style
 
 block content
   // * Header
-  // +header() 
+  +header() 
   // * Banner
   +bannerBlogPosts()
   // * Blog cards
@@ -18,14 +18,17 @@ block content
       h2.kos-blog__title What to read next
       .kos-blog__content 
         +cardBlogPosts({
+          src: '../../assets/images/womans-around-board.jpg',
           title: 'A UX Case Study Creating a Studious Environment for Students: ',
           text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
         })
         +cardBlogPosts({
+          src: '../../assets/images/teamwork-around-table.jpg',
           title: 'A UX Case Study Creating a Studious Environment for Students: ',
           text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
         })
         +cardBlogPosts({
+          src: '../../assets/images/woman-looking-men.jpg',
           title: 'A UX Case Study Creating a Studious Environment for Students: ',
           text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
         })

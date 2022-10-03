@@ -19,7 +19,7 @@
 
 .kos-blog {
   padding-bottom: 64px;
-  padding-top: 128px;
+  padding-top: 208px;
 
   &__title {
     font-family: $ff-sen;
@@ -47,6 +47,7 @@
 .kos-blog-footer {
   &__wrapper {
     border-top: 1px solid $c-medium-grey;
+    padding-bottom: 128px;
     padding-top: 128px;
     display: flex;
     justify-content: space-between;

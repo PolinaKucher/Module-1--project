@@ -186,8 +186,8 @@ input, select, textarea {
   opacity: 0.7;
 }
 .kos-card__photo {
-  background-color: red;
-  height: 320px;
+  max-width: 405px;
+  width: 100%;
 }
 
 /********************************* Core ******************************/
@@ -819,7 +819,7 @@ input, select, textarea {
 
 .kos-blog {
   padding-bottom: 64px;
-  padding-top: 128px;
+  padding-top: 208px;
 }
 .kos-blog__title {
   font-family: "Sen", sans-serif;
@@ -848,6 +848,7 @@ input, select, textarea {
 
 .kos-blog-footer__wrapper {
   border-top: 1px solid #6d6e76;
+  padding-bottom: 128px;
   padding-top: 128px;
   display: flex;
   justify-content: space-between;
