@@ -1,0 +1,193 @@
+// *Base
+@import "../index";
+@import "../plugins/simptip/simptip";
+
+// *Buttons
+@import "../elements/button";
+@import "../elements/form-item";
+
+// *Header
+@import "../components/navigation";
+@import "../components/header";
+
+// *Plugins
+@import "../plugins/bootstrap/bootstrap";
+@import "../plugins/bootstrap/variables";
+
+// * Blog post item section
+@import "../components/content-item";
+
+// *Logo
+@import "../elements/logo";
+
+// *Categories section
+@import "../elements/category-item";
+@import "../components/category";
+
+// *Tags
+@import "../elements/tag-item";
+@import "../components/tags";
+
+// *Footer
+@import "../components/footer";
+
+.val-category-header-block {
+  background-color: $c-lavender;
+  margin-top: 80px;
+  color: $c-black;
+
+  &__wrapper {
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+    align-items: center;
+    padding-top: 80px;
+    display: flex;
+
+    @include media("<=desktop") {
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
+
+    @include media("<=tablet") {
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+  }
+  &__title {
+    font-family: $ff-sen;
+    letter-spacing: -2px;
+    margin-bottom: 16px;
+    font-size: em(56);
+    line-height: 64px;
+    font-weight: 700;
+
+    @include media("<=desktop") {
+      font-size: em(48);
+      line-height: 52px;
+    }
+
+    @include media("<=tablet") {
+      font-size: em(36);
+      line-height: 40px;
+      letter-spacing: 0;
+    }
+  }
+  &__subtitle {
+    font-family: $ff-inter;
+    color: $c-medium-grey;
+    font-size: $fs-base;
+    margin-bottom: 32px;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 400;
+    max-width: 515px;
+
+    @include media("<=tablet") {
+      margin-bottom: 24px;
+      font-size: em(14);
+      line-height: 20px;
+    }
+  }
+  &__path {
+    text-transform: uppercase;
+    font-family: $ff-inter;
+    font-size: $fs-base;
+    letter-spacing: 3px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+    &__link {
+      color: $c-black;
+
+      &:hover {
+        color: $c-purple;
+      }
+    }
+    @include media("<=tablet") {
+      font-size: em(14);
+    }
+  }
+}
+
+.val-category-main {
+  &__wrapper {
+    justify-content: space-between;
+    margin-bottom: 128px;
+    margin-top: 128px;
+    display: flex;
+
+    @include media("<=screen") {
+      flex-direction: column;
+    }
+
+    @include media("<=desktop") {
+      margin-bottom: 96px;
+      margin-top: 96px;
+    }
+
+    &__blog-posts {
+      & .val-content-item {
+        margin-top: 32px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    &__categories {
+      margin-left: 20px;
+
+      @include media("<=screen") {
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 48px;
+      }
+      &__categories-list {
+        margin-bottom: 48px;
+        &__title {
+          font-family: $ff-sen;
+          letter-spacing: -2px;
+          margin-bottom: 40px;
+          font-size: em(36);
+          line-height: 48px;
+          font-weight: 700;
+          color: $c-black;
+
+          @include media("<=tablet") {
+            font-size: em(24);
+            margin-bottom: 16px;
+          }
+        }
+        &__list {
+          padding-left: 0;
+
+          @include media("<=screen") {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          @include media("<=screen") {
+            flex-direction: column;
+            gap: 16px;
+          }
+          & .alx-category-item {
+            flex-direction: row;
+            justify-content: start;
+            padding: 24px;
+            margin-bottom: 24px;
+            align-items: center;
+
+            @include media("<=screen") {
+              margin-bottom: 0;
+            }
+
+            &__icon-block {
+              margin-right: 16px;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
