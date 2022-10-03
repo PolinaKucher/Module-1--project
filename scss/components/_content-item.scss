@@ -1,5 +1,4 @@
 .val-content-item {
-  justify-content: center;
   align-items: center;
   margin-top: 65px;
   display: flex;
@@ -10,17 +9,19 @@
   }
   &__image-block {
     max-width: 410px;
+    display: flex;
   }
   &__info {
     margin-left: 10px;
     padding-left: 25px;
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     &:hover{
       background-color: $c-light-yellow;
       cursor: pointer;
     }
     @include media('<=tablet'){
+      margin-left: 0;
       padding-left: 0;
       padding-top: 30px;
       padding-bottom: 10;
@@ -36,7 +37,7 @@
   }
   &__title {
     font-family: $ff-sen;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     margin-top: 20px;
     font-size: em(36);
     line-height: 48px;

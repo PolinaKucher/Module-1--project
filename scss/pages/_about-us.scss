@@ -5,10 +5,15 @@
 @import '../components/about-us';
 
 // * Components
-@import '../components/statictic';
+@import '../components/statistic';
+@import '../components/authors';
+@import '../components/join-section';
 
 // * Elements
-@import '../elements/statictic-item';
+@import '../elements/statistic-item';
 @import '../elements/block';
 @import '../elements/card';
 @import '../elements/item';
+@import '../elements/authors-item';
+@import '../elements/socials';
+

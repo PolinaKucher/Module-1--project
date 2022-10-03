@@ -1,0 +1,44 @@
+.alx-authors-item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 28px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-right: 28px;
+  align-items: center;
+  text-align: center;
+  background-color: $c-light-grey;
+  cursor: pointer;
+  transition: $t-normal;
+  &:hover {
+    background-color: $c-light-yellow;
+  }
+  &__image-block {
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    border-radius: 50%;
+  }
+
+  &__title {
+    transition: $t-normal;
+    font-family: $ff-sen;
+    font-weight: 700;
+    font-size: em(28);
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: $c-black;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__subtitle {
+    font-family: $ff-inter;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: 20px;
+    color: $c-medium-grey;
+  }
+}

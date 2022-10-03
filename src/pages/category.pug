@@ -4,6 +4,7 @@ block title
   title Category
 
 block style
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT' crossorigin='anonymous')
   link(rel="stylesheet" href="../styles/category.css")
 
 block content 
@@ -23,36 +24,50 @@ block content
     .wrapper.val-category-main__wrapper 
       .val-category-main__wrapper__blog-posts 
         +contentItem({
-          src: '../assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
+          src: '../assets/images/yul-two-women-in-front-of-dry-erase-board-cropped.jpg',
           subtitle: 'Business',
           title: 'Top 6 free website mockup tools 2022',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
         })
         +contentItem({
-          src: '../assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
+          src: '../assets/images/yul-two-women-in-front-of-dry-erase-board-cropped.jpg',
           subtitle: 'Business',
           title: 'Step-by-step guide to choosing great font pairs',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
         })
         +contentItem({
-          src: '../assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
+          src: '../assets/images/yul-two-women-in-front-of-dry-erase-board-cropped.jpg',
           subtitle: 'Business',
           title: 'Ten free foogle fonts that you should use',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
         })
         +contentItem({
-          src: '../assets/images/yul-two-women-in-front-of-dry-erase-board.jpg',
+          src: '../assets/images/yul-two-women-in-front-of-dry-erase-board-cropped.jpg',
           subtitle: 'Business',
           title: 'What did I learn from doing 50+ design sprints?',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
         })
       .val-category-main__wrapper__categories
         .val-category-main__wrapper__categories__categories-list 
-        //- * Category block
-        +categoryItem({
-          src: '#icon-business',
-          title: 'Startup'
-        })
+          //- * Category block
+          h2.val-category-main__wrapper__categories__categories-list__title Categories
+          ul.val-category-main__wrapper__categories__categories-list__list
+            +categoryItem({
+              icon: '#icon-startup',
+              title: 'Startup'
+            })
+            +categoryItem({
+              icon: '#icon-business',
+              title: 'Business'
+            })
+            +categoryItem({
+              icon: '#icon-economy',
+              title: 'Economy'
+            })
+            +categoryItem({
+              icon: '#icon-tecnology',
+              title: 'Technology'
+            })
         .val-category-main__wrapper__categories__tags
           .val-category-main__wrapper__categories__tags__tags-list 
             +tagsTable()
@@ -60,6 +75,51 @@ block content
 
 
   //- *Footer
-  +footer({
-    toolTip: 'Contact us'
-  })
+  footer.py-5.text-bg-dark
+    .container
+      .d-flex.flex-column.flex-sm-row.justify-content-between.my-2
+        a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.text-decoration-none(href='./home.html')
+          //- +logo()        
+        ul.nav.col-12.col-lg-auto.mb-2.justify-content-center.mb-md-0
+          li
+            a.nav-link.px-2.text-white(href='./home.html') Home
+          li
+            a.nav-link.px-2.text-white(href='./blog.html') Blog
+          li
+            a.nav-link.px-2.text-white(href='./about-us.html') About us
+          li
+            a.nav-link.px-2.text-white(href='./contacts.html') Contact us
+          li
+            a.nav-link.px-2.text-white(href='./privacy-policy.html') Privacy Policy
+      .row.bg-white.bg-opacity-10.py-5.my-4.px-5.mx-3
+        .col-md-6
+          h2.text-white Subscribe to our news letter to get latest updates and news
+        .col-md-6
+          form
+            .d-flex.flex-column.flex-sm-row.w-100.gap-2.justify-content-center.align-items-center
+              label.visually-hidden(for='newsletter1') Enter Your Email
+              input#newsletter1.form-control.text-muted(type='text' placeholder='Enter Your Email')
+              button.btn.btn-warning.br-0(type='button') Subscribe
+      .d-flex.flex-column.flex-sm-row.justify-content-between.py-4.my-4
+        .d-flex.flex-column
+          a.text-white.text-muted.text-decoration-none(href='https://www.google.com/maps/place/%D0%A4%D0%B8%D0%BD%D1%82%D0%B0%D1%83%D0%BD,+Co.+%D0%94%D0%BE%D0%BD%D0%B5%D0%B3%D0%BE%D0%BB,+%D0%98%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F/@54.8695755,-8.1242338,15z/data=!3m1!4b1!4m5!3m4!1s0x485f9f63a37df68b:0xa00c7a99731da90!8m2!3d54.869564!4d-8.115479' target='_blank') Finstreet 118 2561 Fintown
+          .d-flex.flex-row
+            a.text-white.text-muted.text-decoration-none.pe-1(href='mailto:Hello@finsweet.com' target='_blank') Hello@finsweet.com
+            a.text-white.text-muted.text-decoration-none(href='tel: 020 7993 2905', target='_blank') 020 7993 2905
+        ul.list-unstyled.d-flex
+          li.ms-3
+            a.link-muted(href='#')
+              svg.bi(width='24' height='24')
+                use(xlink:href='#facebook')
+          li.ms-3
+            a.link-light(href='#')
+              svg.bi(width='24' height='24')
+                use(xlink:href='#twitter')
+          li.ms-3
+            a.link-light(href='#')
+              svg.bi(width='24' height='24')
+                use(xlink:href='#instagram')
+          li.ms-3
+            a.link-light(href='#')
+              svg.bi(width='24' height='24')
+                use(xlink:href='#linkedin')

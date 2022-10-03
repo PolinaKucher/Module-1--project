@@ -1,0 +1,7 @@
+mixin statisticItem(args={})
+  - const subtitle = args.subtitle || 'Default statictic subtitle'
+  - const title = args.title || 'Default statictic title'
+
+  .sol-statistic-item
+    .sol-statistic-item__title=title
+    .sol-statistic-item__subtitle=subtitle

@@ -1,7 +1,11 @@
 .yul-join-section {
+  cursor: default;
   margin-bottom: 128px;
   margin-top: 128px;
   &__wrapper {
+    text-align: center;
+
+    max-width: 414px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -9,18 +13,23 @@
   }
 
   &__title {
+    color: $c-black;
     font-family: $ff-sen;
     margin-bottom: 16px;
-    line-height: em(48);
     font-size: em(36);
     font-weight: 700;
   }
 
   &__subtitle {
+    text-align: center;
     font-family: $ff-inter;
     line-height: em(28);
     margin-bottom: 32px;    
     font-size: em(16);
     font-weight: 400;
+  }
+
+  &__button {
+    width: 170px;
   }
 }

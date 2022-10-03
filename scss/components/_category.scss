@@ -2,64 +2,32 @@
 
 .alx-category {
   margin-top: 128px;
-  background-color: #fff;
-}
-.alx-category__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.alx-category__title {
-  font-family: "Sen";
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
-  letter-spacing: -2px;
-  margin-bottom: 48px;
-  color: #232536;
-  text-align: center;
-}
-.alx-category__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 32px;
-}
-
-.alx-category-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #fff;
-  margin-bottom: 16px;
-  border: 1px solid rgba(109, 110, 118, 0.3);
-  padding: 32px;
-}
-.alx-category-item__icon {
-  background-color: #fbf6ea;
-  font-size: 24px;
-  width: fit-content;
-  padding: 12px;
-  border-radius: 10px;
-  margin-bottom: 12px;
-}
-.alx-category-item__title {
-  font-family: "Sen";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 40px;
-  letter-spacing: -1px;
-  color: #232536;
-  margin-bottom: 4px;
-}
-.alx-category-item__subtitle {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: #6d6e76;
-}
-
-.alx-category-item:hover {
-  background-color: $c-yellow;
-  border-color: $c-white;
+  background-color: $c-white;
+  margin-bottom: 128px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    cursor: default;
+    font-family: $ff-sen;
+    font-weight: 700;
+    font-size: em(36);
+    line-height: 48px;
+    letter-spacing: -2px;
+    margin-bottom: 48px;
+    color: $c-black;
+    text-align: center;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+    @include media("<=desktop") {
+      gap: 32px;
+      flex-direction: column;
+      display: flex;
+    }
+  }
 }

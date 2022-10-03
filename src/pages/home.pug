@@ -5,7 +5,7 @@ block title
 block style 
   link(rel="stylesheet" href="../styles/home.css")
 
-  .app 
+block content
     //- *Header
     +header()
     //- * Banner
@@ -86,8 +86,42 @@ block style
           time: 'August 23, 2021',
           title2: '8 Figma design systems that you can download for free today.'
         })
+
     //- * Category block
-    +category
+    +category({
+      title: 'Choose A Catagory'
+    })
+
+    //- * List of Authors
+    .wrapper.alx-list-of-author
+      h3.alx-list-of-author__title List of Authors
+      ul.alx-list-of-author__list 
+        +authorsItem({
+          title: 'Floyd Miles',
+          subtitle: 'Content Writer @Company',
+          src: '../assets/images/yul-man-in-yellow-button-up-shirt.jpg'
+        }) 
+        +authorsItem({
+          title: 'Dianne Russell',
+          subtitle: 'Content Writer @Company',
+          src: '../assets/images/yul-woman-in-white-and-black-striped-shirt.jpg'
+        }) 
+        +authorsItem({
+          title: 'Jenny Wilson',
+          subtitle: 'Content Writer @Company',
+          src: '../assets/images/yul-fashion-woman-cute-shoes.jpg'
+        }) 
+        +authorsItem({
+          title: 'Leslie Alexander',
+          subtitle: 'Content Writer @Company',
+          src: '../assets/images/yul-content-baker-with-delicious-puff-in-cafeteria.jpg'
+        })
+      
     //- * Logoipsum block
     +logoipsum
-
+    +testimonials()
+    +join-section()
+    //- *Footer
+    +footer({
+      toolTip: 'Contact us'
+    })

@@ -1,0 +1,30 @@
+extends ../common/layout
+
+block title 
+  title Author
+block style
+  link(rel="stylesheet" href="../styles/author.css")
+
+
+block content
+  //- * Header
+  +header()
+  
+  //- * Banner 
+  .andr-banner 
+    .andr-banner__wrapper 
+      .andr-banner__image 
+        img(src="../assets/images/yul-close-up-photography-of-man-wearing-sunglasses.jpg", alt="Portrait")
+      .andr-banner__block 
+        .andr-banner__title Hey there, I'm Andrew Jonhson and welcome to my Blog
+        .andr-banner__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
+        +socials()
+        
+    .andr-banner__line
+      +block(true)
+
+  //- * Content
+  +content()
+
+  //- * Footer
+  +footer()

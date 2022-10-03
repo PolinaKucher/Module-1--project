@@ -5,7 +5,7 @@
 @import '../components/banner';
 // *Buttons
 @import '../elements/button';
-@import '../elements/formItem';
+@import '../elements/form-item';
 // *Header
 @import '../components/navigation';
 @import '../components/header';
@@ -14,14 +14,19 @@
 // *Categories section
 @import '../elements/category-item';
 @import '../components/category';
+@import '../components/join-section';
 // *Footer
+@import '../elements/socials';
 @import '../components/footer';
 
-
-// *Posts Section
 .pol-blog {
   &__wrapper {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    margin-top: 64px;
+  }
+  &__title {
+    cursor: default;
+    color: $c-black;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba($c-medium-grey, $alpha: 0.3);
   }
 }

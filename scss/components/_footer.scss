@@ -23,14 +23,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include media("<=tablet") {
+    @include media("<=desktop") {
       gap: 25px;
       flex-direction: column;
       align-items: flex-start;
     }
   }
   &__title {
-    color: $c-white;
+    cursor: default;
     font-family: $ff-sen;
     font-size: em(36);
     line-height: 48px;
@@ -43,7 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include media("<=tablet") {
+    @include media("<=desktop") {
       padding-left: 0;
       flex-direction: column;
       align-items: flex-start;
@@ -60,6 +60,7 @@
     width: 180px;
   }
   &__footer {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -81,5 +82,8 @@
     &:hover {
       opacity: 1;
     }
+  }
+  &__socials {
+    margin-right: 14px;
   }
 }
