@@ -1,19 +1,15 @@
 // * Base
-@import "../plugins/bootstrap/bootstrap";
-@import "../plugins/bootstrap/variables";
+// @import "../plugins/bootstrap/bootstrap";
+// @import "../plugins/bootstrap/variables";
 @import "../index";
-
 
 // * Plugins
 @import "../plugins/simptip/simptip";
 @import "../plugins/fontawesome/fontawesome";
 
-// * Media
-@import "../media";
-
 // * Elements
 @import "../elements/button";
-@import '../elements/burger';
+@import "../elements/burger";
 @import "../elements/block";
 @import "../elements/socials";
 @import "../elements/logo";
@@ -24,10 +20,17 @@
 @import "../components/content-item.scss";
 @import "../components/content";
 
-@import "../components/navigation";
 @import "../components/header";
+@import "../components/navigation";
 @import "../components/footer";
 
+header {
+  background-color: $c-black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
 .andr-banner {
   background-color: $c-lavender;

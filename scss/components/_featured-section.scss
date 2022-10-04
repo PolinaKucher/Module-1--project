@@ -42,14 +42,9 @@
     color: $c-medium-grey;
     padding-top: 15px;
     line-height: 30px;
-    // font-size: 16px;
 
     @include media ('<=phone'){
       line-height: 25px;
     }
   }
 }
-
-// .andr-h-margin-top-30 {
-//   margin-top: 30px;
-// }

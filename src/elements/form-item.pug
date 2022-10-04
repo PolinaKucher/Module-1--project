@@ -21,10 +21,13 @@ mixin formItem(args={})
           option(value='AQ') India
           option(value='AG') Japan
           option(value='AR') Brazil
+        .kos-form-item__arrow
+          svg(viewbox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(d='M2 2L6 6L10 2' stroke='black' stroke-width='2' stroke-linecap='square')
         .kos-form-item__error * Please choose country
     if args.name3 
       label.kos-form-item__content(data-tooltip=args.toolTip).simptip-position-bottom.simptip-fade.simptip-smooth
-        textarea.kos-form-item__text-area(rows=args.rows, name=args.name3, placeholder=args.placeholder2, data-tooltip=args.toolTip).simptip-position-bottom.simptip-fade.simptip-smooth
+        textarea.kos-form-item__text-area(rows=args.rows, name=args.name3, placeholder=args.placeholder2, data-tooltip=args.toolTip).simptip-position-right.simptip-fade.simptip-smooth
         
 
 

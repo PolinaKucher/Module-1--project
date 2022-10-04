@@ -18,11 +18,13 @@
 @import '../components/header';
 
 // *Footer
+@import '../elements/socials';
 @import '../components/footer';
 
 .kos-contact {
-  
+  padding-top: 208px;
   &__wrapper {
+    margin-bottom: 128px;
     padding-right: 15px;
     padding-left: 15px;
     max-width: 800px;
@@ -34,6 +36,21 @@
     line-height: 20px;
     font-weight: 900;
     color: $c-black;
+    background: linear-gradient(270deg, $c-purple, $c-dark-yellow, $c-purple);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 8s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+    @keyframes animate {
+      0% {
+        background-position: -500%;
+      }
+      100% {
+        background-position: 500%;
+      }
+    }
   }
 
   &__title {
@@ -41,9 +58,23 @@
     text-align: center;
     font-size: em(48);
     padding-top: 10px;
-    font-weight: 700;
     line-height: 64px;
     color: $c-black;
+    background: linear-gradient(270deg, $c-purple, $c-dark-yellow, $c-purple);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 8s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+    @keyframes animate {
+      0% {
+        background-position: -500%;
+      }
+      100% {
+        background-position: 500%;
+      }
+    }
   }
 
   &__description {
@@ -55,19 +86,29 @@
     @include media ('<=tablet') {
       margin-bottom: 65px;
     }
+
+    
   }
 
   &__form {
-    margin-top: 30px;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
+    margin-top: 30px;
+    width: 100%;
   }
-  &__item {
+
+  &__input {
     height: 76px;
   }
+
   &__button {
+    width: 760px;
     margin-top: 15px;
+  }
+
+  &__name {
+    max-height: 76px;
+    height: 100%;
   }
 }

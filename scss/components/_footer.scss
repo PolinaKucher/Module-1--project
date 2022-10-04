@@ -2,10 +2,12 @@
 .pol-footer {
   background-color: $c-black;
   color: $c-white;
+
   &__wrapper {
     padding-top: 56px;
     padding-bottom: 56px;
   }
+
   &__head {
     justify-content: space-between;
     align-items: center;
@@ -17,6 +19,7 @@
       align-items: flex-start;
     }
   }
+
   &__body {
     padding: 80px 64px;
     background-color: rgba($c-white, 0.05);
@@ -29,6 +32,7 @@
       align-items: flex-start;
     }
   }
+
   &__title {
     cursor: default;
     font-family: $ff-sen;
@@ -37,6 +41,7 @@
     letter-spacing: -2px;
     max-width: 560px;
   }
+
   &__block {
     padding-left: 20px;
     gap: 25px;
@@ -49,6 +54,7 @@
       align-items: flex-start;
     }
   }
+
   &__input {
     height: 56px;
     width: 320px;
@@ -56,9 +62,11 @@
       width: inherit;
     }
   }
+
   &__button {
     width: 180px;
   }
+
   &__footer {
     
     display: flex;
@@ -71,6 +79,7 @@
       align-items: flex-start;
     }
   }
+
   &__link {
     transition: $t-normal;
     line-height: 28px;
@@ -83,6 +92,7 @@
       opacity: 1;
     }
   }
+  
   &__socials {
     margin-right: 14px;
   }

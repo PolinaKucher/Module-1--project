@@ -74,7 +74,7 @@ input, select, textarea {
   padding-right: 65px;
   padding-left: 65px;
   padding-top: 50px;
-  margin-top: 0 auto;
+  margin-top: 65px;
   display: flex;
   width: 100%;
   text-align: center;
@@ -87,6 +87,7 @@ input, select, textarea {
 .kos-contact-pannel__block {
   margin-right: 40px;
   max-width: 295px;
+  text-align: left;
   width: 100%;
 }
 .kos-contact-pannel__block:last-child {
@@ -104,6 +105,7 @@ input, select, textarea {
   line-height: 20px;
   color: #fff;
   display: block;
+  opacity: 0.6;
 }
 .kos-contact-pannel__days {
   font-family: "Sen", sans-serif;
@@ -128,15 +130,26 @@ input, select, textarea {
   margin-top: 16px;
 }
 .kos-contact-pannel__link {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 28px;
   font-weight: 400;
   color: #fff;
+  opacity: 0.6;
+}
+.kos-contact-pannel__link:hover {
+  color: #232536;
 }
 .kos-contact-pannel__link--number {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   font-family: "Sen", sans-serif;
   font-size: 1.25em;
+  line-height: 32px;
   font-weight: 700;
   color: #fff;
+  opacity: 1;
+}
+.kos-contact-pannel__link--number:hover {
+  color: #232536;
 }
 
 /********************************* Core ******************************/
@@ -625,7 +638,7 @@ input, select, textarea {
 }
 
 .kos-form-item {
-  height: 100%;
+  height: inherit;
 }
 .kos-form-item__content {
   max-width: 768px;
@@ -633,30 +646,48 @@ input, select, textarea {
   width: 100%;
 }
 .kos-form-item__input {
+  height: 76px;
   border: 1px solid #6d6e76;
-  line-height: 28px;
-  height: 100%;
   padding: 14px 25px;
+  border-radius: 2px;
   width: 100%;
+  height: inherit;
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
 }
 .kos-form-item__country {
   max-width: 768px;
   width: 100%;
 }
+.kos-form-item__arrow {
+  background: transparent;
+  position: absolute;
+  border-radius: 0;
+  right: 65px;
+  width: 12px;
+  height: 8px;
+  top: 27%;
+}
 .kos-form-item__select {
+  color: inherit;
   border: 1px solid #6d6e76;
-  line-height: 28px;
-  font-weight: 400;
-  height: 76px;
+  font-family: "Inter", sans-serif;
   padding: 14px 25px;
+  border-radius: 2px;
+  font-size: 1em;
+  appearance: none;
+  height: 76px;
   width: 100%;
 }
 .kos-form-item__text-area {
   border: 1px solid #6d6e76;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
-  line-height: 28px;
-  display: block;
   padding: 14px 25px;
+  border-radius: 2px;
+  font-size: 1em;
+  font-weight: 400;
+  display: block;
   resize: none;
   width: 100%;
 }
@@ -679,7 +710,7 @@ input, select, textarea {
   padding: 5px;
   z-index: 920;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .kos-burger {
     display: block;
     cursor: pointer;
@@ -737,15 +768,20 @@ input, select, textarea {
 }
 
 .pol-navigation {
-  z-index: 900;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 910;
+  overflow: hidden;
 }
-@media (max-width: 768px) {
+.pol-navigation.open {
+  min-height: 240px;
+}
+@media (max-width: 1024px) {
   .pol-navigation {
-    background-color: #4c4c4c;
+    max-height: 0;
+    background-color: rgba(35, 37, 54, 0.98);
     justify-content: center;
     position: fixed;
     display: flex;
-    bottom: 50%;
     top: 80px;
     right: 0;
     left: 0;
@@ -756,8 +792,9 @@ input, select, textarea {
   height: 100%;
   gap: 40px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .pol-navigation__list {
+    gap: 30px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -781,7 +818,7 @@ input, select, textarea {
   padding: 5px;
   z-index: 920;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .kos-burger {
     display: block;
     cursor: pointer;
@@ -839,19 +876,46 @@ input, select, textarea {
   display: flex;
   margin-right: 2em;
 }
-@media (max-width: 768px) {
-  .yul-header__navigation {
-    display: none;
-  }
-}
-.yul-header__navigation--show {
-  display: block;
-}
 .yul-header__button {
   width: 170px;
   align-items: center;
   display: flex;
   margin-left: 32px;
+}
+@media (max-width: 480px) {
+  .yul-header__button {
+    display: none;
+  }
+}
+
+.andr-social {
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  display: flex;
+  width: 100%;
+}
+.andr-social__link {
+  color: #232536;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  font-size: 1em;
+}
+.andr-social__link--white {
+  font-size: 1em;
+  color: #fff;
+  opacity: 0.7;
+}
+.andr-social__link:hover {
+  background-color: #ffd050;
+  color: #4c4c4c;
+  border-radius: 4px;
+}
+
+.fa-brands {
+  font-size: 1em;
 }
 
 .pol-footer {
@@ -952,7 +1016,11 @@ input, select, textarea {
   margin-right: 14px;
 }
 
+.kos-contact {
+  padding-top: 208px;
+}
 .kos-contact__wrapper {
+  margin-bottom: 128px;
   padding-right: 15px;
   padding-left: 15px;
   max-width: 800px;
@@ -963,15 +1031,42 @@ input, select, textarea {
   line-height: 20px;
   font-weight: 900;
   color: #232536;
+  background: linear-gradient(270deg, #592ea9, #edc14a, #592ea9);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 .kos-contact__title {
   font-family: "Sen", sans-serif;
   text-align: center;
   font-size: 3em;
   padding-top: 10px;
-  font-weight: 700;
   line-height: 64px;
   color: #232536;
+  background: linear-gradient(270deg, #592ea9, #edc14a, #592ea9);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 .kos-contact__description {
   color: #6d6e76;
@@ -985,17 +1080,22 @@ input, select, textarea {
   }
 }
 .kos-contact__form {
-  margin-top: 30px;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
+  margin-top: 30px;
+  width: 100%;
 }
-.kos-contact__item {
+.kos-contact__input {
   height: 76px;
 }
 .kos-contact__button {
+  width: 760px;
   margin-top: 15px;
+}
+.kos-contact__name {
+  max-height: 76px;
+  height: 100%;
 }
 
 /*# sourceMappingURL=contacts.css.map */

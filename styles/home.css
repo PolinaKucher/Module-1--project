@@ -48,6 +48,7 @@ img {
 }
 
 a {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
 }
 
@@ -553,7 +554,7 @@ input, select, textarea {
 }
 
 .kos-form-item {
-  height: 100%;
+  height: inherit;
 }
 .kos-form-item__content {
   max-width: 768px;
@@ -562,29 +563,46 @@ input, select, textarea {
 }
 .kos-form-item__input {
   border: 1px solid #6d6e76;
-  line-height: 28px;
-  height: 100%;
   padding: 14px 25px;
+  border-radius: 2px;
   width: 100%;
+  height: inherit;
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
 }
 .kos-form-item__country {
   max-width: 768px;
   width: 100%;
 }
+.kos-form-item__arrow {
+  background: transparent;
+  position: absolute;
+  border-radius: 0;
+  right: 65px;
+  width: 12px;
+  height: 8px;
+  top: 27%;
+}
 .kos-form-item__select {
+  color: inherit;
   border: 1px solid #6d6e76;
-  line-height: 28px;
-  font-weight: 400;
-  height: 76px;
+  font-family: "Inter", sans-serif;
   padding: 14px 25px;
+  border-radius: 2px;
+  font-size: 1em;
+  appearance: none;
+  height: 76px;
   width: 100%;
 }
 .kos-form-item__text-area {
   border: 1px solid #6d6e76;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
-  line-height: 28px;
-  display: block;
   padding: 14px 25px;
+  border-radius: 2px;
+  font-size: 1em;
+  font-weight: 400;
+  display: block;
   resize: none;
   width: 100%;
 }
@@ -1348,12 +1366,10 @@ input, select, textarea {
   overflow: hidden;
 }
 .pol-navigation.open {
-  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   min-height: 240px;
 }
 @media (max-width: 1024px) {
   .pol-navigation {
-    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     max-height: 0;
     background-color: rgba(35, 37, 54, 0.98);
     justify-content: center;
@@ -1438,20 +1454,10 @@ input, select, textarea {
   display: flex;
   height: 100%;
 }
-.yul-header__logo {
-  max-width: 140px;
-  width: 100%;
-}
 .yul-header__block {
   justify-content: space-between;
   align-items: center;
   display: flex;
-}
-.yul-header__navigation {
-  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  align-items: center;
-  display: flex;
-  margin-right: 2em;
 }
 .yul-header__button {
   width: 170px;

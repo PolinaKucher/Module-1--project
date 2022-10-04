@@ -1,5 +1,5 @@
 .kos-form-item {
-  height: 100%;
+  height: inherit;
   &__content {
     max-width: 768px;
     height: 100%;
@@ -8,10 +8,12 @@
 
   &__input {
     border: 1px solid $c-medium-grey;
-    line-height: 28px;
-    height: 100%;
     padding: 14px 25px;
+    border-radius: 2px;
     width: 100%;    
+    height: inherit;
+    font-family: $ff-inter;
+    font-size: em(16);
   }
 
   &__country {
@@ -19,25 +21,40 @@
     width: 100%;
   }
 
+  &__arrow {
+    background: transparent;
+    position: absolute;
+    border-radius: 0;
+    right: 65px;
+    width: 12px;
+    height: 8px;
+    top: 27%;
+  }
+
   &__select {
+    color: inherit;
     border: 1px solid $c-medium-grey;
-    line-height: 28px;
-    font-weight: 400;
-    // margin-top: 16px;
-    height: 76px;
+    font-family: $ff-inter;
     padding: 14px 25px;
+    border-radius: 2px;
+    font-size: em(16);
+    appearance: none;
+    height: 76px;
     width: 100%;
   }
 
   &__text-area {
     border: 1px solid $c-medium-grey;
+    font-family: $ff-inter;
     box-sizing: border-box;
-    line-height: 28px;
-    // margin-top: 16px;
-    display: block;
     padding: 14px 25px;
+    border-radius: 2px;
+    font-size: em(16);
+    font-weight: 400;
+    display: block;
     resize: none;
     width: 100%;
+
   }
 
   &__error {

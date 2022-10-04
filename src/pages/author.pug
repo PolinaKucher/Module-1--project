@@ -4,30 +4,12 @@ block title
   title Author
 block style
   link(rel="icon", href="../favicon.ico", type="image/x-icon")
-  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT' crossorigin='anonymous')
   link(rel="stylesheet" href="../styles/author.css")
 
 
 block content
   //- * Header
-  header.p-3.text-bg-dark
-    .container
-      .d-flex.flex-wrap.align-items-center.justify-content-center.justify-content-lg-start
-        a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.text-decoration-none(href='../index.html')
-          +logo()
-        ul.nav.col-12.col-lg-auto.mb-2.justify-content-center.mb-md-0
-          li
-            a.nav-link.px-2.text-white(href='../index.html') Home
-          li
-            a.nav-link.px-2.text-white(href='./blog.html') Blog
-          li
-            a.nav-link.px-2.text-white(href='./about-us.html') About Us
-          li
-            a.nav-link.px-2.text-white(href='./contacts.html') Contact Us
-        .text-end.ms-2
-          button.btn.btn-light.me-2(type='button') Subscribe
-
-
+  +header()
 
   //- * Banner
   .andr-banner 

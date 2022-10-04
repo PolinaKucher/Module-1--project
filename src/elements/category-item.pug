@@ -1,10 +1,15 @@
-mixin categoryItem(args)
+mixin categoryItem(args={})
   - const subtitle = args.subtitle || 'Default statictic subtitle'
   - const title = args.title || 'Default statictic title'
 
   li.alx-category-item
-    .alx-category-item__icon-block
-      svg.icon.alx-category-item__icon
-        use(xlink:href=args.icon)
+    if args.indexMode
+      a(href="./pages/category.html").alx-category-item__icon-block
+        svg.icon.alx-category-item__icon
+          use(xlink:href=args.icon)
+    else 
+      a(href="./category.html").alx-category-item__icon-block
+        svg.icon.alx-category-item__icon
+          use(xlink:href=args.icon)
     .alx-category-item__title=args.title
     .alx-category-item__subtitle=args.subtitle

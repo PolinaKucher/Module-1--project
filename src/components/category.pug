@@ -5,66 +5,49 @@ mixin category(args={})
     .wrapper.alx-category__wrapper
       h3.alx-category__title=args.title
       ul.alx-category__list
-        +categoryItem({
+        if args.indexMode
+          +categoryItem({
           title: 'Business',
           subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
-          icon: '#icon-business'
-        })
-        +categoryItem({
-          title: 'Startup',
-          subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
-          icon: '#icon-startup'
-        })
-        +categoryItem({
-          title: 'Economy',
-          subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
-          icon: '#icon-economy'
-        })
-        +categoryItem({
-          title: 'Technology',
-          subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
-          icon: '#icon-tecnology'
-        })
-
-
-
-
-
-
-
-
-
-
-
-
-        //- .alx-category-item
-        //-   .alx-category-item__icon
-        //-     <svg class="icon icon-business"><use xlink:href="#icon-business"></use></svg>
-        //-   .alx-category-item__title
-        //-     h3 Business
-        //-   .alx-category-item__subtitle 
-        //-     p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
-        //- .alx-category-item
-        //-   .alx-category-item__icon
-        //-     <svg class="icon icon-startup"><use xlink:href="#icon-startup"></use></svg>
-        //-   .alx-category-item__title
-        //-     h3 Startup
-        //-   .alx-category-item__subtitle 
-        //-     p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
-        //- .alx-category-item
-        //-   .alx-category-item__icon
-        //-     <svg class="icon icon-economy"><use xlink:href="#icon-economy"></use></svg>
-        //-   .alx-category-item__title
-        //-     h3 Economy
-        //-   .alx-category-item__subtitle 
-        //-     p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
-        //- .alx-category-item
-        //-   .alx-category-item__icon
-        //-     <svg class="icon icon-tecnology"><use xlink:href="#icon-tecnology"></use></svg>
-        //-   .alx-category-item__title
-        //-     h3 Technology
-        //-   .alx-category-item__subtitle 
-        //-     p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          icon: '#icon-business',
+          indexMode: true
+          })
+          +categoryItem({
+            title: 'Startup',
+            subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
+            icon: '#icon-startup',
+            indexMode: true
+          })
+          +categoryItem({
+            title: 'Economy',
+            subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
+            icon: '#icon-economy',
+            indexMode: true
+          })
+          +categoryItem({
+            title: 'Technology',
+            subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
+            icon: '#icon-tecnology',
+            indexMode: true
+          })
+        else
+          +categoryItem({
+            title: 'Business',
+            subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
+            icon: '#icon-business'
+          })
+          +categoryItem({
+            title: 'Startup',
+            subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
+            icon: '#icon-startup'
+          })
+          +categoryItem({
+            title: 'Economy',
+            subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
+            icon: '#icon-economy'
+          })
+          +categoryItem({
+            title: 'Technology',
+            subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
+            icon: '#icon-tecnology'
+          })

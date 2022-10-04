@@ -2,17 +2,27 @@ mixin navigation(args={})
   nav.pol-navigation#js-header-navigation
     .pol-navigation__wrapper 
       ul.pol-navigation__list
-        li.pol-navigation__item 
-          if args.indexMode
-            a(href="./index.html").pol-navigation__link Home
-          else 
-            a(href="../index.html").pol-navigation__link Home
-        li.pol-navigation__item 
-          a(href="./pages/blog.html").pol-navigation__link Blog
-        li.pol-navigation__item 
-          a(href="./pages/about-us.html").pol-navigation__link About us
-        li.pol-navigation__item 
-          a(href="./pages/contacts.html").pol-navigation__link Contact us
-        if args.text
+        if args.indexMode
           li.pol-navigation__item 
-            a(href="./pages/privacy-policy.html").pol-navigation__link=args.text
+            a(href="./index.html").pol-navigation__link Home
+          li.pol-navigation__item 
+            a(href="./pages/blog.html").pol-navigation__link Blog
+          li.pol-navigation__item 
+            a(href="./pages/about-us.html").pol-navigation__link About us
+          li.pol-navigation__item 
+            a(href="./pages/contacts.html").pol-navigation__link Contact us
+          if args.text
+            li.pol-navigation__item 
+              a(href="./pages/privacy-policy.html").pol-navigation__link=args.text
+        else
+          li.pol-navigation__item 
+            a(href="../index.html").pol-navigation__link Home
+          li.pol-navigation__item 
+            a(href="./blog.html").pol-navigation__link Blog
+          li.pol-navigation__item 
+            a(href="./about-us.html").pol-navigation__link About us
+          li.pol-navigation__item 
+            a(href="./contacts.html").pol-navigation__link Contact us
+          if args.text
+            li.pol-navigation__item 
+              a(href="./privacy-policy.html").pol-navigation__link=args.text
