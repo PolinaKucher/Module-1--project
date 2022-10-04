@@ -1,8 +1,8 @@
 // * Base
 @import "../plugins/bootstrap/bootstrap";
 @import "../plugins/bootstrap/variables";
-
 @import "../index";
+
 
 // * Plugins
 @import "../plugins/simptip/simptip";
@@ -13,6 +13,7 @@
 
 // * Elements
 @import "../elements/button";
+@import '../elements/burger';
 @import "../elements/block";
 @import "../elements/socials";
 @import "../elements/logo";
@@ -23,9 +24,10 @@
 @import "../components/content-item.scss";
 @import "../components/content";
 
+@import "../components/navigation";
 @import "../components/header";
 @import "../components/footer";
-@import "../components/navigation";
+
 
 .andr-banner {
   background-color: $c-lavender;

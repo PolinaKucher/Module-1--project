@@ -1,5 +1,4 @@
 .val-content-item {
-  justify-content: center;
   align-items: center;
   margin-top: 65px;
   display: flex;
@@ -8,11 +7,15 @@
     align-items: start;
     margin-top: 40px;
   }
+  &-image {
+    width: 410px;
+  }
   &__image-block {
     max-width: 410px;
     display: flex;
   }
   &__info {
+    width: 100%;
     margin-left: 10px;
     padding-left: 25px;
     padding-top: 40px;

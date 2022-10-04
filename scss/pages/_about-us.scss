@@ -7,14 +7,6 @@
 @import "../components/about-us";
 @import "../components/about-us-info";
 
-// * Components
-@import "../components/navigation";
-@import "../components/header";
-@import "../components/statistic";
-@import "../components/authors";
-@import "../components/join-section";
-@import "../components/footer";
-
 // * Elements
 @import "../elements/button";
 @import "../elements/statistic-item";
@@ -24,5 +16,16 @@
 @import "../elements/form-item";
 @import "../elements/authors-item";
 @import "../elements/socials";
+@import '../elements/burger';
+@import '../elements/logo';
+
+// * Components
+@import "../components/navigation";
+@import "../components/header";
+@import "../components/statistic";
+@import "../components/authors";
+@import "../components/join-section";
+@import "../components/footer";
+
 
 

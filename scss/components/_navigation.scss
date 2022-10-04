@@ -1,12 +1,16 @@
 .pol-navigation {
-  z-index: 900;
-
-  @include media ('<=tablet') {
-    background-color: $c-dark-grey;
+  transition: $t-normal;
+  z-index: 910;
+  overflow: hidden;
+  &.open {
+    min-height: 240px;
+  }
+  @include media("<=desktop") {
+    max-height: 0;
+    background-color: rgba($c-black, $alpha: 0.98);
     justify-content: center;
     position: fixed;
     display: flex;
-    bottom: 50%;
     top: 80px;
     right: 0;
     left: 0;
@@ -17,7 +21,8 @@
     height: 100%;
     gap: 40px;
 
-    @include media ('<=tablet') {
+    @include media("<=desktop") {
+      gap: 30px;
       align-items: center;
       flex-direction: column;
       justify-content: center;
@@ -32,4 +37,3 @@
     }
   }
 }
-

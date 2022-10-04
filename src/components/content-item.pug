@@ -7,5 +7,5 @@ mixin contentItem(args)
       img(src=args.src, alt=args.alt).val-content-item-image
     .val-content-item__info
       .val-content-item__subtitle=subtitle
-      .val-content-item__title=title
+      a(href="./blog.html").val-content-item__title=title
       .val-content-item__description=description

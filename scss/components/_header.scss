@@ -1,5 +1,5 @@
 // * Elements
-@import '../elements/burger';
+@import "../elements/burger";
 
 .yul-header {
   background-color: $c-black;
@@ -34,14 +34,6 @@
     align-items: center;
     display: flex;
     margin-right: em(32);
-
-    @include media ('<=tablet') {
-      display: none;
-    }
-
-    &--show {
-      display: block;
-    }
   }
 
   &__button {
@@ -49,6 +41,9 @@
     align-items: center;
     display: flex;
     margin-left: 32px;
+
+    @include media("<=phone") {
+      display: none;
+    }
   }
 }
-

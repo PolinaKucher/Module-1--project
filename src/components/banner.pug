@@ -9,11 +9,8 @@ mixin banner(args={})
         h1.pol-banner__title=args.title
         if args.author
           .pol-banner__author By 
-            |
             a.pol-banner__link.simptip-position-top.simptip-fade.simptip-smooth(href=args.href,  data-tooltip=args.toolTip, target='blanc', class=args.mod)=args.author
-            |
             | |
-            |
             time(datetime=args.dateTime).pol-banner__time=args.time
         p.pol-banner__text Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
         .pol-banner__button

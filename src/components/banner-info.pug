@@ -7,11 +7,8 @@ mixin bannerInfo(args={})
     h1.pol-banner__title=args.title
     if args.author
       .pol-banner__author By 
-        |
         a.pol-banner__link.simptip-position-top.simptip-fade.simptip-smooth(href=args.href,  data-tooltip=args.toolTip, target='blanc')=args.author
-        |
         | |
-        |
         time(datetime=args.dateTime).pol-banner__time=args.time
     p.pol-banner__text=args.text
     +button({

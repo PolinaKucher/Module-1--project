@@ -6,11 +6,8 @@ mixin article(args={})
       img(src=args.src, alt=args.alt).andr-article__image
     if args.author
       .andr-article__subtitle By 
-        |
         a.andr-article__link.simptip-position-top.simptip-fade.simptip-smooth(href=args.href,  data-tooltip=args.toolTip, target='blanc')=args.author
-        |
         | |
-        |
         time(datetime=args.dateTime).andr-article__time=args.time
       if args.title 
         h3.andr-article__title=args.title

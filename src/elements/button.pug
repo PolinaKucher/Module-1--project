@@ -6,8 +6,6 @@ mixin button(args='')
   button.andr-button(type=args.type, class=classes, data-tooltip=args.toolTip).simptip-position-bottom.simptip-fade.simptip-smooth
     if args.icon
       span.andr-button__text=args.text
-        |
-        |
         span.andr-button__hidden --
         svg.icon.icon-more-sign
           use(xlink:href='#icon-more-sign')
