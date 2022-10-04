@@ -4,7 +4,14 @@ mixin footer(args={})
       .pol-footer__head 
         a(href="../index.html").pol-footer__logo
           +logo()
-        +navigation({text: 'Privacy Policy'})
+        if args.indexMode
+          +navigation({
+              indexMode: true,
+              text: 'Privacy Policy'
+            }) 
+        else
+          +navigation({text: 'Privacy Policy'})
+        //- +navigation({text: 'Privacy Policy'})
       .pol-footer__body
         h2.pol-footer__title Subscribe to our news letter to get latest updates and news
         .pol-footer__block
